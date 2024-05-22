@@ -19,7 +19,7 @@ export default function Nav(){
     return(
         <div>
             <div className="w-screen flex justify-between  px-4 md:px-10 py-4 bg-blue-900 text-white font-medium text-sm"> {/* Contactos - parte superior */}
-                <div className="flex space-x-5 "> {/* Izquierda */}
+                <div className="flex space-x-3 md:space-x-5 "> {/* Izquierda */}
                     <div className="flex">
                         <HiOutlineMail className="m-1 scale-125 mr-2"/>
                         <p>CONSULTA</p>
@@ -32,23 +32,23 @@ export default function Nav(){
                     <p>|</p>
                 </div>
                 <div className="flex space-x-3 cursor-pointer"> {/* Derecha */}
-                    <Image src="/bandera-españa.png" width={30} height={30} alt="bandera de españa" />
-                    <Image src="/bandera-cataluña.png" width={30} height={30} alt="bandera de cataluña" />
+                    <Image priority src="/bandera-españa.png" width={30} height={30} alt="bandera de españa" />
+                    <Image priority src="/bandera-cataluña.png" width={30} height={30} alt="bandera de cataluña" />
                 </div>
             </div>
 
             {/* ------------------------------------------------- */}
 
-            <div className="bg-white flex justify-between py-6 px-4 md:px-10"> {/* Nav Desktop */}
+            <div className="bg-white flex justify-between py-6 px-4 xl:px-10"> {/* Nav Desktop */}
                 <div>
-                    <div>
-                        <Image src="/logo-bio.png" width={240} height={200} alt="Logo de bio-fan" />
+                    <div className="h-full w-fit flex justify-center content-center items-center">
+                        <Image priority src="/logo-bio.png" width={240} height={200} alt="Logo de bio-fan" />
                     </div>
                 </div>
                 {/* Escritorio */}
-                <div className="text-sm  md:text-lg xl:text-xl 2xl:text-2xl hidden md:block">
+                <div className="text-sm sm:text-sm  md:text-md lg:text-lg xl:text-xl 2xl:text-2xl hidden md:block">
                     <div className="flex text-blue-900 font-bold
-                                    space-x-2 md:space-x-3 lg:space-x-4 xl:space-x-5 2xl:space-x-10">
+                                    sm:space-x-1 md:space-x-3 lg:space-x-2 xl:space-x-3 2xl:space-x-10">
                         <p className={estiloHoverSecciones} >Inicio</p>
                         <p className={estiloHoverSecciones}>Aplicaciones</p>
                         <p className={estiloHoverSecciones}>Beneficios</p>
@@ -64,11 +64,11 @@ export default function Nav(){
                 </div>
                 {/* Movil */}
                 <div className="block md:hidden">
-                    <div onClick={mostrarMenu} className="rotate-90 text-4xl font-bold mt-1 cursor-pointer transition">|||</div>
+                    <div onClick={mostrarMenu} className="rotate-90 text-4xl font-bold mt-1 cursor-pointer menuTransition">|||</div>
                     {
                         menu &&
-                        <div className="bg-white w-screen h-screen absolute top-0 left-0 transition">
-                            <div className="p-10 space-y-10 text-xl font-bold text-blue-900">
+                        <div className="bg-white w-screen h-screen absolute top-0 left-0 ">
+                            <div className="p-10 space-y-10 text-xl font-bold text-blue-900 ">
                                 <p className="mt-2" >Inicio</p>
                                 <p className="">Aplicaciones</p>
                                 <p className="">Beneficios</p>
