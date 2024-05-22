@@ -21,8 +21,9 @@ export default function Nav(){
                     </div>
                     <p>|</p>
                 </div>
-                <div> {/* Derecha */}
-                    <p>Banderas</p>
+                <div className="flex space-x-3 cursor-pointer"> {/* Derecha */}
+                <Image src="/bandera-españa.png" width={30} height={30} alt="bandera de españa" />
+                <Image src="/bandera-cataluña.png" width={30} height={30} alt="bandera de cataluña" />
                 </div>
             </div>
 
