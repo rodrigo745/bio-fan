@@ -36,14 +36,16 @@ export default function Nav(){
 
                 <div>
                     <div className="flex space-x-10 text-blue-900 font-bold">
-                        <p>Inicio</p>
-                        <p>Aplicaciones</p>
-                        <p>Beneficios</p>
-                        <p>Productos</p>
-                        <p>Catalogo</p>
-                        <p>Contacto</p>
-                        <p className="flex">Tienda
-                            <TiShoppingCart/>
+                        <p className={estiloHoverSecciones} >Inicio</p>
+                        <p className={estiloHoverSecciones}>Aplicaciones</p>
+                        <p className={estiloHoverSecciones}>Beneficios</p>
+                        <p className={estiloHoverSecciones}>Productos</p>
+                        <p className={estiloHoverSecciones}>Catalogo</p>
+                        <p className={estiloHoverSecciones}>Contacto</p>
+                        <p className={`flex ${estiloHoverSecciones}`}>Tienda
+                            <div className="scale-150">
+                                <TiShoppingCart className="scale-150 mt-1 ml-3"/>
+                            </div>
                         </p>
                     </div>
                 </div>
@@ -52,3 +54,5 @@ export default function Nav(){
         </div>
     )
 }
+
+const estiloHoverSecciones = "p-2 border-4 border-white hover:border-red-500 transition hover:transition hover:rounded-md cursor-pointer";
