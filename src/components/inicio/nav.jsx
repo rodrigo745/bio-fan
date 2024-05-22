@@ -1,3 +1,6 @@
+"use client"
+import { useState } from "react";
+
 // Iconos
 import { HiOutlineMail } from "react-icons/hi";
 import { IoCall } from "react-icons/io5";
@@ -6,6 +9,13 @@ import { TiShoppingCart } from "react-icons/ti";
 import Image from "next/image";
 
 export default function Nav(){
+
+    const [ menu, setMenu ] = useState(false);
+
+    const mostrarMenu = ()=>{
+        menu ? setMenu(false) : setMenu(true);
+    }
+
     return(
         <div>
             <div className="w-screen flex justify-between  px-4 md:px-10 py-4 bg-blue-900 text-white font-medium text-sm"> {/* Contactos - parte superior */}
@@ -54,17 +64,21 @@ export default function Nav(){
                 </div>
                 {/* Movil */}
                 <div className="block md:hidden">
-                    <div className="rotate-90 text-4xl font-bold mt-1 cursor-pointer">|||</div>
-                    <div className="bg-white w-screen h-screen absolute top-0 left-0">
-                        <div className="p-10 space-y-5 text-xl font-bold text-blue-900">
-                            <p className="" >Inicio</p>
-                            <p className="">Aplicaciones</p>
-                            <p className="">Beneficios</p>
-                            <p className="">Productos</p>
-                            <p className="">Catalogo</p>
-                            <p className="">Contacto</p>
+                    <div onClick={mostrarMenu} className="rotate-90 text-4xl font-bold mt-1 cursor-pointer transition">|||</div>
+                    {
+                        menu &&
+                        <div className="bg-white w-screen h-screen absolute top-0 left-0 transition">
+                            <div className="p-10 space-y-10 text-xl font-bold text-blue-900">
+                                <p className="mt-2" >Inicio</p>
+                                <p className="">Aplicaciones</p>
+                                <p className="">Beneficios</p>
+                                <p className="">Productos</p>
+                                <p className="">Catalogo</p>
+                                <p className="">Contacto</p>
+                                <p onClick={mostrarMenu} className="absolute top-0 right-10 text-3xl cursor-pointer">x</p>
+                            </div>
                         </div>
-                    </div>
+                    }
                 </div>
             </div>
 
