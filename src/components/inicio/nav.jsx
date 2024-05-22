@@ -3,6 +3,7 @@ import { HiOutlineMail } from "react-icons/hi";
 import { IoCall } from "react-icons/io5";
 import { TiShoppingCart } from "react-icons/ti";
 
+import Image from "next/image";
 
 export default function Nav(){
     return(
@@ -27,10 +28,10 @@ export default function Nav(){
 
             {/* ------------------------------------------------- */}
 
-            <div className="bg-white flex justify-between py-9 px-10 text-2xl"> {/* Nav Desktop */}
+            <div className="bg-white flex justify-between py-6 px-10 text-2xl"> {/* Nav Desktop */}
                 <div>
                     <div>
-                        LOGO
+                        <Image src="/logo-bio.png" width={240} height={200} alt="Logo de bio-fan" />
                     </div>
                 </div>
 
@@ -42,11 +43,11 @@ export default function Nav(){
                         <p className={estiloHoverSecciones}>Productos</p>
                         <p className={estiloHoverSecciones}>Catalogo</p>
                         <p className={estiloHoverSecciones}>Contacto</p>
-                        <p className={`flex ${estiloHoverSecciones}`}>Tienda
+                        <div className={`flex pr-5 ${estiloHoverSecciones}`}>Tienda
                             <div className="scale-150">
                                 <TiShoppingCart className="scale-150 mt-1 ml-3"/>
                             </div>
-                        </p>
+                        </div>
                     </div>
                 </div>
             </div>
