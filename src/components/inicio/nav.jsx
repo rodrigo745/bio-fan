@@ -64,24 +64,23 @@ export default function Nav(){
                 </div>
                 {/* Movil */}
                 <div className="block md:hidden">
-                    <div onClick={mostrarMenu} className="rotate-90 text-4xl font-bold mt-1 cursor-pointer menuTransition">|||</div>
+                    <div onClick={mostrarMenu} className="rotate-90 text-4xl font-bold mt-1 cursor-pointer">|||</div>
                     {
                         menu &&
-                        <div className="bg-white w-screen h-screen absolute top-0 left-0 ">
-                            <div className="p-10 space-y-10 text-xl font-bold text-blue-900 ">
-                                <p className="mt-2" >Inicio</p>
-                                <p className="">Aplicaciones</p>
-                                <p className="">Beneficios</p>
-                                <p className="">Productos</p>
-                                <p className="">Catalogo</p>
-                                <p className="">Contacto</p>
+                        <div className={`${menu ? "menuOn" : "menuOff"}`}>
+                            <div className="p-14 pt-20 space-y-10 text-xl font-bold text-blue-900 ">
+                                <p className={estiloHoverSecciones}>Inicio</p>
+                                <p className={estiloHoverSecciones}>Aplicaciones</p>
+                                <p className={estiloHoverSecciones}>Beneficios</p>
+                                <p className={estiloHoverSecciones}>Productos</p>
+                                <p className={estiloHoverSecciones}>Catalogo</p>
+                                <p className={estiloHoverSecciones}>Contacto</p>
                                 <p onClick={mostrarMenu} className="absolute top-0 right-10 text-3xl cursor-pointer">x</p>
                             </div>
                         </div>
                     }
                 </div>
             </div>
-
         </div>
     )
 }

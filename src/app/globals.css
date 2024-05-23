@@ -33,3 +33,25 @@ body {
 }
 
 
+
+/*  Nav  */
+.menuOff{
+  width: 1px;
+  height: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: ease-in all 500ms;
+
+}
+.menuOn{
+  background-color: #fff;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: ease-in all 500ms;
+
+}
+
