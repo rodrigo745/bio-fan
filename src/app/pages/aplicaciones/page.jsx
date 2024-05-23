@@ -12,6 +12,14 @@ export default function Aplicaciones(){
         {text: "Industria Electrónica", img: ""},
         {text: "Logística Industrial", img: ""}
     ]
+    const titulosComerciales = [
+        {text: "Gimnasios", img: ""},
+        {text: "Estaciones de Tren y Autobuses", img: ""},
+        {text: "Centros Deportivos", img: ""},
+        {text: "Sala de Espera", img: ""},
+        {text: "Recintos Feriales y de Exposición", img: ""},
+        {text: "Escuelas", img: ""}
+    ]
 
     const mostrarPestaña = (e)=>{
         e.target.id === "0" ? setPestaña(false) : setPestaña(true);
@@ -37,10 +45,11 @@ export default function Aplicaciones(){
 
                             {
                                 titulosIndustriales.map((e, index)=> (
-                                    <div key={index} className="flex border-b-[50px] border-slate-300 hover:border-red-400 items-end w-[100%] h-[280px] bg-slate-300">
+                                    <div key={index} className="flex border-b-[50px] border-slate-300 hover:border-orange-400 items-end w-[100%] h-[280px] bg-slate-300 relative">
                                         <p className="w-fit p-3 transition absolute mb-[-47px] lg:mb-[-52px]
                                             text-sm lg:text-lg">{e.text}</p>
                                         {/* Imagen */}
+                                       
                                     </div>
                                 ))
                             }
@@ -48,9 +57,18 @@ export default function Aplicaciones(){
                         </div>
                         :
                         /* Comerciales */
-                        <div>
-                            <p>Comerciales</p>
-                            
+                        <div className="w-[90%] grid lg:grid-cols-2 xl:grid-cols-3 gap-6 text-white font-bold">
+
+                            {
+                                titulosComerciales.map((e, index)=> (
+                                    <div key={index} className="flex border-b-[50px] border-slate-300 hover:border-orange-400 items-end w-[100%] h-[280px] bg-slate-300">
+                                        <p className="w-fit p-3 transition absolute mb-[-47px] lg:mb-[-52px]
+                                            text-sm lg:text-lg">{e.text}</p>
+                                        {/* Imagen */}
+                                    </div>
+                                ))
+                            }
+                           
                         </div>
                     }
                 </div>
