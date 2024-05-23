@@ -62,7 +62,7 @@ export default function Aplicaciones(){
 
 {
     titulosComerciales.map((e, index) => (
-        <div key={index} className="relative w-[100%] h-[280px] bg-slate-300">
+        <div key={index} className="relative w-[100%] h-[250px] md:h-[280px] bg-slate-300">
             {/* Imagen */}
             {
                 e.img !== "" &&
