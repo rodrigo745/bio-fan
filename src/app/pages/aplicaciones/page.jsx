@@ -71,7 +71,7 @@ export default function Aplicaciones(){
             {/* div con hover y texto */}
             <div className="absolute left-0 top-0 w-full h-full bg-transparent hover:transparent transition-colors duration-300">
                 <div className="absolute left-0 bottom-0 w-full h-[100%] opacity-0 hover:opacity-100 transition-opacity duration-300">
-                    <div className="w-full h-14 absolute bottom-0 bg-orange-400 opacity-100"></div>
+                    <div className="w-full h-12 md:h-14 absolute bottom-0 bg-orange-400 opacity-100"></div>
                 </div>
                 <p className="absolute bottom-0 w-full p-3 text-center text-sm lg:text-lg">{e.text}</p>
             </div>
