@@ -1,5 +1,6 @@
-"use client"
+"use client";
 import { useState } from "react";
+import Link from "next/link";
 
 // Iconos
 import { HiOutlineMail } from "react-icons/hi";
@@ -42,20 +43,21 @@ export default function Nav(){
             <div className="bg-white flex justify-between py-6 px-4 xl:px-10"> {/* Nav Desktop */}
                 <div>
                     <div className="h-full w-fit flex justify-center content-center items-center">
-                        <Image priority src="/logo-bio.png" width={240} height={200} alt="Logo de bio-fan" />
+                        <Image className="scale-75 md:scale-100" priority src="/logo-bio.png" width={240} height={200} alt="Logo de bio-fan" />
                     </div>
                 </div>
                 {/* Escritorio */}
                 <div className="text-sm sm:text-sm  md:text-md lg:text-lg xl:text-xl 2xl:text-2xl hidden md:block">
                     <div className="flex text-blue-900 font-bold
                                     sm:space-x-1 md:space-x-3 lg:space-x-2 xl:space-x-3 2xl:space-x-10">
-                        <p className={estiloHoverSecciones} >Inicio</p>
-                        <p className={estiloHoverSecciones}>Aplicaciones</p>
-                        <p className={estiloHoverSecciones}>Beneficios</p>
-                        <p className={estiloHoverSecciones}>Productos</p>
-                        <p className={estiloHoverSecciones}>Catalogo</p>
-                        <p className={estiloHoverSecciones}>Contacto</p>
-                        <div className={`flex pr-5 ${estiloHoverSecciones}`}>Tienda
+                        <Link href="/" className={estiloHoverSecciones} >Inicio</Link>
+                        <Link href="/pages/aplicaciones" className={estiloHoverSecciones}>Aplicaciones</Link>
+                        <Link href="/pages/beneficios" className={estiloHoverSecciones}>Beneficios</Link>
+                        <Link href="/pages/productos" className={estiloHoverSecciones}>Productos</Link>
+                        <Link href="/pages/catalogo" className={estiloHoverSecciones}>Catalogo</Link>
+                        <Link href="/pages/contacto" className={estiloHoverSecciones}>Contacto</Link>
+                        <div className={`flex pr-5 ${estiloHoverSecciones}`}>
+                            <Link href="/pages/tienda">Tienda</Link>
                             <div className="scale-150">
                                 <TiShoppingCart className="scale-150 mt-1 ml-3 scale-x-[-1.3]"/>
                             </div>
@@ -64,7 +66,7 @@ export default function Nav(){
                 </div>
                 {/* Movil */}
                 <div className="block md:hidden">
-                    <div onClick={mostrarMenu} className="rotate-90 text-4xl font-bold mt-1 cursor-pointer">|||</div>
+                    <div onClick={mostrarMenu} className="rotate-90 text-3xl font-bold mt-1 cursor-pointer">|||</div>
                     {
                         menu &&
                         <div className={`${menu ? "menuOn" : "menuOff"}`}>
