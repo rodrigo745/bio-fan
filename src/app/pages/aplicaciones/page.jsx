@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import Image from "next/image";
 
 export default function Aplicaciones(){
 
@@ -13,12 +14,12 @@ export default function Aplicaciones(){
         {text: "Logística Industrial", img: ""}
     ]
     const titulosComerciales = [
-        {text: "Gimnasios", img: ""},
-        {text: "Estaciones de Tren y Autobuses", img: ""},
-        {text: "Centros Deportivos", img: ""},
-        {text: "Sala de Espera", img: ""},
-        {text: "Recintos Feriales y de Exposición", img: ""},
-        {text: "Escuelas", img: ""}
+        {text: "Gimnasios", img: "/comercial/co_1.jpg"},
+        {text: "Estaciones de Tren y Autobuses", img: "/comercial/co_2.jpg"},
+        {text: "Centros Deportivos", img: "/comercial/co_3.jpg"},
+        {text: "Sala de Espera", img: "/comercial/co_4.jpg"},
+        {text: "Recintos Feriales y de Exposición", img: "/comercial/co_5.jpg"},
+        {text: "Escuelas", img: "/comercial/co_6.jpg"}
     ]
 
     const mostrarPestaña = (e)=>{
@@ -59,15 +60,24 @@ export default function Aplicaciones(){
                         /* Comerciales */
                         <div className="w-[90%] grid lg:grid-cols-2 xl:grid-cols-3 gap-6 text-white font-bold">
 
-                            {
-                                titulosComerciales.map((e, index)=> (
-                                    <div key={index} className="flex border-b-[50px] border-slate-300 hover:border-orange-400 items-end w-[100%] h-[280px] bg-slate-300">
-                                        <p className="w-fit p-3 transition absolute mb-[-47px] lg:mb-[-52px]
-                                            text-sm lg:text-lg">{e.text}</p>
-                                        {/* Imagen */}
-                                    </div>
-                                ))
-                            }
+{
+    titulosComerciales.map((e, index) => (
+        <div key={index} className="relative w-[100%] h-[280px] bg-slate-300">
+            {/* Imagen */}
+            {
+                e.img !== "" &&
+                <Image src={e.img} width={300} height={300} alt="imagen comercial" className="h-full w-full"/>
+            }
+            {/* div con hover y texto */}
+            <div className="absolute left-0 top-0 w-full h-full bg-transparent hover:transparent transition-colors duration-300">
+                <div className="absolute left-0 bottom-0 w-full h-[100%] opacity-0 hover:opacity-100 transition-opacity duration-300">
+                    <div className="w-full h-14 absolute bottom-0 bg-orange-400 opacity-100"></div>
+                </div>
+                <p className="absolute bottom-0 w-full p-3 text-center text-sm lg:text-lg">{e.text}</p>
+            </div>
+        </div>
+    ))
+}
                            
                         </div>
                     }
