@@ -70,13 +70,14 @@ export default function Nav(){
                     {
                         menu &&
                         <div className={`${menu ? "menuOn" : "menuOff"}`}>
-                            <div className="p-14 pt-20 space-y-10 text-xl font-bold text-blue-900 ">
-                                <p className={estiloHoverSecciones}>Inicio</p>
-                                <p className={estiloHoverSecciones}>Aplicaciones</p>
-                                <p className={estiloHoverSecciones}>Beneficios</p>
-                                <p className={estiloHoverSecciones}>Productos</p>
-                                <p className={estiloHoverSecciones}>Catalogo</p>
-                                <p className={estiloHoverSecciones}>Contacto</p>
+                            <div className="flex flex-col p-14 pt-20 space-y-10 text-xl font-bold text-blue-900 ">
+                                <Link onClick={mostrarMenu} href="/" className={estiloHoverSecciones} >Inicio</Link>
+                                <Link onClick={mostrarMenu} href="/pages/aplicaciones" className={estiloHoverSecciones}>Aplicaciones</Link>
+                                <Link onClick={mostrarMenu} href="/pages/beneficios" className={estiloHoverSecciones}>Beneficios</Link>
+                                <Link onClick={mostrarMenu} href="/pages/productos" className={estiloHoverSecciones}>Productos</Link>
+                                <Link onClick={mostrarMenu} href="/pages/catalogo" className={estiloHoverSecciones}>Catalogo</Link>
+                                <Link onClick={mostrarMenu} href="/pages/contacto" className={estiloHoverSecciones}>Contacto</Link>
+                                <Link onClick={mostrarMenu} href="/pages/tienda" className={estiloHoverSecciones}>Tienda</Link>
                                 <p onClick={mostrarMenu} className="absolute top-0 right-10 text-3xl cursor-pointer">x</p>
                             </div>
                         </div>
