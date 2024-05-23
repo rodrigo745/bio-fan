@@ -28,7 +28,7 @@ export default function Aplicaciones(){
             </div>
 
             {/* Contenido de las pestañas */}
-            <div className="w-screen flex justify-center mt-2">
+            <div className="w-screen flex justify-center mt-6">
                 <div className="w-[90%] md:w-[80%] flex justify-center items-center text-xl ">
                     {
                         !pestaña ? 
@@ -38,7 +38,8 @@ export default function Aplicaciones(){
                             {
                                 titulosIndustriales.map((e, index)=> (
                                     <div key={index} className="flex border-b-[50px] border-slate-300 hover:border-red-400 items-end w-[100%] h-[280px] bg-slate-300">
-                                        <p className="w-fit p-3 transition absolute mb-[-52px]">{e.text}</p>
+                                        <p className="w-fit p-3 transition absolute mb-[-47px] lg:mb-[-52px]
+                                            text-sm lg:text-lg">{e.text}</p>
                                         {/* Imagen */}
                                     </div>
                                 ))
