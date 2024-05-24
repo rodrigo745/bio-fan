@@ -6,12 +6,12 @@ export default function Aplicaciones(){
 
     const [ pestaña, setPestaña ] = useState(false);
     const titulosIndustriales = [
-        {text: "Logística de Almacén", img: ""},
-        {text: "Industria Manufacturada", img: ""},
-        {text: "Automotriz", img: ""},
-        {text: "Sector ganadero y Agricultura", img: ""},
-        {text: "Industria Electrónica", img: ""},
-        {text: "Logística Industrial", img: ""}
+        {text: "Logística de Almacén", img: "/industrial/in_1.jpg"},
+        {text: "Industria Manufacturada", img: "/industrial/in_2.jpg"},
+        {text: "Automotriz", img: "/industrial/in_3.jpg"},
+        {text: "Sector ganadero y Agricultura", img: "/industrial/in_4.jpg"},
+        {text: "Industria Electrónica", img: "/industrial/in_5.jpg"},
+        {text: "Logística Industrial", img: "/industrial/in_6.jpg"}
     ]
     const titulosComerciales = [
         {text: "Gimnasios", img: "/comercial/co_1.jpg"},
@@ -37,47 +37,54 @@ export default function Aplicaciones(){
             </div>
 
             {/* Contenido de las pestañas */}
-            <div className="w-screen flex justify-center mt-6">
+            <div className="w-screen flex justify-center mt-6 ">
                 <div className="w-[90%] md:w-[80%] flex justify-center items-center text-xl ">
                     {
                         !pestaña ? 
                         /* Industriales */
                         <div className="w-[90%] grid lg:grid-cols-2 xl:grid-cols-3 gap-6 text-white font-bold">
 
-                            {
-                                titulosIndustriales.map((e, index)=> (
-                                    <div key={index} className="flex border-b-[50px] border-slate-300 hover:border-orange-400 items-end w-[100%] h-[280px] bg-slate-300 relative">
-                                        <p className="w-fit p-3 transition absolute mb-[-47px] lg:mb-[-52px]
-                                            text-sm lg:text-lg">{e.text}</p>
-                                        {/* Imagen */}
-                                       
+                        {
+                            titulosIndustriales.map((e, index) => (
+                                <div key={index} className="relative w-[100%] h-[250px] md:h-[280px] bg-slate-300">
+                                    {/* Imagen */}
+                                    {
+                                        e.img !== "" &&
+                                        <Image src={e.img} width={300} height={300} alt="imagen comercial" className="h-full w-full"/>
+                                    }
+                                    {/* div con hover y texto */}
+                                    <div className="absolute left-0 top-0 w-full h-full bg-transparent hover:transparent transition-colors duration-300">
+                                        <div className="absolute left-0 bottom-0 w-full h-[100%] opacity-0 hover:opacity-100 transition-opacity duration-300">
+                                            <div className="w-full h-10 md:h-14 absolute bottom-0 bg-orange-400 opacity-100"></div>
+                                        </div>
+                                        <p className="absolute bottom-0 w-full p-3 text-left text-sm lg:text-lg">{e.text}</p>
                                     </div>
-                                ))
-                            }
+                                </div>
+                            ))
+                        }
                            
                         </div>
                         :
                         /* Comerciales */
                         <div className="w-[90%] grid lg:grid-cols-2 xl:grid-cols-3 gap-6 text-white font-bold">
-
-{
-    titulosComerciales.map((e, index) => (
-        <div key={index} className="relative w-[100%] h-[250px] md:h-[280px] bg-slate-300">
-            {/* Imagen */}
-            {
-                e.img !== "" &&
-                <Image src={e.img} width={300} height={300} alt="imagen comercial" className="h-full w-full"/>
-            }
-            {/* div con hover y texto */}
-            <div className="absolute left-0 top-0 w-full h-full bg-transparent hover:transparent transition-colors duration-300">
-                <div className="absolute left-0 bottom-0 w-full h-[100%] opacity-0 hover:opacity-100 transition-opacity duration-300">
-                    <div className="w-full h-10 md:h-14 absolute bottom-0 bg-orange-400 opacity-100"></div>
-                </div>
-                <p className="absolute bottom-0 w-full p-3 text-center text-sm lg:text-lg">{e.text}</p>
-            </div>
-        </div>
-    ))
-}
+                        {
+                            titulosComerciales.map((e, index) => (
+                                <div key={index} className="relative w-[100%] h-[250px] md:h-[280px] bg-slate-300">
+                                    {/* Imagen */}
+                                    {
+                                        e.img !== "" &&
+                                        <Image src={e.img} width={300} height={300} alt="imagen comercial" className="h-full w-full"/>
+                                    }
+                                    {/* div con hover y texto */}
+                                    <div className="absolute left-0 top-0 w-full h-full bg-transparent hover:transparent transition-colors duration-300">
+                                        <div className="absolute left-0 bottom-0 w-full h-[100%] opacity-0 hover:opacity-100 transition-opacity duration-300">
+                                            <div className="w-full h-10 md:h-14 absolute bottom-0 bg-orange-400 opacity-100"></div>
+                                        </div>
+                                        <p className="absolute bottom-0 w-full p-3 text-left text-sm lg:text-lg">{e.text}</p>
+                                    </div>
+                                </div>
+                            ))
+                        }
                            
                         </div>
                     }
