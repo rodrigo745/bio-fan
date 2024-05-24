@@ -9,9 +9,10 @@ export default function Home() {
   return (
     <main className="">
       <Header/> {/* Cambio de imagenes */}
-      <MainUno/>
-      <MainDos/>
-      <MainTres/>
+        <MainUno/>
+        <MainDos/>
+        <MainTres/>
+      <div className="fixed z-[-1] w-screen top-0 left-0 h-screen bg-[url('/inicio/fondo_main_1.svg')]  bg-cover"></div>
     </main>
   );
 }
