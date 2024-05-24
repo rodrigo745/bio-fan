@@ -10,7 +10,7 @@ export default function MainUno(){
                 Consideramos esencial, sumar la calidad de vida, el bienestar y el respeto al medio ambiente.
                 </p>
             </div>
-            <div className="w-[100%] lg:w-[50%] text-center flex justify-center mb-44 lg:mb-0">
+            <div className="w-[100%] lg:w-[50%] text-center flex justify-center mt-20 mb-44 lg:mb-0">
                 <Image src="/inicio_main_1.jpg" width={500} height={500} alt="imagen acerca de bio fan" className="rounded-xl shadow-lg" />
             </div>
         </div>
