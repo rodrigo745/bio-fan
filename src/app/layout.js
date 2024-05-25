@@ -22,6 +22,9 @@ export default function RootLayout({ children }) {
           {children}
         </div>
         <Footer/>
+        <div className="w-full h-10 bg-black">
+          <p className="text-white font-bold text-sm text-center pt-2">Copyright 2024  ©  BIOSOLTEC, S.L.</p>
+        </div>
       </body>
     </html>
   );
