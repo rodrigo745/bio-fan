@@ -6,7 +6,7 @@ export default function Contacto(){
     return(
         <div>
             <div className="flex flex-col items-center h-full  w-full lg:h-[80vh] mt-10">
-                <div className="bg-black w-[340px] lg:w-[600px] h-[540px] lg:h-[510px] rounded-xl opacity-75 text-white px-4">
+                <div className="bg-slate-700 w-[340px] lg:w-[600px] h-[540px] lg:h-[510px] rounded-xl opacity-75 text-white px-4">
                     <h2 className="text-4xl text-center pt-5">Contacto</h2>
                     <input type="text" placeholder="Nombre *" 
                         className="p-2 w-full rounded-xl mt-5 px-4 bg-blue-950 text-white border"/>
@@ -44,9 +44,9 @@ export default function Contacto(){
                 </div>
             </div>
             </div>
-            <div className="w-full h-[70vh]">
+            <div className="w-full h-[80vh] pt-12">
             <iframe className="w-full h-[90%]"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d379802.0321565998!2d2.665800923517707!3d41.952966505365396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12bae132e7b077a5%3A0x669c6f196a39dac1!2sCarrer%20Universitat%20de%20Girona%2C%2017003%20Girona%2C%20Espa%C3%B1a!5e0!3m2!1ses!2sar!4v1716622678145!5m2!1ses!2sar" width="100" height="450"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d379802.0321565998!2d2.665800923517707!3d41.952966505365396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12bae132e7b077a5%3A0x669c6f196a39dac1!2sCarrer%20Universitat%20de%20Girona%2C%2017003%20Girona%2C%20Espa%C3%B1a!5e0!3m2!1ses!2sar!4v1716622678145!5m2!1ses!2sar" width="100" height="450"   loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
     )

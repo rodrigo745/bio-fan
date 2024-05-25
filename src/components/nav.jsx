@@ -43,7 +43,7 @@ export default function Nav(){
             <div className="bg-white border-b-2 shadow-md flex justify-between py-6 px-4 xl:px-10"> {/* Nav Desktop */}
                 <div>
                     <div className="h-full w-fit flex justify-center content-center items-center">
-                        <Image className="scale-75 md:scale-100" priority src="/logo-bio.jpg" width={300} height={200} alt="Logo de bio-fan" />
+                        <Image className="scale-75 md:scale-100" priority src="/logo-bio.png" width={300} height={200} alt="Logo de bio-fan" />
                     </div>
                 </div>
                 {/* Escritorio */}

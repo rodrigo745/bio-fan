@@ -17,11 +17,11 @@ export default function Footer(){
                     <Link href="/pages/catalogo">Catálogo</Link>
                     <Link href="/pages/contacto">Contacto</Link>
                 </div>
-                <div className="space-y-2 mt-10 lg:mt-0 ">
+                <div className="flex flex-col space-y-2 mt-10 lg:mt-0 ">
                     <h5 className="font-bold mb-2">CATÁLOGO DE PRODUCTOS</h5>
-                    <p>Catálogo General</p>
-                    <p>Catálogo Resumen</p>
-                    <p>Catálogo Evaporativos</p>
+                    <Link target="_blank" href="https://bio-fan.aflip.in/Catalogo-General.html">Catálogo General</Link>
+                    <Link target="_blank" href="https://bio-fan.aflip.in/03-CATALOGO-RESUMEN.html">Catálogo Resumen</Link>
+                    <Link target="_blank" href="https://bio-fan.aflip.in/02-CATALOGO-EVAPORATIVOS.html">Catálogo Evaporativos</Link>
                 </div>
                 <div >
                     <h5 className="font-bold lg:mb-2 mt-10 lg:mt-0 mb-10">CONTÁCTENOS</h5>
