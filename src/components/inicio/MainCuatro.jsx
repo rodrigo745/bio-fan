@@ -20,13 +20,15 @@ export default function MainCuatro(){
         }
     ]
 
+
+    
     return(
-        <div className="w-full h-full lg:h-screen px-0 ">
-            <h2 className="text-3xl lg:text-5xl pt-20 mb-20 lg:mb-0 lg:pt-56 font-bold text-blue-900 text-center sombra-texto">Blogs y Noticias</h2>
+        <div className="w-full h-full lg:h-[85vh] px-0 lg:pt-20">
+            <h2 className="text-3xl lg:text-5xl pt-20 mb-20 lg:mb-0 font-bold text-blue-900 text-center sombra-texto">Blogs y Noticias</h2>
             <div className="flex flex-col lg:flex lg:flex-row items-center lg:justify-center lg:space-x-20 lg:scale-75 px-10"> 
                 {
                     informacion.map((e, index)=> (
-                        <div key={index} className="flex flex-col w-[350px] lg:w-[400px] h-[580px] lg:h-[630px] border bg-white rounded-lg shadow-md mb-14 lg:mb-0 ">
+                        <div key={index} className="hover:sacle-105 lg:hover:scale-110 transition flex flex-col w-[350px] lg:w-[400px] h-[580px] lg:h-[630px] border bg-white rounded-lg shadow-md mb-14 lg:mb-0 ">
                             <div className="h-[260px] w-full">
                                 <Image src={e.img} width={400} height={300} alt="noticias" />
                             </div>

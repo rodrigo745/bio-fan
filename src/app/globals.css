@@ -39,12 +39,25 @@
   z-index: 100;
 }
 
-/* Sombra de tecto */
 .sombra-texto{
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  text-shadow: 1px 2px 3px #000;
+}
+
+/* Define la animación */
+@keyframes slideInFromLeft {
+  100% {
+    transform: scale(120%);
+  }
+  50% {
+    transform: scale(50%);
+  }
 }
 
 
+/* Aplica la animación a los elementos que la necesiten */
+.slide-in-left {
+  animation: slideInFromLeft 20s  infinite;
+}
 
 
 

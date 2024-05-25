@@ -26,7 +26,7 @@ export default function MainDos(){
     ]
 
     return(
-        <div className="w-full lg:h-screen flex flex-col lg:flex lg:flex-row justify-between items-center px-10 xl:px-32 2xl:px-60 lg:space-x-20">
+        <div className="w-full lg:h-[80vh] flex flex-col lg:flex lg:flex-row justify-between items-center px-10 xl:px-32 2xl:px-60 lg:space-x-20">
             <div className="lg:w-[30%] ">
                 <h3 className="text-3xl lg:text-5xl font-bold text-blue-900 text-center sombra-texto">¿Por qué elegir BIO-FAN?</h3>
                 <p className="text-blue-900 text-md lg:text-2xl mt-6 ">En Bio-Fan, nuestra misión es entregar productos y servicios de la más alta calidad sin compromisos. <br/> 
@@ -36,7 +36,7 @@ export default function MainDos(){
                 <div className="lg:flex lg:flex-wrap justify-center">
                     {
                         informacion.map((e, index)=> (
-                            <div key={index} className={`w-[230px] h-[240px] rounded-2xl p-4 flex flex-col items-center px-3  shadow-[0_5px_10px_2px_rgba(0,0,0,0.3)] border mt-12 mb-10 ml-12 text-sm
+                            <div key={index} className={` hover:scale-110 transition w-[230px] h-[240px] rounded-2xl p-4 flex flex-col items-center px-3  shadow-[0_5px_10px_2px_rgba(0,0,0,0.3)] border mt-12 ml-12 text-sm
                             ${e.id === "2" || e.id === "4" ?
                             "text-white bg-blue-900"
                             :
