@@ -32,7 +32,7 @@ export default function MainDos(){
                 <p className="text-blue-900 text-md lg:text-2xl mt-6 ">En Bio-Fan, nuestra misión es entregar productos y servicios de la más alta calidad sin compromisos. <br/> 
                 Nos enorgullece mantener un compromiso inquebrantable con la seguridad en todas nuestras operaciones. </p>
             </div>
-            <div className="w-full lg:w-[66%] flex justify-center mr-5 lg:mr-0">
+            <div className="w-full lg:w-[66%] flex justify-center mr-14 lg:mr-0">
                 <div className="lg:flex lg:flex-wrap justify-center">
                     {
                         informacion.map((e, index)=> (

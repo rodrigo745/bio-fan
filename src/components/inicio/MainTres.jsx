@@ -7,7 +7,7 @@ export default function MainTres(){
                <Image src="/inicio/inicio_main_3.jpg" width={800} height={300} alt="imagen sobre 
                 nuestra experiencia" />
             </div>
-            <div className="w-[100%] lg:w-[30%]  justify-center mt-12 mb-44 lg:mb-0">
+            <div className="w-[100%] lg:w-[30%]  justify-center mt-12  mb-20 lg:mb-0">
                 <h3 className="text-3xl lg:text-5xl font-bold text-blue-900 text-center sombra-texto">Nuestra experiencia</h3>
                 <p className="text-blue-900 text-md lg:text-2xl mt-6">En Bio-Fan, nuestra experiencia nos ha enseñado que la ventilación eficiente es crucial para el bienestar de las personas, el rendimiento óptimo de la maquinaria y el cumplimiento de normativas de seguridad y medioambientales.</p>
             </div>

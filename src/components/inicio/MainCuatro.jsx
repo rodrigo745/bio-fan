@@ -26,7 +26,7 @@ export default function MainCuatro(){
             <div className="flex flex-col lg:flex lg:flex-row items-center lg:justify-center lg:space-x-20 lg:scale-75 px-10"> 
                 {
                     informacion.map((e, index)=> (
-                        <div key={index} className="flex flex-col w-[350px] lg:w-[400px] h-[630px] border bg-white rounded-lg shadow-md mb-14 lg:mb-0 ">
+                        <div key={index} className="flex flex-col w-[350px] lg:w-[400px] h-[580px] lg:h-[630px] border bg-white rounded-lg shadow-md mb-14 lg:mb-0 ">
                             <div className="h-[260px] w-full">
                                 <Image src={e.img} width={400} height={300} alt="noticias" />
                             </div>
