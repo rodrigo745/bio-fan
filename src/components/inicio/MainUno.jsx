@@ -2,7 +2,7 @@ import Image from "next/image"
 
 export default function MainUno(){
     return(
-        <div className="w-full h-screen flex flex-col lg:flex lg:flex-row justify-between items-center px-10 lg:px-60 mt-20 lg:mt-0">
+        <div className="w-full h-screen flex flex-col lg:flex lg:flex-row justify-between items-center px-10 xl:px-32 2xl:px-60 mt-20 lg:mt-0">
             <div className="w-[100%] lg:w-[60%]">
                 <h3 className="text-3xl lg:text-5xl font-bold text-blue-900 text-center">Acerca de BIO-FAN</h3>
                 <p className="text-blue-900 text-md lg:text-2xl mt-6 ">Todos estos años, como profesionales del sector, nos han permitido detectar las necesidades de las empresas, brindándoles siempre soluciones con un servicio personalizado y de calidad. <br/>

@@ -26,13 +26,13 @@ export default function MainDos(){
     ]
 
     return(
-        <div className="w-full h-screen flex flex-col lg:flex lg:flex-row justify-between items-center px-10 lg:px-60 space-x-20">
+        <div className="w-full lg:h-screen flex flex-col lg:flex lg:flex-row justify-between items-center px-10 xl:px-32 2xl:px-60 lg:space-x-20">
             <div className="lg:w-[30%] ">
                 <h3 className="text-3xl lg:text-5xl font-bold text-blue-900 text-center">¿Por qué elegir BIO-FAN?</h3>
                 <p className="text-blue-900 text-md lg:text-2xl mt-6 ">En Bio-Fan, nuestra misión es entregar productos y servicios de la más alta calidad sin compromisos. <br/> 
                 Nos enorgullece mantener un compromiso inquebrantable con la seguridad en todas nuestras operaciones. </p>
             </div>
-            <div className="w-full lg:w-[70%] ">
+            <div className="w-full lg:w-[66%] flex justify-center mr-5 lg:mr-0">
                 <div className="lg:flex lg:flex-wrap justify-center">
                     {
                         informacion.map((e, index)=> (
