@@ -45,13 +45,13 @@ export default function Catalogo(){
             </div>
 
             {/* Catalogo */}
-            <div className="w-full h-full xl:h-[90vh] flex flex-col items-center lg:mt-20">
+            <div className="w-full h-full flex flex-col items-center lg:mt-20 lg:mb-52">
                 <h2 className="text-blue-900 text-4xl font-bold">CATÁLOGOS</h2>
                 <div className="mt-14 h-full grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-14">
                     
                     {
                         informacion.map((e, index)=> (
-                            <div key={index} className="flex flex-col items-center">
+                            <div key={index} className="flex flex-col items-center hover:scale-110 transition">
                                 <div className="w-40 h-40 bg-slate-400 mb-4"></div>
                                 <p className={`p-2 text-white font-bold px-4 rounded-xl shadow-lg ${e.estilo}`}>{e.titulo}</p>
                             </div>
