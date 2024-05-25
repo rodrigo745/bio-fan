@@ -18,7 +18,7 @@ export default function Nav(){
     }
 
     return(
-        <div>
+        <div className="fixed w-full">
             <div className="w-full flex justify-between  px-4 md:px-10 py-4 bg-blue-900 text-white font-medium text-sm"> {/* Contactos - parte superior */}
                 <div className="flex space-x-3 md:space-x-5 "> {/* Izquierda */}
                     <div className="flex">
@@ -40,7 +40,7 @@ export default function Nav(){
 
             {/* ------------------------------------------------- */}
 
-            <div className="bg-white flex justify-between py-6 px-4 xl:px-10"> {/* Nav Desktop */}
+            <div className="bg-white border-b-2 shadow-md flex justify-between py-6 px-4 xl:px-10"> {/* Nav Desktop */}
                 <div>
                     <div className="h-full w-fit flex justify-center content-center items-center">
                         <Image className="scale-75 md:scale-100" priority src="/logo-bio.png" width={240} height={200} alt="Logo de bio-fan" />
