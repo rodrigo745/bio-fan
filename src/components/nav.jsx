@@ -52,7 +52,7 @@ export default function Nav(){
                                     sm:space-x-1 md:space-x-3 lg:space-x-2 xl:space-x-3 2xl:space-x-10">
                         <Link href="/" className={estiloHoverSecciones} >Inicio</Link>
                         <Link href="/pages/aplicaciones" className={estiloHoverSecciones}>Aplicaciones</Link>
-                        <Link href="/pages/beneficios" className={estiloHoverSecciones}>Caracteristicas</Link>
+                        <Link href="/pages/caracteristicas" className={estiloHoverSecciones}>Caracteristicas</Link>
                         <Link href="/pages/productos" className={estiloHoverSecciones}>Productos</Link>
                         <Link href="/pages/catalogo" className={estiloHoverSecciones}>Catalogo</Link>
                         <Link href="/pages/contacto" className={estiloHoverSecciones}>Contacto</Link>
@@ -73,7 +73,7 @@ export default function Nav(){
                             <div className="flex flex-col p-14 pt-20 space-y-10 text-xl font-bold text-blue-900 ">
                                 <Link onClick={mostrarMenu} href="/" className={estiloHoverSecciones} >Inicio</Link>
                                 <Link onClick={mostrarMenu} href="/pages/aplicaciones" className={estiloHoverSecciones}>Aplicaciones</Link>
-                                <Link onClick={mostrarMenu} href="/pages/beneficios" className={estiloHoverSecciones}>Caracteristicas</Link>
+                                <Link onClick={mostrarMenu} href="/pages/caracteristicas" className={estiloHoverSecciones}>Caracteristicas</Link>
                                 <Link onClick={mostrarMenu} href="/pages/productos" className={estiloHoverSecciones}>Productos</Link>
                                 <Link onClick={mostrarMenu} href="/pages/catalogo" className={estiloHoverSecciones}>Catalogo</Link>
                                 <Link onClick={mostrarMenu} href="/pages/contacto" className={estiloHoverSecciones}>Contacto</Link>

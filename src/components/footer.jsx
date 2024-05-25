@@ -5,7 +5,7 @@ export default function Footer(){
     return(
         <div className="w-full bg-blue-900 mt-10 h-full lg:h-[300px] text-white flex flex-col lg:flex lg:flex-row justify-between px-10 lg:px-56 lg:pt-10">
             <div className="mt-20 w-[300px] lg:w-[400px]">
-                <Image src="/logo-bio.jpg" width={400} height={300} alt="logo footer" />
+                <Image src="/logo-bio-azul.jpg" width={400} height={300} alt="logo footer" />
             </div>
             <div className="flex flex-wrap mt-10 lg:mt-0 justify-between w-[60%] mr-20">
                 <div className="space-y-2 flex flex-col">
