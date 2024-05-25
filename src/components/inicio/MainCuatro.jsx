@@ -21,9 +21,9 @@ export default function MainCuatro(){
     ]
 
     return(
-        <div className="w-full h-screen">
-            <h2 className="text-3xl lg:text-5xl pt-20 font-bold text-blue-900 text-center sombra-texto">Blogs y Noticias</h2>
-            <div className="flex flex-col lg:flex lg:flex-row items-center lg:justify-center mt-20  lg:space-x-10"> 
+        <div className="w-full h-screen px-0 ">
+            <h2 className="text-3xl lg:text-5xl pt-20 mb-20 lg:mb-0 lg:pt-56 font-bold text-blue-900 text-center sombra-texto">Blogs y Noticias</h2>
+            <div className="flex flex-col lg:flex lg:flex-row items-center lg:justify-center lg:space-x-20 lg:scale-75 px-10"> 
                 {
                     informacion.map((e, index)=> (
                         <div key={index} className="flex flex-col w-[350px] lg:w-[400px] h-[630px] border bg-white rounded-lg shadow-md mb-14 lg:mb-0 ">
@@ -31,8 +31,8 @@ export default function MainCuatro(){
                                 <Image src={e.img} width={400} height={300} alt="noticias" />
                             </div>
                             <div className="px-5 h-[350px]">
-                                <h3 className="text-2xl h-[30%] text-blue-900 font-bold text-center ">{e.titulo}</h3>
-                                <p className="text-center text-lg h-[55%] mt-4">{e.descripcion}</p>
+                                <h3 className="text-xl lg:text-2xl h-[30%] text-blue-900 font-bold text-center ">{e.titulo}</h3>
+                                <p className="text-center text-md lg:text-lg h-[55%] mt-4">{e.descripcion}</p>
                                 <p className="mt-4 text-lg text-orange-400 font-semibold">Leer más</p>
                             </div>
                             <p className="text-orange-400 h-[50px] text-sm mt-8 p-4 border-t-2">29 de septiembre de 2023</p>

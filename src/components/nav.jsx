@@ -18,7 +18,7 @@ export default function Nav(){
     }
 
     return(
-        <div className="fixed w-full">
+        <div className="fixed w-full z-50">
             <div className="w-full flex justify-between  px-4 md:px-10 py-4 bg-blue-900 text-white font-medium text-sm"> {/* Contactos - parte superior */}
                 <div className="flex space-x-3 md:space-x-5 "> {/* Izquierda */}
                     <div className="flex">
