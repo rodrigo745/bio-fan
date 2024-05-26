@@ -20,7 +20,7 @@ export default function Catalogo(){
         <div className="">
             <div className="flex flex-col lg:flex lg:flex-row justify-center lg:space-x-28 items-center w-full h-full lg:h-[80vh] mt-10 lg:mt-0 lg:pl-10">
                  <div className="lg:w[30%] flex flex-col items-center mb-14 lg:mb-0">
-                    <h3 className="text-blue-900 text-4xl font-bold mb-8 sombra-texto">CATÁLOGO GENERAL</h3>
+                    <h3 className="text-blue-900 text-3xl lg:text-4xl font-bold mb-8 sombra-texto">CATÁLOGO GENERAL</h3>
                     <Link target="_blank" href="https://bio-fan.aflip.in/Catalogo-General.html">
                         <Image src="/catalogo/1.jpg" width={300} height={300} alt="catalogo" 
                         className="hover:scale-110 transition rounded-lg shadow-md" />
@@ -28,14 +28,14 @@ export default function Catalogo(){
                     
                  </div>
                  <div className=" lg:w[30%] flex flex-col items-center mb-14 lg:mb-0">
-                    <h3 className="text-blue-900 text-4xl font-bold mb-8 sombra-texto">CATÁLOGO RESUMEN</h3>
+                    <h3 className="text-blue-900 text-3xl lg:text-4xl  font-bold mb-8 sombra-texto">CATÁLOGO RESUMEN</h3>
                     <Link target="_blank" href="https://bio-fan.aflip.in/03-CATALOGO-RESUMEN.html">
                         <Image src="/catalogo/2.jpg" width={300} height={300} alt="catalogo"
                             className="hover:scale-110 transition rounded-lg shadow-md" />
                     </Link>
                  </div>
-                 <div className="lg:w[20%] flex flex-col items-center mb-14 lg:mb-0 ">
-                    <h3 className="text-blue-900 text-4xl font-bold mb-8 sombra-texto">CATÁLOGO EVAPORATIVO</h3>
+                 <div className="w-full lg:w[20%] flex flex-col items-center mb-14 lg:mb-0 ">
+                    <h3 className="text-center text-blue-900 text-3xl lg:text-4xl  font-bold mb-8 sombra-texto">CATÁLOGO EVAPORATIVO</h3>
                     <Link target="_blank" href="https://bio-fan.aflip.in/02-CATALOGO-EVAPORATIVOS.html">
                         <Image src="/catalogo/3.jpg" width={300} height={300} alt="catalogo" 
                             className="hover:scale-110 transition rounded-lg shadow-md" />
@@ -46,7 +46,7 @@ export default function Catalogo(){
 
             {/* Catalogo */}
             <div className="w-full h-full flex flex-col items-center lg:mt-10 lg:mb-20">
-                <h2 className="text-blue-900 text-5xl sombra-texto font-bold">CATÁLOGOS</h2>
+                <h2 className="text-blue-900 text-3xl lg:text-4xl  sombra-texto font-bold">CATÁLOGOS</h2>
                 <div className="mt-14 h-full grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-14">
                     
                     {
