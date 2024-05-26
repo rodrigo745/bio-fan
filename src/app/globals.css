@@ -46,10 +46,10 @@
 /* Define la animación */
 @keyframes slideInFromLeft {
   100% {
-    transform: scale(120%);
+    transform: scale(100%);
   }
   50% {
-    transform: scale(50%);
+    transform: scale(130%);
   }
 }
 

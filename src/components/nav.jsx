@@ -57,7 +57,7 @@ export default function Nav(){
                         <div className="dropdown mt-3">
                             <Link href="/pages/catalogo" className={` ${estiloHoverSecciones}`}> Catalogo
                             </Link>
-                            <div class="dropdown-content">
+                            <div className="dropdown-content">
                                 <Link target="_blank" className="enlace" href="https://bio-fan.aflip.in/Catalogo-General.html">Catálogo general</Link>
                                 <Link target="_blank" className="enlace" href="https://bio-fan.aflip.in/03-CATALOGO-RESUMEN.html">Catálogo resumen</Link>
                                 <Link target="_blank" className="enlace" href="https://bio-fan.aflip.in/02-CATALOGO-EVAPORATIVOS.html">Catálogo Evaporativos</Link>
