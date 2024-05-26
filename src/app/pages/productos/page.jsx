@@ -5,7 +5,7 @@ export default function Productos(){
     const informacion = [
         {titulo: "SERIE HDS", descripcion: "VENTILADOR INDUSTRIAL", img: "/productos/1.png"},
         {titulo: "SERIE HDS", descripcion: "VENTILADOR COMERCIAL",  img: "/productos/2.png"},
-        {titulo: "SERIE HDY", descripcion: "VENTILADOR MOVIL",  img: ""},
+        {titulo: "SERIE HDY", descripcion: "VENTILADOR MOVIL",  img: "/productos/3.jpg"},
         {titulo: "SERIE HDY", descripcion: "VENTILADOR MOVIL 45°",  img: "/productos/4.png"}
     ]
     const informacion2 = [
@@ -42,8 +42,9 @@ export default function Productos(){
                             <Image src={e.img} width={400} height={400} alt="producto" className="absolute w-full h-full" />
                             <div className={`p-3 text-center text-white         
                                 rounded-lg z-30 mb-10
-                                ${index <= 1 ? "bg-orange-400" : "bg-blue-800"}
+                                ${index == 0 && "bg-orange-400"}
                                 ${index == 1 && "bg-neutral-500"}
+                                ${index > 1 && "bg-blue-800"}
                             `}>
                                 <h4 className="text-2xl lg:text-4xl font-bold">{e.titulo}</h4>
                                 <p className="text-xl font-bold">{e.descripcion}</p>

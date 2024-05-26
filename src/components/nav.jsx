@@ -54,8 +54,9 @@ export default function Nav(){
                         <Link href="/pages/aplicaciones" className={estiloHoverSecciones}>Aplicaciones</Link>
                         <Link href="/pages/caracteristicas" className={estiloHoverSecciones}>Caracteristicas</Link>
                         <Link href="/pages/productos" className={estiloHoverSecciones}>Productos</Link>
-                        <div className="dropdown mt-3">
-                            <Link href="/pages/catalogo" className={` ${estiloHoverSecciones}`}> Catalogo
+                        <div className="dropdown">
+                            <Link href="/pages/catalogo" className={`flex ${estiloHoverSecciones}`}> Catalogo
+                            <p className="rotate-90 ml-1 ">{`>`}</p>
                             </Link>
                             <div className="dropdown-content">
                                 <Link target="_blank" className="enlace" href="https://bio-fan.aflip.in/Catalogo-General.html">Catálogo general</Link>

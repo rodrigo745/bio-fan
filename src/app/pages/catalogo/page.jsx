@@ -4,16 +4,16 @@ import Link from "next/link"
 export default function Catalogo(){
 
     const informacion = [
-        {titulo: "INDUSTRIAL HDS", estilo:"bg-blue-900", img: ""},
-        {titulo: "COMERCIAL HDS", estilo:"bg-blue-900", img: ""},
-        {titulo: "MOVIL HDY", estilo:"bg-red-500", img: ""},
-        {titulo: "MOVIL 45º HDY", estilo:"bg-red-500", img: ""},
-        {titulo: "PARED HDB", estilo:"bg-orange-400", img: ""},
-        {titulo: "VERTICAL HDS/L", estilo:"bg-neutral-700", img: ""},
-        {titulo: "MODELO - 335L", estilo:"bg-blue-900", img: ""},
-        {titulo: "COOL MILITARY", estilo:"bg-blue-900", img: ""},
-        {titulo: "SENAPATI", estilo:"bg-blue-900", img: ""},
-        {titulo: "OFS PRO", estilo:"bg-blue-900", img: ""}
+        {titulo: "INDUSTRIAL HDS", estilo:"bg-blue-900", img: "/catalogo/items/1.jpg"},
+        {titulo: "COMERCIAL HDS", estilo:"bg-blue-900", img: "/catalogo/items/2.jpg"},
+        {titulo: "MOVIL HDY", estilo:"bg-red-500", img: "/catalogo/items/3.jpg"},
+        {titulo: "MOVIL 45º HDY", estilo:"bg-red-500", img: "/catalogo/items/4.jpg"},
+        {titulo: "PARED HDB", estilo:"bg-orange-400", img: "/catalogo/items/5.jpg"},
+        {titulo: "VERTICAL HDS/L", estilo:"bg-neutral-700", img: "/catalogo/items/6.jpg"},
+        {titulo: "MODELO - 335L", estilo:"bg-blue-900", img: "/catalogo/items/7.jpg"},
+        {titulo: "COOL MILITARY", estilo:"bg-blue-900", img: "/catalogo/items/8.jpg"},
+        {titulo: "SENAPATI", estilo:"bg-blue-900", img: "/catalogo/items/9.jpg"},
+        {titulo: "OFS PRO", estilo:"bg-blue-900", img: "/catalogo/items/10.jpg"}
     ]
     
     return(
@@ -52,7 +52,12 @@ export default function Catalogo(){
                     {
                         informacion.map((e, index)=> (
                             <div key={index} className="flex flex-col items-center hover:scale-110 transition">
-                                <div className="w-40 h-40 bg-slate-400 mb-4"></div>
+                                <div className="w-full h-full mb-4">
+                                    <Image src={e.img} width={200} height={200} alt="" className={`${index === 5 && "pt-8 scale-125"}
+                                    ${index === 6 && "pt-6"}
+                                    ${index === 9 && "pt-6"}
+                                    `} />
+                                </div>
                                 <p className={`p-2 text-white font-bold px-4 rounded-xl shadow-lg ${e.estilo}`}>{e.titulo}</p>
                             </div>
                         ))
