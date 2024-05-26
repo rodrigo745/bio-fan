@@ -48,8 +48,8 @@ export default function Header() {
             <div className="w-full h-full relative">
                 <button onClick={cambiar} id="1" className="text-7xl absolute top-0 bottom-0">{"<"}</button>
                 <div className={`absolute bottom-0 ml-12 lg:ml-28 mb-10 w-[550px]`}>
-                    <h2 className="text-4xl lg:text-7xl font-bold">{ver.titulo}</h2>
-                    <h5 className="text-lg lg:text-2xl font-bold mt-5">{ver.descripcion}</h5>
+                    <h2 className="text-3xl w-[90%] lg:text-7xl font-bold">{ver.titulo}</h2>
+                    <h5 className="text-md w-[70%] lg:text-2xl font-bold mt-5">{ver.descripcion}</h5>
                     <button className="p-2 border-2 font-bold mt-4 rounded-lg">Aprender más</button>
                 </div>
                 <button onClick={cambiar} id="2" className="text-7xl right-0 absolute top-0 bottom-0 ">{">"}</button>

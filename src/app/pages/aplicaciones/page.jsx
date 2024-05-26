@@ -32,7 +32,7 @@ export default function Aplicaciones(){
     return(
         <div className="w-full mb-32">
             <div className="w-full flex flex-col items-center justify-center pt-10">
-                <h2 className="text-blue-900 text-2xl md:text-5xl font-bold">Área de Aplicación</h2>
+                <h2 className="text-blue-900 text-2xl md:text-5xl font-bold sombra-texto">Área de Aplicación</h2>
                 <div className="w-[90%] md:w-[75%] flex justify-between text-md md:text-2xl mt-3 text-blue-900 font-bold ">
                     <p onClick={mostrarPestaña} id="0" className={!pestaña ? `${cambioDePestañasBtn} border-b-4 border-red-500` : `${cambioDePestañasBtn}` }>Escenarios industriales</p>
                     <p onClick={mostrarPestaña} id="1" className={pestaña ? `${cambioDePestañasBtn} border-b-4 border-red-500` : `${cambioDePestañasBtn}` }>Escenarios comerciales</p>

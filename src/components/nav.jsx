@@ -65,7 +65,7 @@ export default function Nav(){
                         </div>
                         <Link href="/pages/contacto" className={estiloHoverSecciones}>Contacto</Link>
                         <div className={`flex pr-5 ${estiloHoverSecciones}`}>
-                            <Link href="/pages/tienda">Tienda</Link>
+                            <Link href="/">Tienda</Link>
                             <div className="scale-150">
                                 <TiShoppingCart className="scale-150 mt-1 ml-3 scale-x-[-1.3]"/>
                             </div>
@@ -85,7 +85,7 @@ export default function Nav(){
                                 <Link onClick={mostrarMenu} href="/pages/productos" className={estiloHoverSecciones}>Productos</Link>
                                 <Link onClick={mostrarMenu} href="/pages/catalogo" className={estiloHoverSecciones}>Catalogo</Link>
                                 <Link onClick={mostrarMenu} href="/pages/contacto" className={estiloHoverSecciones}>Contacto</Link>
-                                <Link onClick={mostrarMenu} href="/pages/tienda" className={estiloHoverSecciones}>Tienda</Link>
+                                <Link onClick={mostrarMenu} href="/" className={estiloHoverSecciones}>Tienda</Link>
                                 <p onClick={mostrarMenu} className="absolute top-0 right-10 text-3xl cursor-pointer">x</p>
                             </div>
                         </div>
