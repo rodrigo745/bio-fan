@@ -22,7 +22,7 @@ export default function Caracteristicas(){
 
     return(
         <div className="w-full">
-            <div className="w-full h-full lg:h-[90vh]">
+            <div className="w-full h-[100%]">
                 <h1 className="text-4xl lg:text-5xl font-bold text-center mt-8 text-blue-900 sombra-texto">Caracteristicas</h1>
                 <div className="flex flex-col lg:flex lg:flex-row justify-center w-full mt-5 lg:space-x-10 items-center space-y-10 lg:space-y-0">
                     {
@@ -53,7 +53,7 @@ export default function Caracteristicas(){
                     }
                 </div>
             </div>
-            <div className="w-full lg:h-[90vh]">
+            <div className="w-full h-[100%]">
                 <h3 className="text-4xl lg:text-5xl font-bold text-center mt-10 lg:mt-0 sombra-texto text-blue-900">Beneficios</h3>
                 <div className="flex flex-col lg:flex lg:flex-row justify-center w-full mt-10 lg:space-x-10 items-center space-y-10 lg:space-y-0">
                         {
@@ -69,7 +69,7 @@ export default function Caracteristicas(){
                             ))
                         }
                     </div>
-                <div className="flex flex-col lg:flex lg:flex-row justify-center mt-20">
+                <div className="flex flex-col lg:flex lg:flex-row justify-center mt-20 ">
                     <div className="text-center w-full lg:w-[500px] lg:mt-10">
                         <h4 className="text-blue-900 sombra-texto font-bold text-4xl lg:text-5xl">Eso y mucho más</h4>
                         <p className="text-blue-900 px-10 mt-5 text-xl">Ponte en contacto con nosotros sin nungún tipo de compromiso.</p>

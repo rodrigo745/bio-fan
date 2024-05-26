@@ -10,7 +10,8 @@ export default function Home() {
   return (
     <main className="">
       <Header/> {/* Cambio de imagenes */}
-        <MainUno/>
+          <MainUno/>
+        
         <MainDos/>
         <MainTres/>
         <MainCuatro/>

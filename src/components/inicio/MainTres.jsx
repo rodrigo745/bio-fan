@@ -2,7 +2,7 @@ import Image from "next/image"
 
 export default function MainTres(){
     return(
-        <div className="w-full mb-4 lg:mb-0 lg:h-[50vh] flex flex-col-reverse lg:flex lg:flex-row lg:justify-between lg:items-center px-10 xl:px-32 2xl:px-60 mt-20 lg:mt-0">
+        <div className="w-full mb-4 lg:mb-0 lg:h-[100%]flex flex-col-reverse lg:flex lg:flex-row lg:justify-between lg:items-center px-10 xl:px-32 2xl:px-60 mt-20 lg:mt-0">
             <div className="w-[100%] lg:w-[70%] hover:scale-105 transition">
                <Image className="rounded-full" src="/inicio/inicio_main_3.jpg" width={800} height={300} alt="imagen sobre nuestra experiencia" />
             </div>

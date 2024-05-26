@@ -5,7 +5,7 @@ import { FaMapMarkedAlt } from "react-icons/fa";
 export default function Contacto(){
     return(
         <div>
-            <div className="flex flex-col items-center h-full  w-full lg:h-[80vh] mt-10">
+            <div className="flex flex-col items-center h-full  w-full mt-10">
                 <div className="bg-slate-700 w-[340px] lg:w-[600px] h-[540px] lg:h-[510px] rounded-xl opacity-75 text-white px-4">
                     <h2 className="text-4xl text-center pt-5">Contacto</h2>
                     <input type="text" placeholder="Nombre *" 
