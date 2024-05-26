@@ -46,8 +46,8 @@ export default function Catalogo(){
 
             {/* Catalogo */}
             <div className="w-full h-full flex flex-col items-center lg:mt-10 lg:mb-20">
-                <h2 className="text-blue-900 text-3xl lg:text-4xl  sombra-texto font-bold">CATÁLOGOS</h2>
-                <div className="mt-14 h-full grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-14">
+                <h2 className="text-blue-900 text-3xl lg:text-5xl  sombra-texto font-bold">CATÁLOGOS</h2>
+                <div className="mt-6 h-full grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-14">
                     
                     {
                         informacion.map((e, index)=> (
