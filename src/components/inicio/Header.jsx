@@ -5,7 +5,7 @@ import { useState } from "react"
 export default function Header() {
 
     const informacion = [
-        {titulo: "VENTILADOR INDUSTRIAL", descripcion: "Esenciales para la circulación del aire en grandes espacios industriales."},
+        {titulo: "VENTILADOR INDUSTRIAL", descripcion: "Esenciales para la circulación del aire en grandes espacios industriales.", img: ""},
         {titulo: "VENTILADOR MOVIL", descripcion: "Está construido sobre un cuerpo de acero resistente y viene con ruedas omnidireccionales para transportarlo prácticamente a cualquier lugar." },
         {titulo: "VENTILADOR MOVIL 45°", descripcion: "Grande y resistente con ajuste de 45º, hacia arriba y abajo." },
         {titulo: "VENTILADOR PARED", descripcion: "Resuelve entornos complejos con espacios de ventilación limitados."},
@@ -55,10 +55,10 @@ export default function Header() {
             <div></div>
             <div className="w-full h-full relative">
                 <button onClick={cambiar} id="1" className="text-7xl absolute top-0 bottom-0">{"<"}</button>
-                <div className={`absolute bottom-0 ml-20 ${animationClass}`}>
-                    <h2 className="text-5xl">{ver.titulo}</h2>
-                    <h5 className="text-xl">{ver.descripcion}</h5>
-                    <button>Aprender más</button>
+                <div className={`absolute bottom-0 ml-28 mb-36 ${animationClass}`}>
+                    <h2 className="text-5xl font-bold">{ver.titulo}</h2>
+                    <h5 className="text-xl font-bold">{ver.descripcion}</h5>
+                    <button className="p-2 border-2 font-bold mt-4 rounded-lg">Aprender más</button>
                 </div>
                 <button onClick={cambiar} id="2" className="text-7xl right-0 absolute top-0 bottom-0">{">"}</button>
             </div>

@@ -54,7 +54,15 @@ export default function Nav(){
                         <Link href="/pages/aplicaciones" className={estiloHoverSecciones}>Aplicaciones</Link>
                         <Link href="/pages/caracteristicas" className={estiloHoverSecciones}>Caracteristicas</Link>
                         <Link href="/pages/productos" className={estiloHoverSecciones}>Productos</Link>
-                        <Link href="/pages/catalogo" className={estiloHoverSecciones}>Catalogo</Link>
+                        <div className="dropdown mt-3">
+                            <Link href="/pages/catalogo" className={` ${estiloHoverSecciones}`}> Catalogo
+                            </Link>
+                            <div class="dropdown-content">
+                                <Link target="_blank" className="enlace" href="https://bio-fan.aflip.in/Catalogo-General.html">Catálogo general</Link>
+                                <Link target="_blank" className="enlace" href="https://bio-fan.aflip.in/03-CATALOGO-RESUMEN.html">Catálogo resumen</Link>
+                                <Link target="_blank" className="enlace" href="https://bio-fan.aflip.in/02-CATALOGO-EVAPORATIVOS.html">Catálogo Evaporativos</Link>
+                            </div>
+                        </div>
                         <Link href="/pages/contacto" className={estiloHoverSecciones}>Contacto</Link>
                         <div className={`flex pr-5 ${estiloHoverSecciones}`}>
                             <Link href="/pages/tienda">Tienda</Link>
