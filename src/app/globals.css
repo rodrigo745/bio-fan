@@ -56,7 +56,7 @@
 
 /* Aplica la animación a los elementos que la necesiten */
 .slide-in-left {
-  animation: slideInFromLeft 20s  infinite;
+  animation: slideInFromLeft 40s  infinite;
 }
 
 
