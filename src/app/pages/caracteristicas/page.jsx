@@ -1,21 +1,23 @@
+import Image from "next/image"
+
 export default function Caracteristicas(){
 
     const informacion = [
-        {titulo: "Motor Brushless", descripcion: "Nuevo motor de rotor externo de desarrollo propio.", img: ""},
-        {titulo: "Control inteligente", descripcion: "4 botones de fácil operación.", img: ""},
-        {titulo: "Bajo nivel de ruido", descripcion: " Funcionamiento súper silencioso 38dB.", img: ""}
+        {titulo: "Motor Brushless", descripcion: "Nuevo motor de rotor externo de desarrollo propio.", img: "/caracteristicas/1.jpg"},
+        {titulo: "Control inteligente", descripcion: "4 botones de fácil operación.", img: "/caracteristicas/2.jpg"},
+        {titulo: "Bajo nivel de ruido", descripcion: " Funcionamiento súper silencioso 38dB.", img: "/caracteristicas/3.jpg"}
     ]
     const informacion2 = [
-        {titulo: "Diseño único", descripcion: "Diámetro de las palas de 2,4 ~ 7,3 m.", img: ""},
-        {titulo: "Eficiencia", descripcion: "Más rendimiento, con menos Kw de fuerza.", img: ""},
-        {titulo: "Servicio", descripcion: " Creamos proyectos según tus necesidades.", img: ""},
+        {titulo: "Diseño único", descripcion: "Diámetro de las palas de 2,4 ~ 7,3 m.", img: "/caracteristicas/4.jpg"},
+        {titulo: "Eficiencia", descripcion: "Más rendimiento, con menos Kw de fuerza.", img: "/caracteristicas/5.jpg"},
+        {titulo: "Servicio", descripcion: " Creamos proyectos según tus necesidades.", img: "/caracteristicas/6.jpg"},
     ]
     const infoBeneficios = [
-        {titulo: "Sensación térmica", descripcion: "Disminuye la sensación térmica hasta 6°C", img: ""},
-        {titulo: "Estratificación y estrés térmico", descripcion: "Adiós a los molestos puntos calientes o fríos", img: ""},
-        {titulo: "Eficiencia", descripcion: "Minimizan la necesidad de depender en exceso de sistemas de calefacción y refrigeración", img: ""},
-        {titulo: "Mantenimiento y rentabilidad", descripcion: "Mantenimiento mínimo, retorno de inversión tangible tanto a corto como a largo plazo", img: ""},
-        {titulo: "Impacto positivo en el medio ambiente", descripcion: "Reducción de Emisiones de CO2", img: ""}
+        {titulo: "Sensación térmica", descripcion: "Disminuye la sensación térmica hasta 6°C", img: "/caracteristicas/beneficios/1.jpg"},
+        {titulo: "Estratificación y estrés térmico", descripcion: "Adiós a los molestos puntos calientes o fríos", img: "/caracteristicas/beneficios/2.jpg"},
+        {titulo: "Eficiencia", descripcion: "Minimizan la necesidad de depender en exceso de sistemas de calefacción y refrigeración", img: "/caracteristicas/beneficios/3.jpg"},
+        {titulo: "Mantenimiento y rentabilidad", descripcion: "Mantenimiento mínimo, retorno de inversión tangible tanto a corto como a largo plazo", img: "/caracteristicas/beneficios/4.jpg"},
+        {titulo: "Impacto positivo en el medio ambiente", descripcion: "Reducción de Emisiones de CO2", img: "/caracteristicas/beneficios/5.jpg"}
     ]
 
     return(
@@ -25,8 +27,10 @@ export default function Caracteristicas(){
                 <div className="flex flex-col lg:flex lg:flex-row justify-center w-full mt-5 lg:space-x-10 items-center space-y-10 lg:space-y-0">
                     {
                         informacion.map((e, index)=> (
-                            <div key={index} className="w-[260px] h-[300px] border-4 border-red-600 rounded-lg text-blue-900 text-center hover:scale-105 transition">
-                                <div className="h-[50%] "></div>
+                            <div key={index} className="w-[260px] h-[300px] border-4 border-red-600 rounded-lg text-blue-900 text-center hover:scale-105 transition ">
+                                <div className="h-[50%] flex justify-center">
+                                    <Image src={e.img} width={150} height={140} alt="imagen" />
+                                </div>
                                 <h4 className="text-2xl font-bold h-[15%]">{e.titulo}</h4>
                                 <p className="h-[20%]">{e.descripcion}</p>
                                 <button className="h-[15%] font-bold">Aprender más</button>
@@ -38,7 +42,9 @@ export default function Caracteristicas(){
                     {
                         informacion2.map((e, index)=> (
                             <div key={index} className="w-[260px] h-[300px] border-4 border-red-600 rounded-lg text-blue-900 text-center hover:scale-105 transition">
-                                <div className="h-[50%] "></div>
+                                <div className="h-[50%] flex justify-center">
+                                <Image src={e.img} width={150} height={140} alt="imagen" />
+                                </div>
                                 <h4 className="text-2xl font-bold h-[15%]">{e.titulo}</h4>
                                 <p className="h-[20%]">{e.descripcion}</p>
                                 <button className="h-[15%] font-bold">Aprender más</button>
@@ -53,7 +59,9 @@ export default function Caracteristicas(){
                         {
                             infoBeneficios.map((e, index)=> (
                                 <div key={index} className="w-[260px] h-[350px] border-4 border-red-600 rounded-lg text-blue-900 text-center hover:scale-105 transition">
-                                    <div className="h-[43%] "></div>
+                                    <div className="h-[43%] flex justify-center">
+                                        <Image src={e.img} width={150} height={140} alt="imagen" />
+                                    </div>
                                     <h4 className="text-2xl font-bold h-[20%]">{e.titulo}</h4>
                                     <p className="h-[27%]">{e.descripcion}</p>
                                     <button className="h-[10%] font-bold">Aprender más</button>
