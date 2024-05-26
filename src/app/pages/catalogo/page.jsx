@@ -18,8 +18,8 @@ export default function Catalogo(){
     
     return(
         <div className="">
-            <div className="flex flex-col lg:flex lg:flex-row justify-center lg:space-x-28 items-center w-full h-full lg:h-[80vh] mt-10 lg:mt-0 lg:pl-10">
-                 <div className="lg:w[30%] flex flex-col items-center mb-14 lg:mb-0">
+            <div className="flex flex-col lg:flex lg:flex-row justify-center items-center w-[100%] h-full lg:h-[80vh] mt-10 lg:mt-0 lg:px-36">
+                 <div className="w-full lg:w[30%] flex flex-col items-center mb-14 lg:mb-0 text-center">
                     <h3 className="text-blue-900 text-3xl lg:text-4xl font-bold mb-8 sombra-texto">CATÁLOGO GENERAL</h3>
                     <Link target="_blank" href="https://bio-fan.aflip.in/Catalogo-General.html">
                         <Image src="/catalogo/1.jpg" width={300} height={300} alt="catalogo" 
@@ -27,8 +27,8 @@ export default function Catalogo(){
                     </Link>
                     
                  </div>
-                 <div className=" lg:w[30%] flex flex-col items-center mb-14 lg:mb-0">
-                    <h3 className="text-blue-900 text-3xl lg:text-4xl  font-bold mb-8 sombra-texto">CATÁLOGO RESUMEN</h3>
+                 <div className="w-full lg:w[30%] flex flex-col items-center mb-14 lg:mb-0">
+                    <h3 className="text-blue-900 text-3xl lg:text-4xl  font-bold mb-8 sombra-texto text-center">CATÁLOGO RESUMEN</h3>
                     <Link target="_blank" href="https://bio-fan.aflip.in/03-CATALOGO-RESUMEN.html">
                         <Image src="/catalogo/2.jpg" width={300} height={300} alt="catalogo"
                             className="hover:scale-110 transition rounded-lg shadow-md" />
