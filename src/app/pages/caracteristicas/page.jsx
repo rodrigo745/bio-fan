@@ -53,7 +53,7 @@ export default function Caracteristicas(){
                     }
                 </div>
             </div>
-            <div className="w-full h-[100%]">
+            <div className="w-full h-[100%] mt-10">
                 <h3 className="text-4xl lg:text-5xl font-bold text-center mt-10 lg:mt-0 sombra-texto text-blue-900">Beneficios</h3>
                 <div className="flex flex-col lg:flex lg:flex-row justify-center w-full mt-10 lg:space-x-10 items-center space-y-10 lg:space-y-0">
                         {
