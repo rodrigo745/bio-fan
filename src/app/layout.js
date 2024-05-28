@@ -25,7 +25,6 @@ export default function RootLayout({ children }) {
     <html lang="es">
       <body className={inter.className}>
         <PrecargaImagenes/>
-        <Loading/>
         <Nav/>
         <div className="pt-40">
           {children}
