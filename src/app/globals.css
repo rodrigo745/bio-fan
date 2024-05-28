@@ -62,13 +62,13 @@
 
 @keyframes tranImg {
   to{opacity: 100%;}
-  from{opacity: 70%;}
+  from{opacity: 60%;}
 }
 
 .tran{
   background-color: #000;
 
-  animation: tranImg 1500ms forwards;
+  animation: tranImg 2000ms forwards;
 }
 
 
