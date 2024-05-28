@@ -60,6 +60,17 @@
 }
 
 
+@keyframes aniTexto {
+  0%{top: 80vh;}
+  100%{top: 36vh;}  
+}
+
+.animacion-texto{
+  position: absolute;
+  animation: aniTexto 500ms forwards;
+}
+
+
 
 
 /* nav */
