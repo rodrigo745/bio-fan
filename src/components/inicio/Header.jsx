@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react"
+import { useState, useEffect, useRef } from "react"
 import Image from "next/image";
 
 export default function Header() {
@@ -14,32 +14,34 @@ export default function Header() {
         {titulo: "RECUBRIMIENTO SUPERIOR SOLAR", descripcion: "Pintura térmica solución innovadora en el sector industrial, para gestionar el calor.", img: "/inicio/slider/07.png"}
     ]
 
-    const [ ver, setVer ] = useState(informacion[0]);
+    const [ver, setVer] = useState(informacion[0]);
+    const contRef = useRef(0);
 
-    const cambiar = (e)=>{
+    useEffect(() => {
+        const actualizar = async () => {
+            const nextIndex = (contRef.current + 1) % informacion.length;
+            setVer(informacion[nextIndex]);
+            contRef.current = nextIndex;
+        };
+
+        const intervalId = setInterval(actualizar, 5000);
+
+        return () => clearInterval(intervalId);
+    }, []);
+
+    const cambiar = (e) => {
         const btn = e.target.id;
-        
+
         if (btn === "1") {
-            const currentIndex = informacion.findIndex(item => item.titulo === ver.titulo);
-            if(currentIndex < 1){
-                setVer(informacion[5]);
-            }else {   
-                if (currentIndex > 0) {
-                    setVer(informacion[currentIndex - 1]);
-                }
-            }
+            const prevIndex = (contRef.current - 1 + informacion.length) % informacion.length;
+            setVer(informacion[prevIndex]);
+            contRef.current = prevIndex;
         } else if (btn === "2") {
-            const currentIndex = informacion.findIndex(item => item.titulo === ver.titulo);
-            if(currentIndex > 5){
-                setVer(informacion[0]);
-            } else {
-                if (currentIndex < informacion.length - 1) {
-                    setVer(informacion[currentIndex + 1]);
-                }
-            }
+            const nextIndex = (contRef.current + 1) % informacion.length;
+            setVer(informacion[nextIndex]);
+            contRef.current = nextIndex;
         }
     }
-
     return(
         <div className="w-full overflow-hidden h-[72vh] lg:h-[83vh] text-blue-900 lg:text-white active:opacity-30 transition"> 
             <div className="relative">
