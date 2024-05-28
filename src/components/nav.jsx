@@ -28,7 +28,7 @@ export default function Nav(){
                     <p>|</p>
                     <div className="flex">
                         <IoCall className="m-1 scale-125 mr-2"/>
-                        <p>999999999</p>
+                        <p>633175711</p>
                     </div>
                     <p>|</p>
                 </div>
@@ -58,14 +58,14 @@ export default function Nav(){
                             <p className="rotate-90 ml-1 ">{`>`}</p>
                             </Link>
                             <div className="dropdown-content cursor-pointer">
-                                <a href="#items-productos" className="enlace">Ventilador Industrial</a>
-                                <p className="enlace">Ventilador Comercial</p>
-                                <p className="enlace">Ventilador Movil</p>
-                                <p className="enlace">Ventilador Movil 45º</p>
-                                <p className="enlace">Ventilador de Pared</p>
-                                <p className="enlace">Ventilador Vertical</p>
-                                <p className="enlace">Industrial Comercial</p>
-                                <p className="enlace">Recubrimiento Solar</p>
+                                <Link href="/pages/productos" className="enlace">Ventilador Industrial</Link>
+                                <Link href="/pages/productos" className="enlace">Ventilador Comercial</Link>
+                                <Link href="/pages/productos" className="enlace">Ventilador Movil</Link>
+                                <Link href="/pages/productos" className="enlace">Ventilador Movil 45º</Link>
+                                <Link href="/pages/productos" className="enlace">Ventilador de Pared</Link>
+                                <Link href="/pages/productos" className="enlace">Ventilador Vertical</Link>
+                                <Link href="/pages/productos" className="enlace">Industrial Comercial</Link>
+                                <Link href="/pages/productos" className="enlace">Recubrimiento Solar</Link>
                             </div>
                         </div>
                         <div className="dropdown">

@@ -23,7 +23,7 @@ export default function MainCuatro(){
 
     
     return(
-        <div className="w-full h-full lg:h-[100%] px-0 lg:pt-10">
+        <div className="w-full h-full lg:h-[100%] px-0 ">
             <h2 className="text-3xl lg:text-5xl pt-20 mb-20 lg:mb-0 font-bold text-blue-900 text-center sombra-texto">Blogs y Noticias</h2>
             <div className="flex flex-col lg:flex lg:flex-row items-center lg:justify-center lg:space-x-20 lg:scale-75 px-10"> 
                 {

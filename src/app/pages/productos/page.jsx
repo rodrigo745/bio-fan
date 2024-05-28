@@ -17,7 +17,7 @@ export default function Productos(){
 
     return(
         <div className="w-full ">
-            <div className="w-full h-[260vh] lg:h-[77vh] flex flex-col lg:flex lg:flex-row  lg:space-x-5 mt-6 px-4">
+            <div className="w-full h-[260vh] lg:h-[77vh] flex flex-col lg:flex lg:flex-row  lg:space-x-5 mt-6 px-4" >
                 {
                     informacion.map((e, index)=> (
                         <div key={index} className={`w-[100%] lg:w-[25%] h-full 
@@ -34,7 +34,7 @@ export default function Productos(){
                     ))
                 }
             </div>
-            <div className="w-full h-[260vh] lg:h-[75vh] flex flex-col lg:flex lg:flex-row  lg:space-x-5 mt-10 px-4 mb-10">
+            <div className="w-full h-[260vh] lg:h-[75vh] flex flex-col lg:flex lg:flex-row  lg:space-x-5 mt-10 px-4 mb-10" id="producto-2">
                 {
                     informacion2.map((e, index)=> (
                         <div key={index} className={`w-[100%] lg:w-[25%] h-full 

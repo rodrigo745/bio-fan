@@ -79,7 +79,7 @@ export default function Caracteristicas(){
                             ))
                         }
                     </div>
-                <div className="flex flex-col lg:flex h-[400px] lg:flex-row justify-center mt-20 ">
+                <div className="flex flex-col lg:flex h-[500px] lg:h-[400px] lg:flex-row justify-center mt-20 mb-20 lg:mb-0">
                     <div className="text-center w-full lg:w-[500px] lg:mt-10">
                         <h4 className="text-blue-900 sombra-texto font-bold text-4xl lg:text-5xl">Eso y mucho más</h4>
                         <p className="text-blue-900 px-10 mt-5 text-xl">Ponte en contacto con nosotros sin nungún tipo de compromiso.</p>
