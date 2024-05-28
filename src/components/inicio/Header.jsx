@@ -83,7 +83,9 @@ export default function Header() {
         <div className="w-full overflow-hidden h-[72vh] lg:h-[83vh] text-blue-900 lg:text-white "> 
             <div className="relative">
                 <Image 
+                    priority
                     key={key} // Clave aleatoria para forzar la actualización de la imagen
+                    loading="eager"
                     src={ver.img} 
                     width={1000} 
                     height={1000} 
