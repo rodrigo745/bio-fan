@@ -74,7 +74,7 @@ export default function Header() {
         setAnimacionTexto("animacion-texto");
         setTimeout(() => {
             setAnimacionTexto("");
-        }, 500);
+        }, 800);
         } else if (btn === "2") {
             avanzarImagen();
         }
