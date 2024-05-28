@@ -49,15 +49,15 @@ export default function Header() {
         contRef.current = nextIndex;
         setKey(prevKey => prevKey + 1); // Incrementa la clave para forzar la actualización de la imagen
 
-        // Iniciar temporizador de destello
-        setFlash("opacity-25");
+        // // Iniciar temporizador de destello
+        setFlash("tran");
         setTimeout(() => {
             setFlash("");
-        }, 100);
+        }, 1500);
         setAnimacionTexto("animacion-texto");
         setTimeout(() => {
             setAnimacionTexto("");
-        }, 500);
+        }, 800);
     };
 
     const cambiar = (e) => {
@@ -67,14 +67,14 @@ export default function Header() {
             const prevIndex = (contRef.current - 1 + informacion.length) % informacion.length;
             setVer(informacion[prevIndex]);
             contRef.current = prevIndex;
-            setFlash("opacity-25");
-            setTimeout(() => {
-                setFlash("");
-            }, 100);
-            setAnimacionTexto("animacion-texto");
-            setTimeout(() => {
-                setAnimacionTexto("");
-            }, 500);
+            setFlash("tran");
+        setTimeout(() => {
+            setFlash("");
+        }, 1500);
+        setAnimacionTexto("animacion-texto");
+        setTimeout(() => {
+            setAnimacionTexto("");
+        }, 500);
         } else if (btn === "2") {
             avanzarImagen();
         }
@@ -88,7 +88,7 @@ export default function Header() {
                     width={1000} 
                     height={1000} 
                     alt="imagen slider" 
-                    className={`absolute w-full top-0 slide-in-left ${flash}`}
+                    className={` absolute w-full top-0 transition slide-in-left ${flash}`}
                 />
             </div>
             <div className="w-full h-full relative" >

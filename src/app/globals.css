@@ -56,7 +56,19 @@
 
 /* Aplica la animación a los elementos que la necesiten */
 .slide-in-left {
-  animation: slideInFromLeft 10s  forwards;
+  animation: slideInFromLeft 14s  forwards;
+  transition: all;
+}
+
+@keyframes tranImg {
+  to{opacity: 100%;}
+  from{opacity: 50%;}
+}
+
+.tran{
+  background-color: #000;
+
+  animation: tranImg 1500ms forwards;
 }
 
 
@@ -67,7 +79,8 @@
 
 .animacion-texto{
   position: absolute;
-  animation: aniTexto 500ms forwards;
+  animation: aniTexto 800ms forwards;
+  transition: all;
 }
 
 
