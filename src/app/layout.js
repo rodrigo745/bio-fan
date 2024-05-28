@@ -4,7 +4,7 @@ import "./globals.css";
 // Componentes
 import Nav from "@/components/nav";
 import Footer from "@/components/footer";
-
+import PrecargaImagenes from "@/components/preCarga";
 
 const inter = Poppins({ subsets: ["latin"], weight: ["100", "200", "300", "400", "500", "600","700", "900"] });
 
