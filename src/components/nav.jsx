@@ -53,14 +53,28 @@ export default function Nav(){
                         <Link href="/" className={estiloHoverSecciones} >Inicio</Link>
                         <Link href="/pages/aplicaciones" className={estiloHoverSecciones}>Aplicaciones</Link>
                         <Link href="/pages/caracteristicas" className={estiloHoverSecciones}>Caracteristicas</Link>
-                        <Link href="/pages/productos" className={estiloHoverSecciones}>Productos</Link>
+                        <div className="dropdown">
+                            <Link href="/pages/productos" className={`flex ${estiloHoverSecciones}`}> Productos
+                            <p className="rotate-90 ml-1 ">{`>`}</p>
+                            </Link>
+                            <div className="dropdown-content cursor-pointer">
+                                <p className="enlace">Ventilador Industrial</p>
+                                <p className="enlace">Ventilador Comercial</p>
+                                <p className="enlace">Ventilador Movil</p>
+                                <p className="enlace">Ventilador Movil 45º</p>
+                                <p className="enlace">Ventilador de Pared</p>
+                                <p className="enlace">Ventilador Vertical</p>
+                                <p className="enlace">Industrial Comercial</p>
+                                <p className="enlace">Recubrimiento Solar</p>
+                            </div>
+                        </div>
                         <div className="dropdown">
                             <Link href="/pages/catalogo" className={`flex ${estiloHoverSecciones}`}> Catalogo
                             <p className="rotate-90 ml-1 ">{`>`}</p>
                             </Link>
                             <div className="dropdown-content">
-                                <Link target="_blank" className="enlace" href="https://bio-fan.aflip.in/Catalogo-General.html">Catálogo general</Link>
-                                <Link target="_blank" className="enlace" href="https://bio-fan.aflip.in/03-CATALOGO-RESUMEN.html">Catálogo resumen</Link>
+                                <Link target="_blank" className="enlace" href="https://bio-fan.aflip.in/Catalogo-General.html">Catálogo General</Link>
+                                <Link target="_blank" className="enlace" href="https://bio-fan.aflip.in/03-CATALOGO-RESUMEN.html">Catálogo Resumen</Link>
                                 <Link target="_blank" className="enlace" href="https://bio-fan.aflip.in/02-CATALOGO-EVAPORATIVOS.html">Catálogo Evaporativos</Link>
                             </div>
                         </div>

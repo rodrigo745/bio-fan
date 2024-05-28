@@ -26,7 +26,7 @@ export default function Contacto(){
                         <button className="p-2 px-6 rounded-lg mt-6 bg-orange-700">Enviar</button>
                     </div>
                 </div>
-            <div className="w-full flex flex-col lg:flex lg:flex-row justify-center mt-10 items-center lg:space-x-20 mb-20 lg:mb-0">
+            <div className="w-full flex flex-col lg:flex lg:flex-row justify-center mt-10 items-center lg:space-x-20 mb-20 lg:mb-5">
                 <div className="text-center hover:scale-125 transition p-2 rounded-lg flex flex-col items-center w-[300px]">
                     <IoCall className="text-orange-500 text-6xl"/>
                     <h3 className="text-2xl font-bold mb-2">Llámanos</h3>
@@ -44,8 +44,8 @@ export default function Contacto(){
                 </div>
             </div>
             </div>
-            <div className="w-full h-[80vh]">
-            <iframe className="w-full h-[90%]"
+            <div className="w-full h-[70vh]">
+            <iframe className="w-full h-[95%]"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d379802.0321565998!2d2.665800923517707!3d41.952966505365396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12bae132e7b077a5%3A0x669c6f196a39dac1!2sCarrer%20Universitat%20de%20Girona%2C%2017003%20Girona%2C%20Espa%C3%B1a!5e0!3m2!1ses!2sar!4v1716622678145!5m2!1ses!2sar" width="100" height="450"   loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>

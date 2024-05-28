@@ -1,6 +1,16 @@
+"use client";
+import { useState } from "react";
 import Image from "next/image"
 
 export default function Caracteristicas(){
+
+    const [scrollTop, setScrollTop] = useState(0);
+
+    const handleScroll = (e) => {
+      // Mantener la vista en la parte superior del contenedor
+      setScrollTop(0);
+    };
+
 
     const informacion = [
         {titulo: "Motor Brushless", descripcion: "Nuevo motor de rotor externo de desarrollo propio.", img: "/caracteristicas/1.jpg"},
@@ -27,13 +37,13 @@ export default function Caracteristicas(){
                 <div className="flex flex-col lg:flex lg:flex-row justify-center w-full mt-5 lg:space-x-10 items-center space-y-10 lg:space-y-0">
                     {
                         informacion.map((e, index)=> (
-                            <div key={index} className="w-[260px] h-[300px] border-4 border-red-600 rounded-lg text-blue-900 text-center hover:scale-105 transition ">
+                            <div key={index} className="w-[260px] h-[300px] border-4 border-red-600 rounded-lg text-blue-900 text-center hover:scale-110 transition ">
                                 <div className="h-[50%] flex justify-center">
                                     <Image src={e.img} width={150} height={140} alt="imagen" />
                                 </div>
                                 <h4 className="text-2xl font-bold h-[15%]">{e.titulo}</h4>
                                 <p className="h-[20%]">{e.descripcion}</p>
-                                <button className="h-[15%] font-bold">Aprender más</button>
+                                <button className="h-[15%] font-bold hover:scale-125 transition">Aprender más</button>
                             </div>
                         ))
                     }
@@ -47,7 +57,7 @@ export default function Caracteristicas(){
                                 </div>
                                 <h4 className="text-2xl font-bold h-[15%]">{e.titulo}</h4>
                                 <p className="h-[20%]">{e.descripcion}</p>
-                                <button className="h-[15%] font-bold">Aprender más</button>
+                                <button className="h-[15%] font-bold hover:scale-125 transition">Aprender más</button>
                             </div>
                         ))
                     }
@@ -58,29 +68,79 @@ export default function Caracteristicas(){
                 <div className="flex flex-col lg:flex lg:flex-row justify-center w-full mt-10 lg:space-x-10 items-center space-y-10 lg:space-y-0">
                         {
                             infoBeneficios.map((e, index)=> (
-                                <div key={index} className="w-[260px] h-[350px] border-4 border-red-600 rounded-lg text-blue-900 text-center hover:scale-105 transition">
+                                <div key={index} className="w-[260px] h-[350px] border-4 border-red-600 rounded-lg text-blue-900 text-center hover:scale-110 transition">
                                     <div className="h-[43%] flex justify-center">
                                         <Image src={e.img} width={150} height={140} alt="imagen" />
                                     </div>
                                     <h4 className="text-2xl font-bold h-[20%]">{e.titulo}</h4>
                                     <p className="h-[27%]">{e.descripcion}</p>
-                                    <button className="h-[10%] font-bold">Aprender más</button>
+                                    <button className="h-[10%] font-bold hover:scale-125 transition">Aprender más</button>
                                 </div>
                             ))
                         }
                     </div>
-                <div className="flex flex-col lg:flex lg:flex-row justify-center mt-20 ">
+                <div className="flex flex-col lg:flex h-[400px] lg:flex-row justify-center mt-20 ">
                     <div className="text-center w-full lg:w-[500px] lg:mt-10">
                         <h4 className="text-blue-900 sombra-texto font-bold text-4xl lg:text-5xl">Eso y mucho más</h4>
                         <p className="text-blue-900 px-10 mt-5 text-xl">Ponte en contacto con nosotros sin nungún tipo de compromiso.</p>
                     </div>
-                    <div className="px-10 lg:px-0 mt-10 lg:mt-0 lg:w-[30%] lg:h-[500px] text-blue-900 font-bold  hover:scale-105 transition">
-                        <p className="border-4 p-2 px-4 border-red-500 rounded-lg mb-2">Control de humedad</p>
-                        <p className="border-4 p-2 px-4 border-red-500 rounded-lg mb-2">Olores y contaminantes</p>
-                        <p className="border-4 p-2 px-4 border-red-500 rounded-lg mb-2">Enfriamiento y calefacción zonificados</p>
-                        <p className="border-4 p-2 px-4 border-red-500 rounded-lg mb-2">Diseño de eficiencia energética</p>
-                        <p className="border-4 p-2 px-4 border-red-500 rounded-lg mb-10">Prevención de la corrosión</p>
-                    </div>
+                
+                    <div className="px-10 lg:px-0 mt-10 lg:mt-0 lg:h-[300px] text-blue-900 font-bold overflow-y-scroll flex flex-col items-center lg:w-[30%] relative contenedor">
+  <div className="sticky top-0 w-full bg-white z-10">
+    {/* Contenido fijo aquí */}
+    <p className="border-4 p-2 px-4 border-red-500 bg-white rounded-lg bar top-0">Control de humedad</p>
+    <p className="border-4 p-2 px-4 border-red-500 bg-white rounded-lg top-8 bar bar2">Olores y contaminantes</p>
+    <p className="border-4 p-2 px-4 border-red-500 bg-white rounded-lg  bar top-16 bar3">Enfriamiento y calefacción zonificados</p>
+    <p className="border-4 p-2 px-4 border-red-500 bg-white rounded-lg top-24 bar bar4">Diseño de eficiencia energética</p>
+    <p className="border-4 p-2 px-4 border-red-500 bg-white rounded-lg top-32 bar bar5">Prevención de la corrosión</p>
+  </div>
+  {/* Contenido scrollable */}
+  <div>
+    {/* Aquí puedes añadir el contenido scrollable */}
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+  </div>
+</div>
+
                 </div>
             </div>
         </div>

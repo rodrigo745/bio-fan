@@ -76,7 +76,6 @@
   min-width: 260px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
-  margin-top: 2px;
   font-size: 17px;
   margin-left: -10px;
 }
@@ -95,4 +94,63 @@
 
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+
+
+
+
+
+/* caracteristicas */
+
+.contenedor {
+  overflow-y: scroll; /* Mostrar barra de desplazamiento solo si es necesario */
+  scrollbar-width: none; /* Ocultar la barra de desplazamiento en Firefox */
+  -ms-overflow-style: none; /* Ocultar la barra de desplazamiento en IE/Edge */
+}
+.contenedor::-webkit-scrollbar {
+  display: none; /* Ocultar la barra de desplazamiento en Chrome, Safari, y Opera */
+}
+.bar{
+  width: 400px;
+  height: 60px;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+}
+.bar2 {
+  animation: resize2 auto linear forwards;
+  animation-timeline: scroll(nearest);
+}
+.bar3 {
+  animation: resize3 auto linear forwards;
+  animation-timeline: scroll(nearest);
+}
+.bar4 {
+  animation: resize4 auto linear forwards;
+  animation-timeline: scroll(nearest);
+}
+
+.bar5 {  
+  animation: resize5 auto linear forwards;
+  animation-timeline: scroll(nearest);
+}
+@keyframes resize2 {
+  70% { top: 34px; } 
+  80% { top: 34px; }
+  100%{top: 120px}
+}
+@keyframes resize3 {
+  60% { top: 70px; }
+  70% { top: 120px; }
+  100%{top: 160px}
+}
+@keyframes resize4 {
+  30% { top: 100px; }
+  40% { top: 180px; }
+  100%{top: 200px}
+}
+@keyframes resize5 {
+  10% { top: 210px; }
+  100%{top: 240px}
 }

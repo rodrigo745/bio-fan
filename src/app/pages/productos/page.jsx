@@ -17,11 +17,11 @@ export default function Productos(){
 
     return(
         <div className="w-full ">
-            <div className="w-full h-[260vh] lg:h-[80vh] flex flex-col lg:flex lg:flex-row  lg:space-x-5 mt-3 px-4">
+            <div className="w-full h-[260vh] lg:h-[77vh] flex flex-col lg:flex lg:flex-row  lg:space-x-5 mt-6 px-4">
                 {
                     informacion.map((e, index)=> (
                         <div key={index} className={`w-[100%] lg:w-[25%] h-full 
-                        flex items-end justify-center mb-5 lg:mb-0 relative hover:scale-105 transition`}>
+                        flex items-end justify-center mb-5 lg:mb-0 relative hover:scale-105 transition cursor-pointer`}>
                             <Image src={e.img} width={400} height={400} alt="producto" className="absolute w-full h-full" />
                             <div className={`p-3 text-center text-white         
                                 rounded-lg z-30 mb-10
@@ -34,11 +34,11 @@ export default function Productos(){
                     ))
                 }
             </div>
-            <div className="w-full h-[260vh] lg:h-[80vh] flex flex-col lg:flex lg:flex-row  lg:space-x-5 mt-10 px-4">
+            <div className="w-full h-[260vh] lg:h-[75vh] flex flex-col lg:flex lg:flex-row  lg:space-x-5 mt-10 px-4 mb-10">
                 {
                     informacion2.map((e, index)=> (
                         <div key={index} className={`w-[100%] lg:w-[25%] h-full 
-                        flex items-end justify-center mb-5 lg:mb-0 relative hover:scale-105 transition`}>
+                        flex items-end justify-center mb-5 lg:mb-0 relative hover:scale-105 transition cursor-pointer`}>
                             <Image src={e.img} width={400} height={400} alt="producto" className="absolute w-full h-full" />
                             <div className={`p-3 text-center text-white         
                                 rounded-lg z-30 mb-10

@@ -8,7 +8,7 @@ export default function MainTres(){
             </div>
             <div className="w-[100%]  z-30 lg:w-[40%]  justify-center mt-12  mb-10 lg:mb-0">
                 <h3 className="text-3xl lg:text-5xl font-bold text-blue-900 text-center sombra-texto px-3">Nuestra experiencia</h3>
-                <p className="text-blue-900 text-md lg:text-2xl mt-6">En Bio-Fan, nuestra experiencia nos ha enseñado que la ventilación eficiente es crucial para el bienestar de las personas, el rendimiento óptimo de la maquinaria y el cumplimiento de normativas de seguridad y medioambientales.</p>
+                <p className="text-blue-900 text-md text-justify lg:text-2xl mt-6">En Bio-Fan, nuestra experiencia nos ha enseñado que la ventilación eficiente es crucial para el bienestar de las personas, el rendimiento óptimo de la maquinaria y el cumplimiento de normativas de seguridad y medioambientales.</p>
             </div>
         </div>
     )

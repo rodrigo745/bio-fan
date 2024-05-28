@@ -30,7 +30,7 @@ export default function Aplicaciones(){
     const cambioDePestañasBtn = `w-full text-center cursor-pointer border-b-2 transition lg:text-3xl hover:border-b-4 hover:border-red-500 `;
 
     return(
-        <div className="w-full mb-32">
+        <div className="w-full mb-20">
             <div className="w-full flex flex-col items-center justify-center pt-10">
                 <h2 className="text-blue-900 text-2xl md:text-5xl font-bold sombra-texto">Área de Aplicación</h2>
                 <div className="w-[90%] md:w-[75%] flex justify-between text-md md:text-2xl mt-3 text-blue-900 font-bold ">
@@ -57,10 +57,10 @@ export default function Aplicaciones(){
                                     }
                                     {/* div con hover y texto */}
                                     <div className="absolute left-0 top-0 w-full h-full bg-transparent hover:transparent transition-colors duration-300">
-                                        <div className="absolute left-0 bottom-0 w-full h-[100%] opacity-0 hover:opacity-100 transition-opacity duration-300">
+                                        <div className="absolute left-0 bottom-0 w-full h-[100%] opacity-0 hover:opacity-100 transition-opacity duration-0">
                                             <div className="w-full h-10 md:h-14 absolute bottom-0 bg-orange-400 opacity-100"></div>
                                         </div>
-                                        <p className="absolute bottom-0 w-full p-3 text-left text-sm lg:text-lg">{e.text}</p>
+                                        <p className="absolute hover:bg-orange-400 bottom-0 w-full h-14 p-3 text-left cursor-pointer text-sm lg:text-lg">{e.text}</p>
                                     </div>
                                 </div>
                             ))
@@ -80,10 +80,10 @@ export default function Aplicaciones(){
                                     }
                                     {/* div con hover y texto */}
                                     <div className="absolute left-0 top-0 w-full h-full bg-transparent hover:transparent transition-colors duration-300">
-                                        <div className="absolute left-0 bottom-0 w-full h-[100%] opacity-0 hover:opacity-100 transition-opacity duration-300">
+                                        <div className="absolute left-0 bottom-0 w-full h-[100%] opacity-0 hover:opacity-100 transition-opacity duration-0">
                                             <div className="w-full h-10 md:h-14 absolute bottom-0 bg-orange-400 opacity-100"></div>
                                         </div>
-                                        <p className="absolute bottom-0 w-full p-3 text-left text-sm lg:text-lg">{e.text}</p>
+                                        <p className="absolute hover:bg-orange-400 bottom-0 w-full h-14 p-3 text-left cursor-pointer text-sm lg:text-lg">{e.text}</p>
                                     </div>
                                 </div>
                             ))
