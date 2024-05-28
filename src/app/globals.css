@@ -45,10 +45,10 @@
 
 /* Define la animación */
 @keyframes slideInFromLeft {
-  100% {
+  0% {
     transform: scale(100%);
   }
-  50% {
+  100% {
     transform: scale(110%);
   }
 }
@@ -56,9 +56,8 @@
 
 /* Aplica la animación a los elementos que la necesiten */
 .slide-in-left {
-  animation: slideInFromLeft 40s  infinite;
+  animation: slideInFromLeft 10s  forwards;
 }
-
 
 
 

@@ -16,18 +16,40 @@ export default function Header() {
 
     const [ver, setVer] = useState(informacion[0]);
     const contRef = useRef(0);
+    const [flash, setFlash] = useState("");
+    const [key, setKey] = useState(0); // Clave aleatoria para forzar la actualización de la imagen
+    let flashTimer;
 
     useEffect(() => {
-        const actualizar = async () => {
-            const nextIndex = (contRef.current + 1) % informacion.length;
-            setVer(informacion[nextIndex]);
-            contRef.current = nextIndex;
+        const intervalId = setInterval(() => {
+            avanzarImagen();
+        }, 6000);
+
+        // Función para limpiar el temporizador de destello
+        const clearFlashTimer = () => {
+            clearTimeout(flashTimer);
         };
 
-        const intervalId = setInterval(actualizar, 5000);
+        // Temporizador de destello inicial
 
-        return () => clearInterval(intervalId);
-    }, []);
+        return () => {
+            clearInterval(intervalId);
+            clearFlashTimer();
+        };
+    }, [flashTimer, informacion]);
+
+    const avanzarImagen = () => {
+        const nextIndex = (contRef.current + 1) % informacion.length;
+        setVer(informacion[nextIndex]);
+        contRef.current = nextIndex;
+        setKey(prevKey => prevKey + 1); // Incrementa la clave para forzar la actualización de la imagen
+
+        // Iniciar temporizador de destello
+        setFlash("opacity-25");
+        setTimeout(() => {
+            setFlash("");
+        }, 100);
+    };
 
     const cambiar = (e) => {
         const btn = e.target.id;
@@ -37,15 +59,20 @@ export default function Header() {
             setVer(informacion[prevIndex]);
             contRef.current = prevIndex;
         } else if (btn === "2") {
-            const nextIndex = (contRef.current + 1) % informacion.length;
-            setVer(informacion[nextIndex]);
-            contRef.current = nextIndex;
+            avanzarImagen();
         }
-    }
-    return(
-        <div className="w-full overflow-hidden h-[72vh] lg:h-[83vh] text-blue-900 lg:text-white active:opacity-30 transition"> 
+    };
+    return (
+        <div className="w-full overflow-hidden h-[72vh] lg:h-[83vh] text-blue-900 lg:text-white "> 
             <div className="relative">
-                <Image src={ver.img} width={1000} height={1000} alt="imagen slider" className={`absolute w-full top-0 slide-in-left`}/>
+                <Image 
+                    key={key} // Clave aleatoria para forzar la actualización de la imagen
+                    src={ver.img} 
+                    width={1000} 
+                    height={1000} 
+                    alt="imagen slider" 
+                    className={`absolute w-full top-0 slide-in-left ${flash}`}
+                />
             </div>
             <div className="w-full h-full relative">
                 <button onClick={cambiar} id="1" className="text-7xl absolute top-0 bottom-0">{"<"}</button>
