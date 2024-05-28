@@ -62,13 +62,13 @@
 
 @keyframes tranImg {
   to{opacity: 100%; }
-  from{opacity: 60%; filter: blur(4px);}
+  from{opacity: 60%; filter: blur(5px);}
 }
 
 .tran{
   background-color: #000;
 
-  animation: tranImg 1700ms forwards;
+  animation: tranImg 2000ms forwards;
 }
 
 
@@ -79,7 +79,7 @@
 
 .animacion-texto{
   position: absolute;
-  animation: aniTexto 800ms forwards;
+  animation: aniTexto 1000ms forwards;
   transition: all;
 }
 

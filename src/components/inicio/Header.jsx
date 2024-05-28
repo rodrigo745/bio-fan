@@ -53,11 +53,11 @@ export default function Header() {
         setFlash("tran");
         setTimeout(() => {
             setFlash("");
-        }, 1700);
+        }, 2000);
         setAnimacionTexto("animacion-texto");
         setTimeout(() => {
             setAnimacionTexto("");
-        }, 800);
+        }, 1000);
     };
 
     const cambiar = (e) => {
@@ -70,11 +70,11 @@ export default function Header() {
             setFlash("tran");
         setTimeout(() => {
             setFlash("");
-        }, 1700);
+        }, 2000);
         setAnimacionTexto("animacion-texto");
         setTimeout(() => {
             setAnimacionTexto("");
-        }, 800);
+        }, 1000);
         } else if (btn === "2") {
             avanzarImagen();
         }
