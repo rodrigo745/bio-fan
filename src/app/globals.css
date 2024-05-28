@@ -61,14 +61,14 @@
 }
 
 @keyframes tranImg {
-  to{opacity: 100%;}
-  from{opacity: 60%;}
+  to{opacity: 100%; }
+  from{opacity: 60%; filter: blur(4px);}
 }
 
 .tran{
   background-color: #000;
 
-  animation: tranImg 2000ms forwards;
+  animation: tranImg 1700ms forwards;
 }
 
 

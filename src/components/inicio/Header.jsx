@@ -53,7 +53,7 @@ export default function Header() {
         setFlash("tran");
         setTimeout(() => {
             setFlash("");
-        }, 2000);
+        }, 1700);
         setAnimacionTexto("animacion-texto");
         setTimeout(() => {
             setAnimacionTexto("");
@@ -70,7 +70,7 @@ export default function Header() {
             setFlash("tran");
         setTimeout(() => {
             setFlash("");
-        }, 2000);
+        }, 1700);
         setAnimacionTexto("animacion-texto");
         setTimeout(() => {
             setAnimacionTexto("");
