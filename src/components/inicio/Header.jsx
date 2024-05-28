@@ -58,6 +58,10 @@ export default function Header() {
             const prevIndex = (contRef.current - 1 + informacion.length) % informacion.length;
             setVer(informacion[prevIndex]);
             contRef.current = prevIndex;
+            setFlash("opacity-25");
+        setTimeout(() => {
+            setFlash("");
+        }, 100);
         } else if (btn === "2") {
             avanzarImagen();
         }
@@ -74,14 +78,14 @@ export default function Header() {
                     className={`absolute w-full top-0 slide-in-left ${flash}`}
                 />
             </div>
-            <div className="w-full h-full relative">
+            <div className="w-full h-full relative" >
                 <button onClick={cambiar} id="1" className="text-7xl absolute top-0 bottom-0">{"<"}</button>
                 <div className={`absolute bottom-0 ml-12 lg:ml-28 mb-10 w-[550px]`}>
                     <h2 className="text-2xl w-[60%] lg:w-[90%] lg:text-7xl font-bold">{ver.titulo}</h2>
                     <h5 className="text-md w-[50%] lg:w-[90%] lg:text-2xl font-bold mt-5">{ver.descripcion}</h5>
                     <button className="p-2 border-2 font-bold mt-4 rounded-lg">Aprender más</button>
                 </div>
-                <button onClick={cambiar} id="2" className="text-7xl right-0 absolute top-0 bottom-0 ">{">"}</button>
+                <button  onClick={cambiar} id="2" className="text-7xl right-0 absolute top-0 bottom-0 ">{">"}</button>
             </div>
 
         </div>

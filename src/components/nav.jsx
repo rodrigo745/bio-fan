@@ -41,16 +41,16 @@ export default function Nav(){
             {/* ------------------------------------------------- */}
 
             <div className="bg-white border-b-2 shadow-md flex justify-between py-6 px-4 xl:px-10"> {/* Nav Desktop */}
-                <div>
+                <Link href="/">
                     <div className="h-full w-fit flex justify-center content-center items-center">
                         <Image className="w-[180px] lg:w-[220px]" priority src="/logo-bio.png" width={300} height={200} alt="Logo de bio-fan" />
                     </div>
-                </div>
+                </Link>
                 {/* Escritorio */}
                 <div className="text-sm sm:text-sm  md:text-md lg:text-lg xl:text-xl 2xl:text-2xl hidden md:block">
                     <div className="flex text-blue-900 font-bold
                                     sm:space-x-1 md:space-x-3 lg:space-x-2 xl:space-x-3 2xl:space-x-10">
-                        <Link href="/" className={estiloHoverSecciones} >Inicio</Link>
+                        <Link href="/#main" className={estiloHoverSecciones} >Inicio</Link>
                         <Link href="/pages/aplicaciones" className={estiloHoverSecciones}>Aplicaciones</Link>
                         <Link href="/pages/caracteristicas" className={estiloHoverSecciones}>Caracteristicas</Link>
                         <div className="dropdown">

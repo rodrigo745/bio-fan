@@ -9,8 +9,9 @@ import MainCuatro from "@/components/inicio/MainCuatro";
 export default function Home() {
   return (
     <main className="">
-      <Header/> {/* Cambio de imagenes */}
-          <MainUno/>
+        <Header/> {/* Cambio de imagenes */}
+        <div className="absolute top-[90vh]" id="main"></div>
+        <MainUno/>
         
         <MainDos/>
         <MainTres/>
