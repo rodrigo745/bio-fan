@@ -33,8 +33,8 @@ export default function Nav(){
                     <p>|</p>
                 </div>
                 <div className="flex space-x-3 cursor-pointer"> {/* Derecha */}
-                    <Image priority src="/bandera-españa.png" width={30} height={30} alt="bandera de españa" />
-                    <Image priority src="/bandera-cataluña.png" width={30} height={30} alt="bandera de cataluña" />
+                    <Image loading="lazy" src="/bandera-españa.png" width={30} height={30} alt="bandera de españa" />
+                    <Image loading="lazy" src="/bandera-cataluña.png" width={30} height={30} alt="bandera de cataluña" />
                 </div>
             </div>
 
@@ -43,7 +43,7 @@ export default function Nav(){
             <div className="bg-white border-b-2 shadow-md flex justify-between py-6 px-4 xl:px-10"> {/* Nav Desktop */}
                 <Link href="/">
                     <div className="h-full w-fit flex justify-center content-center items-center">
-                        <Image className="w-[180px] lg:w-[220px]" priority src="/logo-bio.png" width={300} height={200} alt="Logo de bio-fan" />
+                        <Image className="w-[180px] lg:w-[220px]" src="/logo-bio.png" width={300} height={200} alt="Logo de bio-fan" />
                     </div>
                 </Link>
                 {/* Escritorio */}

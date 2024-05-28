@@ -30,7 +30,7 @@ export default function MainCuatro(){
                     informacion.map((e, index)=> (
                         <div key={index} className="hover:sacle-105 lg:hover:scale-110 transition flex flex-col w-[350px] lg:w-[400px] h-[580px] lg:h-[630px] border bg-white rounded-lg shadow-md mb-14 lg:mb-0 ">
                             <div className="h-[260px] w-full">
-                                <Image src={e.img} width={400} height={300} alt="noticias" />
+                                <Image loading="lazy" src={e.img} width={400} height={300} alt="noticias" />
                             </div>
                             <div className="px-5 h-[350px]">
                                 <h3 className="text-xl lg:text-2xl h-[30%] text-blue-900 font-bold text-center ">{e.titulo}</h3>

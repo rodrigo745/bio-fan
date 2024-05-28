@@ -42,7 +42,7 @@ export default function MainDos(){
                             :
                             " bg-white"
                             }`}>
-                                <Image src={e.img} width={100} height={100} alt="icono de eleccion" className="rounded-full" />
+                                <Image loading="lazy" src={e.img} width={100} height={100} alt="icono de eleccion" className="rounded-full" />
                                 <p className="text-lg font-bold text-center">{e.titulo}</p>
                                 <p className="text-justify px-4">{e.descripcion}</p>
                             </div>

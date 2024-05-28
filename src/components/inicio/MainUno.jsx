@@ -11,7 +11,7 @@ export default function MainUno(){
                 </p>
             </div>
             <div className="w-[80%] lg:w-[40%] hover:scale-105 transition  text-center flex justify-center mt-12 mb-20 lg:mb-0"> 
-                <Image src="/inicio/inicio_main_1.jpg" width={460} height={450} alt="imagen acerca de bio fan" className="rounded-xl shadow-lg" />
+                <Image loading="lazy" src="/inicio/inicio_main_1.jpg" width={460} height={450} alt="imagen acerca de bio fan" className="rounded-xl shadow-lg" />
             </div>
         </div>
     )
