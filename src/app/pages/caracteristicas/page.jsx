@@ -88,11 +88,11 @@ export default function Caracteristicas(){
                     <div className="px-10 lg:px-0 mt-10 lg:mt-0 lg:h-[300px] text-blue-900 font-bold overflow-y-scroll flex flex-col items-center lg:w-[30%] relative contenedor">
   <div className="sticky top-0 w-full bg-white z-10">
     {/* Contenido fijo aquí */}
-    <p className="border-4 p-2 px-4 border-red-500 bg-white rounded-lg bar top-0">Control de humedad</p>
-    <p className="border-4 p-2 px-4 border-red-500 bg-white rounded-lg top-8 bar bar2">Olores y contaminantes</p>
-    <p className="border-4 p-2 px-4 border-red-500 bg-white rounded-lg  bar top-16 bar3">Enfriamiento y calefacción zonificados</p>
-    <p className="border-4 p-2 px-4 border-red-500 bg-white rounded-lg top-24 bar bar4">Diseño de eficiencia energética</p>
-    <p className="border-4 p-2 px-4 border-red-500 bg-white rounded-lg top-32 bar bar5">Prevención de la corrosión</p>
+    <p className="border-4 p-2 px-4 border-red-500 bg-white rounded-lg w-[360px] lg:w-[500px] bar top-0">Control de humedad</p>
+    <p className="border-4 p-2 px-4 border-red-500 bg-white rounded-lg w-[360px] lg:w-[500px] top-9 bar bar2">Olores y contaminantes</p>
+    <p className="border-4 p-2 px-4 border-red-500 bg-white rounded-lg w-[360px] lg:w-[500px] bar top-[72px] bar3">Enfriamiento y calefacción zonificados</p>
+    <p className="border-4 p-2 px-4 border-red-500 bg-white rounded-lg w-[360px] lg:w-[500px] top-[110px] bar bar4">Diseño de eficiencia energética</p>
+    <p className="border-4 p-2 px-4 border-red-500 bg-white rounded-lg w-[360px] lg:w-[500px] top-[150px] bar bar5">Prevención de la corrosión</p>
   </div>
   {/* Contenido scrollable */}
   <div>

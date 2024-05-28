@@ -58,7 +58,7 @@ export default function Nav(){
                             <p className="rotate-90 ml-1 ">{`>`}</p>
                             </Link>
                             <div className="dropdown-content cursor-pointer">
-                                <p className="enlace">Ventilador Industrial</p>
+                                <a href="#items-productos" className="enlace">Ventilador Industrial</a>
                                 <p className="enlace">Ventilador Comercial</p>
                                 <p className="enlace">Ventilador Movil</p>
                                 <p className="enlace">Ventilador Movil 45º</p>
