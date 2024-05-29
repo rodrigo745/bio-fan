@@ -1,6 +1,7 @@
 "use client";
 import { useState, useEffect, useRef } from "react"
 import Image from "next/image";
+import PrecargaImagenes from "../preCarga";
 
 export default function Header() {
 
@@ -80,6 +81,7 @@ export default function Header() {
     };
     return (
         <div className="w-full overflow-hidden h-[72vh] lg:h-[83vh] text-blue-900 lg:text-white "> 
+        <PrecargaImagenes/>
             {
                 informacion.map((e, index)=> (
                     
