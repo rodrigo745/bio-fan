@@ -18,9 +18,9 @@ export default function Header() {
     const contRef = useRef(0);
     const [flash, setFlash] = useState("");
     const [ animacionTexto, setAnimacionTexto ] = useState("");
-    const [key, setKey] = useState(0); // Clave aleatoria para forzar la actualización de la imagen
     let flashTimer;
     let aniText;
+    const [ vista, setVista ] = useState(0);
 
     useEffect(() => {
         const intervalId = setInterval(() => {
@@ -45,9 +45,8 @@ export default function Header() {
 
     const avanzarImagen = () => {
         const nextIndex = (contRef.current + 1) % informacion.length;
-        setVer(informacion[nextIndex]);
+        setVista(nextIndex);
         contRef.current = nextIndex;
-        setKey(prevKey => prevKey + 1); // Incrementa la clave para forzar la actualización de la imagen
 
         // // Iniciar temporizador de destello
         setFlash("tran");
@@ -65,7 +64,7 @@ export default function Header() {
 
         if (btn === "1") {
             const prevIndex = (contRef.current - 1 + informacion.length) % informacion.length;
-            setVer(informacion[prevIndex]);
+            setVista(prevIndex);
             contRef.current = prevIndex;
             setFlash("tran");
         setTimeout(() => {
@@ -81,27 +80,38 @@ export default function Header() {
     };
     return (
         <div className="w-full overflow-hidden h-[72vh] lg:h-[83vh] text-blue-900 lg:text-white "> 
-            <div className="relative">
-                <Image 
-                    priority
-                    key={key} // Clave aleatoria para forzar la actualización de la imagen
-                    loading="eager"
-                    src={ver.img} 
-                    width={1000} 
-                    height={1000} 
-                    alt="imagen slider" 
-                    className={` absolute w-full top-0 transition slide-in-left ${flash}`}
-                />
-            </div>
-            <div className="w-full h-full relative" >
-                <button onClick={cambiar} id="1" className="text-7xl absolute top-0 bottom-0">{"<"}</button>
-                <div className={`absolute top-[36vh] ml-12 lg:ml-28 mb-10 w-[550px] ${animacionTexto}`}>
-                    <h2 className="text-2xl w-[60%] lg:w-[90%] lg:text-7xl font-bold">{ver.titulo}</h2>
-                    <h5 className="text-md w-[50%] lg:w-[130%] text-justify lg:text-2xl font-bold mt-5">{ver.descripcion}</h5>
-                    <button className="p-2 border-2 font-bold mt-4 rounded-lg">Aprender más</button>
-                </div>
-                <button  onClick={cambiar} id="2" className="text-7xl right-0 absolute top-0 bottom-0 ">{">"}</button>
-            </div>
+            {
+                informacion.map((e, index)=> (
+                    
+                        (index === vista) &&
+                        <div key={index} >
+                    <div className={`relative`}>
+                            <Image 
+                                priority
+                                
+                                loading="eager"
+                                src={e.img} 
+                                width={1000} 
+                                height={1000} 
+                                alt="imagen slider" 
+                                className={` absolute w-full top-0 transition slide-in-left ${flash}`}
+                            />
+                        </div>
+                        <div className="w-full h-full relative" >
+                            <button onClick={cambiar} id="1" className={`text-7xl absolute top-[33vh]`}>{"<"}</button>
+                            <div className={`absolute top-[36vh] ml-12 lg:ml-28 mb-10 w-[550px] ${animacionTexto}`}>
+                                <h2 className={`text-2xl w-[60%] lg:w-[90%] lg:text-7xl font-bold `}>{e.titulo}</h2>
+                                <h5 className="text-md w-[50%] lg:w-[130%] text-justify lg:text-2xl font-bold mt-5">{e.descripcion}</h5>
+                                <button className="p-2 border-2 font-bold mt-4 rounded-lg">Aprender más</button>
+                            </div>
+                            <button  onClick={cambiar} id="2" className="text-7xl right-0 absolute top-[33vh]">{">"}</button>
+                        </div>
+                    </div>
+                    
+                    
+                ))
+            }
+            
 
         </div>
     )
