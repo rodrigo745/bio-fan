@@ -72,21 +72,21 @@ export default function Caracteristicas(){
                                     <div className="h-[43%] flex justify-center">
                                         <Image src={e.img} width={150} height={140} alt="imagen" />
                                     </div>
-                                    <h4 className="text-2xl font-bold h-[20%]">{e.titulo}</h4>
-                                    <p className="h-[27%]">{e.descripcion}</p>
+                            <h4 className={`text-2xl font-bold ${index == 2 ? "h-[12%]" : "h-[20%]" }`}>{e.titulo}</h4>
+                                    <p className={`${index == 2 ? "h-[35%]" : "h-[27%]"} `}>{e.descripcion}</p>
                                     <button className="h-[10%] font-bold hover:scale-125 transition">Aprender más</button>
                                 </div>
                             ))
                         }
                     </div>
-                <div className="flex flex-col lg:flex h-[500px] lg:h-[400px] lg:flex-row justify-center mt-20 mb-20 lg:mb-0">
+                <div className="flex flex-col lg:flex h-[500px] lg:h-[350px] lg:flex-row justify-center mt-20 mb-20 lg:mb-0 lg:ml-60">
                     <div className="text-center w-full lg:w-[500px] lg:mt-10">
                         <h4 className="text-blue-900 sombra-texto font-bold text-4xl lg:text-5xl">Eso y mucho más</h4>
                         <p className="text-blue-900 px-10 mt-5 text-xl">Ponte en contacto con nosotros sin nungún tipo de compromiso.</p>
                     </div>
                 
-                    <div className="px-4 lg:px-0 mt-10 lg:mt-0 lg:h-[300px] text-blue-900 font-bold overflow-y-scroll flex flex-col items-center lg:w-[30%] relative contenedor">
-  <div className="sticky top-0 w-full bg-white z-10">
+                    <div className="px-4 lg:px-0 mt-10 lg:mt-0 lg:h-[300px] text-blue-900 font-bold overflow-y-scroll flex flex-col items-center lg:w-[50%] relative contenedor">
+  <div className="sticky top-0 w-full bg-white z-10 ">
     {/* Contenido fijo aquí */}
     <p className="border-4 p-2 px-4 border-red-500 bg-white rounded-lg w-[330px] lg:w-[500px] bar top-0">Control de humedad</p>
     <p className="border-4 p-2 px-4 border-red-500 bg-white rounded-lg w-[330px] lg:w-[500px] top-9 bar bar2">Olores y contaminantes</p>

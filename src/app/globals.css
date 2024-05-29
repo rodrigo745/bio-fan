@@ -183,17 +183,16 @@
   animation-timeline: scroll(nearest);
 }
 @keyframes resize2 {
-  70% { top: 34px; } 
-  80% { top: 34px; }
+  85% { top: 36px; } 
   100%{top: 120px}
 }
 @keyframes resize3 {
-  60% { top: 70px; }
-  70% { top: 120px; }
+  45% { top: 72px; }
+  50% { top: 120px; }
   100%{top: 160px}
 }
 @keyframes resize4 {
-  30% { top: 100px; }
+  30% { top: 110px; }
   40% { top: 180px; }
   100%{top: 200px}
 }
