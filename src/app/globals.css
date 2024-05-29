@@ -66,8 +66,6 @@
 }
 
 .tran{
-  background-color: #000;
-
   animation: tranImg 2000ms forwards;
 }
 
