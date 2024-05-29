@@ -61,13 +61,13 @@
 }
 
 @keyframes tranImg {
-  to{opacity: 100%; }
-  from{opacity: 60%; filter: blur(5px);}
+  100% { opacity: 1; filter: blur(0px) saturate(100%);  }
+  0% { opacity: 0.7; filter: blur(5px) saturate(200%);  }
 }
 
-.tran{
-  background-color: #000000d8;
-
+.tran {
+  background-color: #000000; 
+  opacity: 1; 
   animation: tranImg 2000ms forwards;
 }
 
