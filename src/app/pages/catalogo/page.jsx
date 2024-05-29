@@ -21,7 +21,7 @@ export default function Catalogo(){
             <div className="flex flex-col lg:flex lg:flex-row justify-center items-center w-[100%] h-full lg:h-[80vh] mt-10 lg:mt-0 lg:px-36">
                  <div className="w-full lg:w[30%] flex flex-col items-center mb-14 lg:mb-0 text-center">
                     <h3 className="text-blue-900 text-3xl lg:text-4xl font-bold mb-8 sombra-texto">CATÁLOGO GENERAL</h3>
-                    <Link target="_blank" href="https://bio-fan.aflip.in/Catalogo-General.html">
+                    <Link target="_blank" href="https://bio-fan.aflip.in/001-CATALOGO-GENERAL-BIO-FAN-2024.html">
                         <Image src="/catalogo/1.jpg" width={300} height={300} alt="catalogo" 
                         className="hover:scale-110 transition rounded-lg shadow-md" />
                     </Link>
