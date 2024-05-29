@@ -29,14 +29,14 @@ export default function Catalogo(){
                  </div>
                  <div className="w-full lg:w[30%] flex flex-col items-center mb-14 lg:mb-0">
                     <h3 className="text-blue-900 text-3xl lg:text-4xl  font-bold mb-8 sombra-texto text-center">CATÁLOGO RESUMEN</h3>
-                    <Link target="_blank" href="https://bio-fan.aflip.in/03-CATALOGO-RESUMEN.html">
+                    <Link target="_blank" href="https://bio-fan.aflip.in/003-CATALOGO-RESUMEN-BIO-FAN-2024.html">
                         <Image src="/catalogo/2.jpg" width={300} height={300} alt="catalogo"
                             className="hover:scale-110 transition rounded-lg shadow-md" />
                     </Link>
                  </div>
                  <div className="w-full lg:w[20%] flex flex-col items-center mb-14 lg:mb-0 ">
                     <h3 className="text-center text-blue-900 text-3xl lg:text-4xl  font-bold mb-8 sombra-texto">CATÁLOGO EVAPORATIVO</h3>
-                    <Link target="_blank" href="https://bio-fan.aflip.in/02-CATALOGO-EVAPORATIVOS.html">
+                    <Link target="_blank" href="https://bio-fan.aflip.in/002-CATALOGO-EVAPORATIVOS-BIO-FAN-2024.html">
                         <Image src="/catalogo/3.jpg" width={300} height={300} alt="catalogo" 
                             className="hover:scale-110 transition rounded-lg shadow-md" />
                     </Link>
