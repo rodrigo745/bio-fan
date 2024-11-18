@@ -11,7 +11,6 @@ export default function Caracteristicas(){
       setScrollTop(0);
     };
 
-
     const informacion = [
         {titulo: "Motor Brushless", descripcion: "Nuevo motor de rotor externo de desarrollo propio.", img: "/caracteristicas/1.jpg"},
         {titulo: "Control inteligente", descripcion: "4 botones de fácil operación.", img: "/caracteristicas/2.jpg"},
@@ -94,7 +93,7 @@ export default function Caracteristicas(){
     <p className="border-4 p-2 px-4 border-red-500 bg-white rounded-lg w-[330px] lg:w-[500px] top-[110px] bar bar4">Diseño de eficiencia energética</p>
     <p className="border-4 p-2 px-4 border-red-500 bg-white rounded-lg w-[330px] lg:w-[500px] top-[150px] bar bar5">Prevención de la corrosión</p>
   </div>
-  {/* Contenido scrollable */}
+  {/* Contenido scrolleable */}
   <div>
     {/* Aquí puedes añadir el contenido scrollable */}
     <br />

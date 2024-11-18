@@ -74,7 +74,7 @@
 
 @keyframes aniTexto {
   0%{top: 80vh;}
-  100%{top: 36vh;}  
+  100%{top: 26vh;}  
 }
 
 .animacion-texto{
@@ -82,6 +82,20 @@
   animation: aniTexto 1000ms forwards;
   transition: all;
 }
+
+.hoverBlack{
+  background-color: #0000006e;
+  width: 48vw;
+  height: 100.5vh;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 10;
+  padding-top: 50vh;
+  text-align: center;
+}
+
+
 
 /*  Loading  */
 

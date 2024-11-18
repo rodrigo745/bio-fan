@@ -26,7 +26,7 @@ export default function Header() {
     useEffect(() => {
         const intervalId = setInterval(() => {
             avanzarImagen();
-        }, 6000);
+        }, 2000);
 
         // Función para limpiar el temporizador de destello
         const clearFlashTimer = () => {
@@ -53,7 +53,7 @@ export default function Header() {
         setFlash("tran");
         setTimeout(() => {
             setFlash("");
-        }, 2000);
+        }, 1500);
         setAnimacionTexto("animacion-texto");
         setTimeout(() => {
             setAnimacionTexto("");
@@ -81,7 +81,14 @@ export default function Header() {
     };
     return (
         <div className="w-full overflow-hidden h-[72vh] lg:h-[83vh] text-blue-900 lg:text-white "> 
-        <PrecargaImagenes/>
+            <div className="hoverBlack">
+                <div className={`${animacionTexto}`}>
+                    <p className="text-4xl font-bold">Texto de ejemplo</p>
+                    <p className="mt-5 ">Subtexto de ejmplo</p>
+
+                </div>
+            </div>
+            <PrecargaImagenes/>
             {
                 informacion.map((e, index)=> (
                     
@@ -101,12 +108,13 @@ export default function Header() {
                         </div>
                         <div className="w-full h-full relative" >
                             <button onClick={cambiar} id="1" className={`text-7xl absolute top-[33vh]`}>{"<"}</button>
-                            <div className={`absolute top-[36vh] ml-12 lg:ml-28 mb-10 w-[550px] ${animacionTexto}`}>
-                                <h2 className={`text-2xl w-[60%] lg:w-[90%] lg:text-7xl font-bold `}>{e.titulo}</h2>
-                                <h5 className="text-md w-[50%] lg:w-[130%] text-justify lg:text-2xl font-bold mt-5">{e.descripcion}</h5>
-                                <button className="p-2 border-2 font-bold mt-4 rounded-lg">Aprender más</button>
+                            <div className={`absolute top-[26vh] ml-12 lg:ml-28 mb-10 w-[550px] ${animacionTexto}`}>
+                                <h1 className="text-7xl font-bold mb-6">HDS</h1>
+                                <h2 className={`text-2xl w-[60%] lg:w-[90%] lg:text-5xl font-bold `}>{e.titulo}</h2>
+                                <h5 className="text-md w-[50%] lg:w-[130%] text-justify lg:text-2xl font-medium mt-5">{e.descripcion}</h5>
+                                <button className="p-2 border-2 font-medium mt-4 rounded-lg">Aprender más</button>
                             </div>
-                            <button  onClick={cambiar} id="2" className="text-7xl right-0 absolute top-[33vh]">{">"}</button>
+                            <button  onClick={cambiar} id="2" className="text-7xl right-0 absolute top-[33vh] z-20">{">"}</button>
                         </div>
                     </div>
                     

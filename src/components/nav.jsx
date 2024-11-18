@@ -19,36 +19,19 @@ export default function Nav(){
 
     return(
         <div className="fixed w-full z-50">
-            <div className="w-full flex justify-between  px-4 md:px-10 py-4 bg-blue-900 text-white font-medium text-sm"> {/* Contactos - parte superior */}
-                <div className="flex space-x-3 md:space-x-5 "> {/* Izquierda */}
-                    <div className="flex">
-                        <HiOutlineMail className="m-1 scale-125 mr-2"/>
-                        <p>CONSULTA</p>
-                    </div>
-                    <p>|</p>
-                    <div className="flex">
-                        <IoCall className="m-1 scale-125 mr-2"/>
-                        <p>633175711</p>
-                    </div>
-                    <p>|</p>
-                </div>
-                <div className="flex space-x-3 cursor-pointer"> {/* Derecha */}
-                    <Image loading="lazy" src="/bandera-españa.png" width={30} height={30} alt="bandera de españa" />
-                    <Image loading="lazy" src="/bandera-cataluña.png" width={30} height={30} alt="bandera de cataluña" />
-                </div>
-            </div>
+            
 
             {/* ------------------------------------------------- */}
 
             <div className="bg-white border-b-2 shadow-md flex justify-between py-6 px-4 xl:px-10"> {/* Nav Desktop */}
                 <Link href="/">
                     <div className="h-full w-fit flex justify-center content-center items-center">
-                        <Image className="w-[180px] lg:w-[220px]" src="/logo-bio.png" width={300} height={200} alt="Logo de bio-fan" />
+                        <Image className="w-[180px] lg:w-[260px]" src="/logo-bio.png" width={300} height={200} alt="Logo de bio-fan" />
                     </div>
                 </Link>
                 {/* Escritorio */}
                 <div className="text-sm sm:text-sm  md:text-md lg:text-lg xl:text-xl 2xl:text-2xl hidden md:block">
-                    <div className="flex text-blue-900 font-bold
+                    <div className="flex text-blue-900 
                                     sm:space-x-1 md:space-x-3 lg:space-x-2 xl:space-x-3 2xl:space-x-10">
                         <Link href="/#main" className={estiloHoverSecciones} >Inicio</Link>
                         <Link href="/pages/aplicaciones" className={estiloHoverSecciones}>Aplicaciones</Link>
@@ -82,7 +65,7 @@ export default function Nav(){
                         <div className={`flex pr-5 ${estiloHoverSecciones}`}>
                             <Link href="/">Tienda</Link>
                             <div className="scale-150">
-                                <TiShoppingCart className="scale-150 mt-1 ml-3 scale-x-[-1.3]"/>
+                                {/*<TiShoppingCart className="scale-150 mt-1 ml-3 scale-x-[-1.3]"/>*/}
                             </div>
                         </div>
                     </div>
@@ -111,4 +94,4 @@ export default function Nav(){
     )
 }
 
-const estiloHoverSecciones = "p-2 border-4 border-white hover:border-red-500 transition hover:transition hover:rounded-md cursor-pointer";
+const estiloHoverSecciones = "p-2 border-4 border-white hover:text-yellow-500 transition hover:transition hover:rounded-md cursor-pointer";
