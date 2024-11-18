@@ -111,7 +111,7 @@ export default function Header() {
                             {/*<button onClick={cambiar} id="1" className={`text-7xl absolute top-[33vh]`}>{"<"}</button>*/}
                             <div className={`absolute top-[38vh] ml-12 lg:ml-28 mb-10 w-[550px] ${animacionTexto}`}>
                                 <h1 className="lg:text-[5.5rem] font-bold serie" style={{lineHeight: 1}}>HDS</h1>
-                                <h2 className={`text-2xl w-[60%] lg:w-[90%] lg:text-[5.5rem] font-bold `} style={{lineHeight: 1}}>{e.titulo}</h2>
+                                <h2 className={`text-2xl w-[60%] lg:w-[150%] lg:text-[5.5rem] font-bold `} style={{lineHeight: 1}}>{e.titulo}</h2>
                                 <h5 className="text-md w-[50%] lg:w-[130%] text-justify lg:text-2xl font-medium mt-2">{e.descripcion}</h5>
                                 <button className="p-1 px-3 font-medium mt-4 rounded-lg bg-[#eb5347]">Aprender más</button>
                             </div>
