@@ -6,8 +6,8 @@ import PrecargaImagenes from "../preCarga";
 export default function Header() {
 
     const informacion = [
-        {titulo: "VENTILADOR INDUSTRIAL", descripcion: "Esenciales para la circulación del aire en grandes espacios industriales.", img: "/inicio/slider/01.png", frase: ["30%","Ahorro de consumo energético"]},
-        {titulo: "VENTILADOR MOVIL", descripcion: "Está construido sobre un cuerpo de acero resistente y viene con ruedas omnidireccionales para transportarlo prácticamente a cualquier lugar.", img: "/inicio/slider/02.png", frase: ""},
+        {titulo: "VENTILADOR INDUSTRIAL", descripcion: "Esenciales para la circulación del aire en grandes espacios industriales.", img: "/inicio/slider/01.png", frase: ["30%","Ahorro de consumo energético"], serie: "HDS"},
+        {titulo: "VENTILADOR MOVIL", descripcion: "Está construido sobre un cuerpo de acero resistente y viene con ruedas omnidireccionales para transportarlo prácticamente a cualquier lugar.", img: "/inicio/slider/02.png", frase: ["0","Distribución uniforme del aire", "/inicio/ventilador.png"], serie: "HDY"},
         {titulo: "VENTILADOR MOVIL 45°", descripcion: "Grande y resistente con ajuste de 45º, hacia arriba y abajo.", img: "/inicio/slider/03.png", frase: "" },
         {titulo: "VENTILADOR PARED", descripcion: "Resuelve entornos complejos con espacios de ventilación limitados.", img: "/inicio/slider/04.png", frase: ""},
         {titulo: "VENTILADOR VERTICAL", descripcion: "Potente flujo de aire, de funcionamiento silencioso, posicionamiento estratégico, durabilidad y eficiencia energética.", img: "/inicio/slider/05.png", frase: ""},
@@ -102,7 +102,12 @@ export default function Header() {
                         </div>
                         <div className="hoverBlack">
                             <div className="">
-                                <p className="text-6xl font-bold">{e.frase[0]}</p>
+                                {
+                                    e.frase[0] == "0" ?
+                                        <Image src={e.frase[2]} width={110} height={100} alt="Foto icono" className="ml-10 animate-spin"/>
+                                    :
+                                        <p className="text-6xl font-bold">{e.frase[0]}</p>
+                                    }
                                 <p className="mt-2 text-xl font-bold w-[10.8vw]">{e.frase[1]}</p>
 
                             </div>
@@ -110,8 +115,15 @@ export default function Header() {
                         <div className="w-full h-full relative" >
                             {/*<button onClick={cambiar} id="1" className={`text-7xl absolute top-[33vh]`}>{"<"}</button>*/}
                             <div className={`absolute top-[38vh] ml-12 lg:ml-28 mb-10 w-[550px] ${animacionTexto}`}>
-                                <h1 className="lg:text-[5.5rem] font-bold serie" style={{lineHeight: 1}}>HDS</h1>
-                                <h2 className={`text-2xl w-[60%] lg:w-[150%] lg:text-[5.5rem] font-bold `} style={{lineHeight: 1}}>{e.titulo}</h2>
+                                <h1 className="lg:text-[5.5rem] font-bold serie" style={{lineHeight: 1}}>{e.serie}</h1>
+                                {
+                                    e.titulo === "RECUBRIMIENTO SUPERIOR SOLAR" ?
+                                    <h2 className={`text-2xl w-[60%] lg:w-[180%] lg:text-[5.5rem] font-bold `} style={{lineHeight: 1}}>{e.titulo}</h2>
+                                    
+                                    :
+                                    <h2 className={`text-2xl w-[60%] lg:w-[90%] lg:text-[5.5rem] font-bold `} style={{lineHeight: 1}}>{e.titulo}</h2>
+
+                                }
                                 <h5 className="text-md w-[50%] lg:w-[130%] text-justify lg:text-2xl font-medium mt-2">{e.descripcion}</h5>
                                 <button className="p-1 px-3 font-medium mt-4 rounded-lg bg-[#eb5347]">Aprender más</button>
                             </div>
