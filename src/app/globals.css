@@ -74,7 +74,7 @@
 
 @keyframes aniTexto {
   0%{top: 80vh;}
-  100%{top: 26vh;}  
+  100%{top: 38vh;}  
 }
 
 .animacion-texto{
@@ -83,15 +83,14 @@
   transition: all;
 }
 .serie{
-  color: #f2a94ab7;
+  color: #eb5347;
 }
 .hoverBlack{
-  background-color: #0000006e;
-  width: 48vw;
-  height: 90vh;
+  width: 10vw;
+  height: 30vh;
   position: absolute;
-  top: 6rem;
-  right: 0;
+  top: 12rem;
+  right: 24vw;
   z-index: 10;
   padding-top: 50vh;
   text-align: center;

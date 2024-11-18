@@ -82,9 +82,9 @@ export default function Header() {
     return (
         <div className="w-full overflow-hidden h-[72vh] lg:h-[90vh] text-blue-900 lg:text-white "> 
             <div className="hoverBlack">
-                <div >
-                    <p className="text-4xl font-bold">Texto de ejemplo</p>
-                    <p className="mt-5 ">Subtexto de ejmplo</p>
+                <div className="">
+                    <p className="text-6xl font-bold">30%</p>
+                    <p className="mt-2 text-xl font-bold w-[10.8vw]">Ahorro de consumo energético</p>
 
                 </div>
             </div>
@@ -108,11 +108,11 @@ export default function Header() {
                         </div>
                         <div className="w-full h-full relative" >
                             {/*<button onClick={cambiar} id="1" className={`text-7xl absolute top-[33vh]`}>{"<"}</button>*/}
-                            <div className={`absolute top-[26vh] ml-12 lg:ml-28 mb-10 w-[550px] ${animacionTexto}`}>
-                                <h1 className="text-7xl font-bold mb-6 serie">HDS</h1>
-                                <h2 className={`text-2xl w-[60%] lg:w-[90%] lg:text-5xl font-bold `}>{e.titulo}</h2>
-                                <h5 className="text-md w-[50%] lg:w-[130%] text-justify lg:text-2xl font-medium mt-5">{e.descripcion}</h5>
-                                <button className="p-2 border-2 font-medium mt-4 rounded-lg">Aprender más</button>
+                            <div className={`absolute top-[38vh] ml-12 lg:ml-28 mb-10 w-[550px] ${animacionTexto}`}>
+                                <h1 className="lg:text-[5.5rem] font-bold serie" style={{lineHeight: 1}}>HDS</h1>
+                                <h2 className={`text-2xl w-[60%] lg:w-[90%] lg:text-[5.5rem] font-bold `} style={{lineHeight: 1}}>{e.titulo}</h2>
+                                <h5 className="text-md w-[50%] lg:w-[130%] text-justify lg:text-2xl font-medium mt-2">{e.descripcion}</h5>
+                                <button className="p-1 px-3 font-medium mt-4 rounded-lg bg-[#eb5347]">Aprender más</button>
                             </div>
                             {/*<button  onClick={cambiar} id="2" className="text-7xl right-0 absolute top-[33vh] z-20">{">"}</button>*/}
                         </div>
