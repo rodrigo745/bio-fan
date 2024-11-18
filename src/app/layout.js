@@ -25,7 +25,7 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         <PrecargaImagenes/>
         <Nav/>
-        <div className="pt-40">
+        <div className="pt-24">
           {children}
         </div>
         <Footer/>
