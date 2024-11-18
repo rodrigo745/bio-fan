@@ -6,13 +6,13 @@ import PrecargaImagenes from "../preCarga";
 export default function Header() {
 
     const informacion = [
-        {titulo: "VENTILADOR INDUSTRIAL", descripcion: "Esenciales para la circulación del aire en grandes espacios industriales.", img: "/inicio/slider/01.png"},
-        {titulo: "VENTILADOR MOVIL", descripcion: "Está construido sobre un cuerpo de acero resistente y viene con ruedas omnidireccionales para transportarlo prácticamente a cualquier lugar.", img: "/inicio/slider/02.png"},
-        {titulo: "VENTILADOR MOVIL 45°", descripcion: "Grande y resistente con ajuste de 45º, hacia arriba y abajo.", img: "/inicio/slider/03.png" },
-        {titulo: "VENTILADOR PARED", descripcion: "Resuelve entornos complejos con espacios de ventilación limitados.", img: "/inicio/slider/04.png"},
-        {titulo: "VENTILADOR VERTICAL", descripcion: "Potente flujo de aire, de funcionamiento silencioso, posicionamiento estratégico, durabilidad y eficiencia energética.", img: "/inicio/slider/05.png"},
-        {titulo: "EVAPORATIVOS", descripcion: "Dos presentaciones de Evaporativos Industrial y Comercial, ambas se basan en el principio físico del enfriamiento adiabático.", img: "/inicio/slider/06.png"},
-        {titulo: "RECUBRIMIENTO SUPERIOR SOLAR", descripcion: "Pintura térmica solución innovadora en el sector industrial, para gestionar el calor.", img: "/inicio/slider/07.png"}
+        {titulo: "VENTILADOR INDUSTRIAL", descripcion: "Esenciales para la circulación del aire en grandes espacios industriales.", img: "/inicio/slider/01.png", frase: ["30%","Ahorro de consumo energético"]},
+        {titulo: "VENTILADOR MOVIL", descripcion: "Está construido sobre un cuerpo de acero resistente y viene con ruedas omnidireccionales para transportarlo prácticamente a cualquier lugar.", img: "/inicio/slider/02.png", frase: ""},
+        {titulo: "VENTILADOR MOVIL 45°", descripcion: "Grande y resistente con ajuste de 45º, hacia arriba y abajo.", img: "/inicio/slider/03.png", frase: "" },
+        {titulo: "VENTILADOR PARED", descripcion: "Resuelve entornos complejos con espacios de ventilación limitados.", img: "/inicio/slider/04.png", frase: ""},
+        {titulo: "VENTILADOR VERTICAL", descripcion: "Potente flujo de aire, de funcionamiento silencioso, posicionamiento estratégico, durabilidad y eficiencia energética.", img: "/inicio/slider/05.png", frase: ""},
+        {titulo: "EVAPORATIVOS", descripcion: "Dos presentaciones de Evaporativos Industrial y Comercial, ambas se basan en el principio físico del enfriamiento adiabático.", img: "/inicio/slider/06.png", frase: ""},
+        {titulo: "RECUBRIMIENTO SUPERIOR SOLAR", descripcion: "Pintura térmica solución innovadora en el sector industrial, para gestionar el calor.", img: "/inicio/slider/07.png", frase: ""}
     ]
 
     const [ver, setVer] = useState(informacion[0]);
@@ -81,13 +81,7 @@ export default function Header() {
     };
     return (
         <div className="w-full overflow-hidden h-[72vh] lg:h-[90vh] text-blue-900 lg:text-white "> 
-            <div className="hoverBlack">
-                <div className="">
-                    <p className="text-6xl font-bold">30%</p>
-                    <p className="mt-2 text-xl font-bold w-[10.8vw]">Ahorro de consumo energético</p>
-
-                </div>
-            </div>
+           
             <PrecargaImagenes/>
             {
                 informacion.map((e, index)=> (
@@ -105,6 +99,13 @@ export default function Header() {
                                 alt="imagen slider" 
                                 className={` absolute w-full top-0 transition slide-in-left ${flash}`}
                             />
+                        </div>
+                        <div className="hoverBlack">
+                            <div className="">
+                                <p className="text-6xl font-bold">{e.frase[0]}</p>
+                                <p className="mt-2 text-xl font-bold w-[10.8vw]">{e.frase[1]}</p>
+
+                            </div>
                         </div>
                         <div className="w-full h-full relative" >
                             {/*<button onClick={cambiar} id="1" className={`text-7xl absolute top-[33vh]`}>{"<"}</button>*/}
