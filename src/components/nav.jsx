@@ -19,7 +19,7 @@ export default function Nav(){
 
     return(
         <div className="fixed w-full z-50">
-            <div className="w-full flex justify-between  px-4 md:px-10 py-4 bg-[#1d4674] text-white font-medium text-sm"> {/* Contactos - parte superior */}
+            <div className="w-full flex justify-between  px-4 md:px-10 py-1 bg-[#1d4674] text-white font-medium text-sm"> {/* Contactos - parte superior */}
                 <div className="flex space-x-3 md:space-x-5 "> {/* Izquierda */}
                     <div className="flex">
                         <HiOutlineMail className="m-1 scale-125 mr-2"/>
@@ -40,7 +40,7 @@ export default function Nav(){
             <div className="bg-white border-b-2 shadow-md flex px-5 justify-between py-1"> {/* Nav Desktop */}
                 <Link href="/">
                     <div className="h-full w-fit flex justify-center content-center items-center">
-                        <Image className="w-[180px] lg:w-[300px] pl-4" src="/logo-bio.png" width={300} height={200} alt="Logo de bio-fan" />
+                        <Image className="w-[180px] lg:w-[280px] pl-4" src="/logo-bio.png" width={300} height={200} alt="Logo de bio-fan" />
                     </div>
                 </Link>
                 {/* Escritorio */}

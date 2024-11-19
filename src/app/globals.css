@@ -72,14 +72,25 @@
 }
 
 
-@keyframes aniTexto {
+/*@keyframes aniTexto {
   0%{top: 80vh;}
   100%{top: 38vh;}  
 }
+*/
+@keyframes aniTexto {
+  0%{opacity: 0;}
+  70%{opacity: 0;}
+  100%{opacity: 1;}  
+}
+
 
 .animacion-texto{
   position: absolute;
-  animation: aniTexto 1000ms forwards;
+  animation: aniTexto 700ms forwards;
+  transition: all;
+}
+.animacion-texto2{
+  animation: aniTexto 700ms forwards;
   transition: all;
 }
 .serie{
@@ -90,12 +101,29 @@
   height: 30vh;
   position: absolute;
   top: 12rem;
-  right: 24vw;
+  right: 20vw;
   z-index: 10;
   padding-top: 50vh;
   text-align: center;
 }
-
+.hoverEvapo{
+  width: 20vw;
+  height: 30vh;
+  position: absolute;
+  top: 0rem;
+  right: 28vw;
+  z-index: 10;
+  padding-top: 50vh;
+  text-align: right;
+}
+@keyframes spin {
+  to {
+      transform: rotate(360deg);
+  }
+}
+.animate-spin {
+  animation: spin 3s linear infinite;
+}
 
 
 /*  Loading  */
