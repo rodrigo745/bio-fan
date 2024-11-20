@@ -27,7 +27,7 @@ export default function Header() {
     useEffect(() => {
         const intervalId = setInterval(() => {
             avanzarImagen();
-        }, 4000);
+        }, 7000);
 
         // Función para limpiar el temporizador de destello
         const clearFlashTimer = () => {
@@ -105,35 +105,35 @@ export default function Header() {
                             <div>
                                 {
                                     e.frase[0] == "0" ?
-                                        <Image src={e.frase[2]} width={110} height={100} alt="Foto icono" className="ml-10 animate-spin"/>
+                                        <Image src={e.frase[2]} width={130} height={100} alt="Foto icono" className="ml-20 animate-spin"/>
                                     :
                                     e.frase[0] === "1" ?
                                         <div className="flex justify-end">
                                             <Image src={e.frase[2]} width={100} height={100} alt="Foto icono" className=" absolute"/>
                                             <div className="mt-8 absolute mr-32">
-                                                <p className="text-xl w-[14vw] ml-1
+                                                <p className="text-xl w-[14vw]
                                                 absolute text-right" style={{lineHeight: 1.2}}>{`Climatización`}</p>
                                                 <br />
                                                 <p className="text-xl w-[14vw] ml-1 absolute text-right mt-3" style={{lineHeight: 1.2}}>{`agradable y ecológica`}</p>
                                             </div>
                                         </div>
                                     :
-                                        <p className="text-6xl font-bold">{e.frase[0]}</p>
+                                        <p className="text-7xl font-semibold ml-14">{e.frase[0]}</p>
                                     }
                                 {
                                     e.titulo !== "EVAPORATIVOS" &&
-                                    <p className=" text-xl w-[10.8vw]" style={{lineHeight: 1.2}}>{e.frase[1]}</p>
+                                    <p className=" text-2xl w-[15.4vw]" style={{lineHeight: 1.2}}>{e.frase[1]}</p>
                                 }
 
                             </div>
                         </div>
                         <div className="w-full h-full relative animacion-texto" >
                             {/*<button onClick={cambiar} id="1" className={`text-7xl absolute top-[33vh]`}>{"<"}</button>*/}
-                            <div className={`absolute top-[45vh] ml-12 lg:ml-28 mb-10 w-[550px] ${animacionTexto} 
-                            ${e.titulo === "VENTILADOR VERTICAL" && "top-[35vh]"}
-                            ${e.titulo === "EVAPORATIVOS" && "top-[36vh]"}
-                            ${e.titulo === "RECUBRIMIENTO SUPERIOR SOLAR" && "top-[36vh]"}`}>
-                                <h1 className="lg:text-[6rem] top-[-100px] absolute font-bold serie w-[40vw]" style={{lineHeight: 1}}>{e.serie}</h1>
+                            <div className={`absolute top-[45vh] ml-10 mb-10 w-[550px] ${animacionTexto} 
+                            ${e.titulo === "VENTILADOR VERTICAL" && "top-[32.9vh]"}
+                            ${e.titulo === "EVAPORATIVOS" && "top-[32vh]"}
+                            ${e.titulo === "RECUBRIMIENTO SUPERIOR SOLAR" && "top-[32vh]"}`}>
+                                <h1 className="lg:text-[6.7rem] top-[-120px] absolute font-bold serie w-[40vw]" style={{lineHeight: 1}}>{e.serie}</h1>
                                 {
                                     e.titulo === "RECUBRIMIENTO SUPERIOR SOLAR" ?
                                     <h2 className={`text-2xl w-[60%] lg:w-[180%] lg:text-[5.5rem] font-bold `} style={{lineHeight: 1}}>{e.titulo}</h2>
