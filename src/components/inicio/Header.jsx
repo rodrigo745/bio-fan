@@ -101,7 +101,7 @@ export default function Header() {
                                 className={` absolute w-full top-0 transition slide-in-left ${flash}`}
                             />
                         </div>
-                        <div className={`animacion-texto2 ${e.titulo !== "EVAPORATIVOS" ? "hoverBlack" : "hoverEvapo"}`}>
+                        <div className={`animacion-texto2 ${e.titulo !== "EVAPORATIVOS" ? "hoverBlack" : "hoverEvapo"} hidden lg:block`}>
                             <div>
                                 {
                                     e.frase[0] == "0" ?
@@ -133,7 +133,7 @@ export default function Header() {
                             ${e.titulo === "VENTILADOR VERTICAL" && "top-[32.9vh]"}
                             ${e.titulo === "EVAPORATIVOS" && "top-[32vh]"}
                             ${e.titulo === "RECUBRIMIENTO SUPERIOR SOLAR" && "top-[32vh]"}`}>
-                                <h1 className="lg:text-[6.7rem] top-[-120px] absolute font-bold serie w-[40vw]" style={{lineHeight: 1}}>{e.serie}</h1>
+                                <h1 className="text-[2.2rem] lg:text-[6.7rem] top-[-50px] lg:top-[-120px] absolute font-bold serie w-[80vw] lg:w-[40vw]" style={{lineHeight: 1}}>{e.serie}</h1>
                                 {
                                     e.titulo === "RECUBRIMIENTO SUPERIOR SOLAR" ?
                                     <h2 className={`text-2xl w-[60%] lg:w-[180%] lg:text-[5.5rem] font-bold `} style={{lineHeight: 1}}>{e.titulo}</h2>
@@ -142,7 +142,7 @@ export default function Header() {
 
                                 }
                                 <h5 className="text-md w-[50%] lg:w-[130%] text-justify lg:text-2xl font-medium mt-2">{e.descripcion}</h5>
-                                <button className="p-1 px-3 font-medium mt-4 rounded-lg bg-[#eb5347]">Aprende más</button>
+                                <button className="p-1 px-3 font-medium mt-4 rounded-lg bg-[#eb5347] text-white">Aprende más</button>
                             </div>
                             {/*<button  onClick={cambiar} id="2" className="text-7xl right-0 absolute top-[33vh] z-20">{">"}</button>*/}
                         </div>
