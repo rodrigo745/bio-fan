@@ -1,0 +1,46 @@
+
+.contCirculo {
+    display: flex;
+    width: 230px;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 40px;
+    margin: auto;
+    gap: 14px;
+  }
+  
+  .circulo {
+    width: 14px;
+    height: 14px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+    cursor: pointer; /* Cambia el cursor a pointer cuando se pasa sobre un botón */
+    transform: scale(1); /* Tamaño inicial */
+  }
+  
+  /* Animación para agrandar el botón */
+  @keyframes agrandar {
+    0% {
+      transform: scale(1); /* Tamaño original */
+    }
+    100% {
+      transform: scale(1.5); /* Se agranda a 1.5x */
+    }
+  }
+  
+  /* Activar la animación cuando el botón esté activo */
+  .circulo.active {
+    animation: agrandar 1s forwards;
+  }
+  
+  /* Vuelve el botón a su tamaño normal después de la animación */
+  .circulo:not(.active) {
+    transform: scale(1); /* Vuelve al tamaño original */
+  }
+  
+  /* Transición suave para el cambio de tamaño */
+  .circulo {
+    transition: transform 0.3s ease-in-out;
+  }

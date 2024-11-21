@@ -2,6 +2,7 @@
 import { useState, useEffect, useRef } from "react"
 import Image from "next/image";
 import PrecargaImagenes from "../preCarga";
+import styles from "@/components/inicio/Circulos.module.css";
 
 export default function Header() {
 
@@ -24,11 +25,22 @@ export default function Header() {
     let aniText;
     const [ vista, setVista ] = useState(0);
 
+    const [currentIndex, setCurrentIndex] = useState(0); // Indice del botón activo
+
+    // Función que maneja la animación secuencial
+    const iniciarAnimacion = () => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % 9); // Aumenta el índice, reinicia al llegar al último
+    };
+  
+
+
     useEffect(() => {
         const intervalId = setInterval(() => {
             avanzarImagen();
-        }, 7000);
-
+            
+        }, 6000);
+        const intervalo = setInterval(iniciarAnimacion, 6000); // Llamar cada 6 segundos
+        
         // Función para limpiar el temporizador de destello
         const clearFlashTimer = () => {
             clearTimeout(flashTimer);
@@ -40,6 +52,7 @@ export default function Header() {
 
         return () => {
             clearInterval(intervalId);
+            clearInterval(intervalo);
             clearFlashTimer();
             clearAniTextTimer();
         };
@@ -79,7 +92,16 @@ export default function Header() {
         } else if (btn === "2") {
             avanzarImagen();
         }
+        
+        
     };
+    // Función para manejar clics en los botones
+    const handleClick = (index) => {
+      setCurrentIndex(index); // Cambia el índice al botón clickeado
+    };
+
+
+
     return (
         <div className="w-full overflow-hidden h-[72vh] lg:h-[90vh] text-blue-900 lg:text-white "> 
            
@@ -127,12 +149,14 @@ export default function Header() {
 
                             </div>
                         </div>
-                        <div className="w-full h-full relative animacion-texto" >
+                        <div className={`w-full h-full animacion-texto
+                            relative
+                            ${e.titulo == "VENTILADOR VERTICAL" && "top-[5%]"}
+                            ${e.titulo == "EVAPORATIVOS" && "top-[3%]"}
+                            ${e.titulo == "RECUBRIMIENTO SUPERIOR SOLAR" && "top-[3%]"}`} >
                             {/*<button onClick={cambiar} id="1" className={`text-7xl absolute top-[33vh]`}>{"<"}</button>*/}
-                            <div className={`absolute top-[45vh] ml-10 mb-10 w-[550px] ${animacionTexto} 
-                            ${e.titulo === "VENTILADOR VERTICAL" && "top-[32.9vh]"}
-                            ${e.titulo === "EVAPORATIVOS" && "top-[32vh]"}
-                            ${e.titulo === "RECUBRIMIENTO SUPERIOR SOLAR" && "top-[32vh]"}`}>
+                            <div className={`absolute top-[44vh] ml-10 mb-10 w-[550px] ${animacionTexto} 
+                            `}>
                                 <h1 className="text-[2.2rem] lg:text-[6.7rem] top-[-50px] lg:top-[-120px] absolute font-bold serie w-[80vw] lg:w-[40vw]" style={{lineHeight: 1}}>{e.serie}</h1>
                                 {
                                     e.titulo === "RECUBRIMIENTO SUPERIOR SOLAR" ?
@@ -145,14 +169,23 @@ export default function Header() {
                                 <button className="p-1 px-3 font-medium mt-4 rounded-lg bg-[#eb5347] text-white">Aprende más</button>
                             </div>
                             {/*<button  onClick={cambiar} id="2" className="text-7xl right-0 absolute top-[33vh] z-20">{">"}</button>*/}
+                            
+                            
                         </div>
                     </div>
                     
                     
                 ))
             }
-            
-
+            <div className={styles.contCirculo}>
+            {Array.from({ length: 8 }).map((_, index) => (
+                <button
+                key={index}
+                className={`${styles.circulo} ${currentIndex === index ? styles.active : ""}`}
+                onClick={() => handleClick(index)} // Cambia el índice con el clic
+                />
+            ))}
+            </div>
         </div>
     )
 }

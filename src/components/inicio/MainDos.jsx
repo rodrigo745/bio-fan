@@ -26,28 +26,14 @@ export default function MainDos(){
     ]
 
     return(
-        <div className="w-full lg:h-[100%] flex flex-col lg:flex lg:flex-row justify-between items-center px-10 xl:px-32 2xl:px-60 lg:space-x-20">
-            <div className="lg:w-[30%] ">
-                <h3 className="text-3xl lg:text-5xl font-bold text-blue-900 text-center sombra-texto">¿Por qué elegir BIO-FAN?</h3>
-                <p className="text-blue-900 text-md lg:text-2xl mt-6 text-justify">En Bio-Fan, nuestra misión es entregar productos y servicios de la más alta calidad sin compromisos. <br/> 
-                Nos enorgullece mantener un compromiso inquebrantable con la seguridad en todas nuestras operaciones. </p>
+        <div className="w-full pt-14 lg:h-[100%] mt-24 pb-28 bg-[#f0a84d] px-10 xl:px-32 2xl:px-60">
+            <div className="mb-10 ">
+                <h3 className="text-3xl lg:text-5xl font-bold text-white text-center sombra-texto2">Por qué elegir BIOFAN</h3>
+                
             </div>
-            <div className="w-full lg:w-[66%] flex justify-center mr-14 lg:mr-0">
+            <div className="w-full">
                 <div className="lg:flex lg:flex-wrap justify-center">
-                    {
-                        informacion.map((e, index)=> (
-                            <div key={index} className={` hover:scale-110 transition w-[250px] h-[250px] rounded-2xl p-4 flex flex-col items-center px-3  shadow-[0_5px_10px_2px_rgba(0,0,0,0.3)] border mt-12 ml-12 text-sm
-                            ${e.id === "2" || e.id === "4" ?
-                            "text-white bg-blue-900"
-                            :
-                            " bg-white"
-                            }`}>
-                                <Image loading="lazy" src={e.img} width={100} height={100} alt="icono de eleccion" className="rounded-full" />
-                                <p className="text-lg font-bold text-center">{e.titulo}</p>
-                                <p className="text-justify px-4">{e.descripcion}</p>
-                            </div>
-                        ))
-                    }
+                    <Image className="w-full" src="/inicio/inicio_main_2.jpg" width={400} height={400} alt="" />
                 </div>
             </div>
         </div>

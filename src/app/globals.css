@@ -40,8 +40,20 @@
 }
 
 .sombra-texto{
-  text-shadow: 1px 2px 3px #000;
+  text-shadow: 5px 4px 2px #002f7a85;
 }
+.sombra-texto2{
+  text-shadow: 3px 3px 1px #ffffff87;
+}
+.sombra-texto3{
+  text-shadow: 1.6px 1.5px 1px #002f7a85;
+}
+.sombra-texto4{
+  text-shadow: 1.4px 1.4px 2px #002f7a85;
+}
+
+
+
 
 /* Define la animación */
 @keyframes slideInFromLeft {
@@ -243,3 +255,4 @@
   10% { top: 210px; }
   100%{top: 240px}
 }
+
