@@ -8,7 +8,7 @@ export default function Footer(){
                 <Image src="/logo-bio-azul.jpg" width={400} height={300} alt="logo footer" />
             </div>
             <div className="flex flex-wrap mt-10 lg:mt-0 justify-between lg:w-[60%] mr-10">
-                <div className="space-y-2 flex flex-col font-semibold">
+                <div className="space-y-2 flex flex-col font-semibold text-shadow">
                     <h5 className="font-bold mb-2">MENÚ DE NAVEGACIÓN</h5>
                     <Link href="/">Inicio</Link>
                     <Link href="/pages/aplicaciones">Aplicaciones</Link>
@@ -17,7 +17,7 @@ export default function Footer(){
                     <Link href="/pages/catalogo">Catálogo</Link>
                     <Link href="/pages/contacto">Contacto</Link>
                 </div>
-                <div className="flex flex-col space-y-2 mt-10 lg:mt-0 ">
+                <div className="flex flex-col space-y-2 mt-10 lg:mt-0 text-shadow">
                     <h5 className="font-bold mb-2">CATÁLOGO DE EQUIPOS</h5>
                     <p className="font-semibold">Solicitud</p>
                     <Link className="font-semibold" target="_blank" href="https://bio-fan.aflip.in/Catalogo-General.html">Catálogo General</Link>
@@ -26,20 +26,20 @@ export default function Footer(){
                 </div>
                 <div className="space-y-2">
                     <h5 className="font-bold lg:mb-2 mt-10 lg:mt-0">CONTÁCTENOS</h5>
-                    <div className="flex font-semibold">
+                    <div className="flex font-semibold text-shadow">
                         <Image className="w-6 h-6 ml-1" src="/log1.jpg" width={24} height={20} alt=""/>
                         <p className="ml-2 mr-9">Mobil</p>
                         <p>: +34 619 28 33 74</p>
                     </div>
                     <div className="flex font-semibold">
                         <Image className="w-7 h-6" src="/log2.jpg" width={24} height={20} alt=""/>
-                        <p className="ml-2 mr-1">Contacto</p>
-                        <p>: info@bio-fan.com</p>
+                        <p className="ml-2 mr-1 text-shadow">Contacto</p>
+                        <p className="text-shadow">: info@bio-fan.com</p>
                     </div>
                     <div className="flex font-semibold">
                         <Image src="/log3.jpg" className="w-7 h-6" width={24} height={20} alt=""/>
-                        <p className="ml-2 mr-1">Dirección</p>
-                        <p>: Vip Centro de Negocios. {<br></br>} C/Josep M. Gironella, 1-3. 17005 Girona.</p>
+                        <p className="ml-2 mr-1 text-shadow">Dirección</p>
+                        <p className="text-shadow">: Vip Centro de Negocios. {<br></br>} <span className="ml-3 ">C/Josep M. Gironella, 1-3. 17005 Girona.</span></p>
 
                     </div>
                 </div>

@@ -30,7 +30,7 @@ export default function RootLayout({ children }) {
         </div>
         <Footer/>
         <div className="w-full h-8 bg-[#1d4674]">
-          <p className="text-white font-bold text-sm text-center pt-1">Copyright 2024  ©  BIOSOLTEC, S.L.</p>
+          <p className="text-white font-bold text-md text-center pt-1">Copyright 2024  ©  BIOFAN, S.L.</p>
         </div>
       </body>
     </html>

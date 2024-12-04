@@ -26,14 +26,14 @@ export default function MainDos(){
     ]
 
     return(
-        <div className="w-full pt-14 lg:h-[100%] mt-24 pb-28 bg-[#f0a84d] px-10 xl:px-32 2xl:px-60">
+        <div className="w-full pt-14 lg:h-[100%] mt-24 pb-40 bg-[#f0a84d] px-10 xl:px-32 2xl:px-16 ">
             <div className="mb-10 ">
-                <h3 className="text-3xl lg:text-5xl font-bold text-white text-center sombra-texto2">Por qué elegir BIOFAN</h3>
+                <h3 className="text-3xl mt-4 lg:text-7xl font-bold roboto text-white text-center sombra-texto2">Por qué elegir BIOFAN</h3>
                 
             </div>
             <div className="w-full">
                 <div className="lg:flex lg:flex-wrap justify-center">
-                    <Image className="w-full" src="/inicio/inicio_main_2.jpg" width={400} height={400} alt="" />
+                    <Image className="w-full imgMain" src="/inicio/inicio_main_2.jpeg" width={1400} height={1400} alt="" />
                 </div>
             </div>
         </div>

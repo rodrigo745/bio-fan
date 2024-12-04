@@ -19,7 +19,7 @@ export default function Nav(){
 
     return(
         <div className="fixed w-full z-50">
-            <div className="w-full flex justify-between  px-4 md:px-10 py-1 bg-[#1d4674] text-white font-medium text-sm"> {/* Contactos - parte superior */}
+            <div className="w-full flex justify-between  px-4 md:px-20 py-1 bg-[#1d4674] text-white font-medium text-sm"> {/* Contactos - parte superior */}
                 <div className="flex space-x-3 md:space-x-5 "> {/* Izquierda */}
                     <div className="flex">
                         <HiOutlineMail className="m-1 scale-125 mr-2"/>
@@ -28,7 +28,7 @@ export default function Nav(){
                     <p>|</p>
                     <div className="flex">
                         <IoCall className="m-1 scale-125 mr-2"/>
-                        <p>633175711</p>
+                        <p>619 28 33 74</p>
                     </div>
                     <p>|</p>
                 </div>
@@ -37,7 +37,7 @@ export default function Nav(){
 
             {/* ------------------------------------------------- */}
 
-            <div className="bg-white border-b-2 shadow-md flex px-5 justify-between py-1"> {/* Nav Desktop */}
+            <div className="bg-white border-b-2 shadow-md flex px-16 justify-between py-1"> {/* Nav Desktop */}
                 <Link href="/">
                     <div className="h-full w-fit flex justify-center content-center items-center">
                         <Image className="w-[180px] lg:w-[280px] pl-4" src="/logo-bio.png" width={300} height={200} alt="Logo de bio-fan" />
@@ -55,23 +55,80 @@ export default function Nav(){
                             <p className="rotate-90 ml-1 ">{`>`}</p>
                             </Link>
                             <div className="dropdown-content cursor-pointer">
-                                <Link href="/pages/productos" className="enlace">Ventilador Industrial</Link>
-                                <Link href="/pages/productos" className="enlace">Ventilador Comercial</Link>
-                                <Link href="/pages/productos" className="enlace">Ventilador Movil</Link>
-                                <Link href="/pages/productos" className="enlace">Ventilador Movil 45º</Link>
-                                <Link href="/pages/productos" className="enlace">Ventilador de Pared</Link>
-                                <Link href="/pages/productos" className="enlace">Ventilador Vertical</Link>
-                                <Link href="/pages/productos" className="enlace">Industrial Comercial</Link>
-                                <Link href="/pages/productos" className="enlace">Recubrimiento Solar</Link>
+                                <div href="/pages/productos" className="enlace dropdown2">
+                                    <p>Serie HDS</p>
+                                    <div className="dropdown-content2">
+                                        <Link href="/pages/productos" className="flex p-2 space-x-3 border hover:bg-[#ddd]">
+                                        <Image src="/nav/1.png" width={50} height={50} className="w-fit" alt=""/>
+                                        <p>Ventilador de techo Industrial</p></Link>
+                                        <Link href="/pages/productos" className="flex p-2 space-x-3 border hover:bg-[#ddd]">
+                                        <Image src="/nav/2.png" width={50} height={50} className="w-fit" alt=""/>
+                                        <p>Ventilador de techo Comercial</p>
+                                        </Link>
+                                    </div>
+                                </div>
+                                <div href="/pages/productos" className="enlace dropdown2">
+                                    <p>Serie HDY</p>
+                                    <div className="dropdown-content2">
+                                        <Link href="/pages/productos" className="flex p-[14px] py-2 space-x-3 border hover:bg-[#ddd]">
+                                        <Image src="/nav/3.png" width={40} height={50} className="w-fit" alt=""/>
+                                        <p className="pt-3">Ventilador Movil de 45°</p>
+                                        </Link>
+                                        <Link href="/pages/productos" className="flex p-[14px] py-2 space-x-3 border hover:bg-[#ddd]">
+                                        <Image src="/nav/4.png" width={40} height={20} className="w-fit h-12" alt=""/>
+                                        <p className="">Ventilador Movil de 45° Industrial</p>
+                                        </Link>
+                                    </div>                               
+                                </div>
+                                <div href="/pages/productos" className="enlace dropdown2">
+                                    <p>Serie HDB</p>
+                                    <div className="dropdown-content2">
+                                        <Link href="/pages/productos" className="flex p-[14px] py-2 space-x-3 border hover:bg-[#ddd]">
+                                        <Image src="/nav/5.png" width={40} height={50} className="w-fit" alt=""/>
+                                        <p className="pt-2">Ventilador de Pared</p>
+                                        </Link>
+                                    </div> 
+                                </div>
+                                <div href="/pages/productos" className="enlace dropdown2">
+                                    <p>Serie HDS/L</p>
+                                    <div className="dropdown-content2">
+                                        <Link href="/pages/productos" className="flex p-[14px] py-2 space-x-3 border hover:bg-[#ddd]">
+                                        <Image src="/nav/6.png" width={40} height={50} className="w-fit" alt=""/>
+                                        <p className="">Ventilador Vertical Industrial y Comercial</p>
+                                        </Link>
+                                    </div> 
+                                </div>
+                                <div href="/pages/productos" className="enlace dropdown2">
+                                    <p>Evaporativos</p>
+                                    <div className="dropdown-content2">
+                                        <Link href="/pages/productos" className="flex p-[14px] py-2 space-x-3 border hover:bg-[#ddd]">
+                                        <Image src="/nav/7.png" width={40} height={50} className="w-fit" alt=""/>
+                                        <p className="">Enfriador Evaporativo Industrial - 335L</p>
+                                        </Link>
+                                        <Link href="/pages/productos" className="flex p-[14px] py-2 space-x-3 border hover:bg-[#ddd]">
+                                        <Image src="/nav/8.png" width={40} height={50} className="w-fit" alt=""/>
+                                        <p className="">Enfriador Evaporativo Industrial Cool Military</p>
+                                        </Link>
+                                        <Link href="/pages/productos" className="flex p-[14px] py-2 space-x-3 border hover:bg-[#ddd]">
+                                        <Image src="/nav/9.png" width={40} height={50} className="w-fit" alt=""/>
+                                        <p className="">Enfriador Evaporativo Industrial - OFS PRO</p>
+                                        </Link>
+                                        <Link href="/pages/productos" className="flex p-[14px] py-2 space-x-3 border hover:bg-[#ddd]">
+                                        <Image src="/nav/10.png" width={40} height={50} className="w-fit" alt=""/>
+                                        <p className="">Enfriador Evaporativo Comercial - Senapati</p>
+                                        </Link>
+                                    </div>
+                                </div>
+                                <Link href="/pages/productos" className="enlace">Recubrimiento solar</Link>
                             </div>
                         </div>
                         <div className="dropdown">
-                            <Link href="/pages/catalogo" className={`flex ${estiloHoverSecciones}`}> Catalogo
+                            <Link href="/pages/catalogo" className={`flex ${estiloHoverSecciones}`}> Catálogos
                             <p className="rotate-90 ml-1 ">{`>`}</p>
                             </Link>
                             <div className="dropdown-content">
-                                <Link target="_blank" className="enlace" href="https://bio-fan.aflip.in/Catalogo-General.html">Catálogo General</Link>
                                 <Link target="_blank" className="enlace" href="https://bio-fan.aflip.in/03-CATALOGO-RESUMEN.html">Catálogo Resumen</Link>
+                                <Link target="_blank" className="enlace" href="https://bio-fan.aflip.in/Catalogo-General.html">Catálogo General</Link>
                                 <Link target="_blank" className="enlace" href="https://bio-fan.aflip.in/02-CATALOGO-EVAPORATIVOS.html">Catálogo Evaporativos</Link>
                             </div>
                         </div>
