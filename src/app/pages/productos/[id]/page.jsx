@@ -52,7 +52,7 @@ export default function Producto({params}){
                         e.titulo === "EVAPORATIVO INDUSTRIAL <br/> Mod-335L" || e.titulo === "EVAPORATIVO INDUSTRIAL <br/> Mod-150L COOL MILITARY" ? "ENFRIADOR EVAPORATIVO INDUSTRIAL" : enlace
                         } {e.serie}</p>
                     <h3 className="text-4xl font-semibold text-[#1d4674] mt-5 mb-4 roboto border-b-4 border-neutral-400 pb-3 w-fit" dangerouslySetInnerHTML={{__html: e.titulo}}></h3>
-                    <button className={`py-2 mb-8 px-12 rounded-md roboto lg:text-xl font-semibold text-white mt-3
+                    <button className={`py-2 mb-8 px-12 rounded-md roboto lg:text-xl font-semibold  mt-3
                         ${e.titulo === "Ventilador de Techo Industrial" && "bg-[#fe7604]"}
                         ${e.titulo === "Ventilador de Techo Comercial" && "bg-[#f0c50b]"}
                         ${e.titulo === "Ventilador Móvil Industrial" && "bg-[#ff3131]"} 
@@ -60,7 +60,7 @@ export default function Producto({params}){
                         ${e.titulo === "Ventilador de Pared" && "bg-[#1d4674] "}
                         ${e.titulo === "Ventilador Comercial Vertical" && "bg-[#fe7604]"}
                         ${e.titulo === "EVAPORATIVO INDUSTRIAL <br/> Mod-335L" && "bg-[#fe7604]"}
-                        ${e.titulo === "Ventilador Industrial Vertical" && "bg-[#e6e6d4] text-[#0b0f14]"}
+                        ${e.titulo === "Ventilador Industrial Vertical" && "bg-[#e6e6d4] text-[#090d12]"}
                         ${e.titulo === "EVAPORATIVO INDUSTRIAL <br/> Mod-150L COOL MILITARY" && "bg-[#fe7604]"}`} 
                         >Enviar consulta</button>
                     <p className="text-xl helvetica text-justify" style={{lineHeight: 1.8}} dangerouslySetInnerHTML={{__html: e.descripcion1}} />
