@@ -352,7 +352,7 @@ export default function Producto({params}){
                 <div className={`absolute z-0 mt-[8%] w-[80%] h-[460px]  rounded-md
                     ${e.titulo === "Ventilador de Techo Comercial" ? "bg-[#f0c50b] h-[360px] mt-[-4%]" : "bg-[#fe7604]"}   
                     ${e.titulo === "Ventilador Móvil Industrial" && "bg-[#ff3131] w-[99%] ml-[-102px] mt-[-3%] h-[350px]"} 
-                    ${e.titulo === "Ventilador Móvil de 45° Industrial" && "bg-[#fecb17] relative w-[57vw] ml-[-40%] mt-[-5.4%] h-[340px]"}
+                    ${e.titulo === "Ventilador Móvil de 45° Industrial" && "bg-[#fecb17] relative w-[57vw] ml-[-40%] mt-[-9vh] h-[340px]"}
                     ${e.titulo === "Ventilador de Pared" && "bg-[#1c4573] w-[99vw] mt-[-5%] h-[345px]"}
                     ${e.titulo === "Ventilador Industrial Vertical" && "bg-[#e0e0cd] w-[51vw] mt-[-1.3%] ml-[-22%] h-[550px]"}
                     ${e.titulo === "Ventilador Comercial Vertical" && "bg-[#fe7604] w-[59vw] mt-[-1.3%] ml-[-9%] h-[480px]"}
@@ -404,7 +404,7 @@ export default function Producto({params}){
                     e.titulo === "Ventilador Industrial Vertical" &&
                     <>
                     <Image src={e.img2[3]} width={450} height={450} alt="" className={`z-10 hover:scale-105 transition hover:z-30 hover:cursor-pointer hover:border-4                     
-                     ${e.titulo === "Ventilador Industrial Vertical" && " hover:border-0   w-[300px]"}
+                     ${e.titulo === "Ventilador Industrial Vertical" && " hover:border-0   w-[300px] hover:border-none"}
                      ${e.titulo === "Ventilador Comercial Vertical" && " hover:border-0   w-[400px] rounded-2xl"}
 
                     `}/>
