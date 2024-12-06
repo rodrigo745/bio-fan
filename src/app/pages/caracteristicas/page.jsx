@@ -59,14 +59,14 @@ export default function Caracteristicas(){
                     <h2 className="text-2xl lg:text-7xl sombra-texto3 roboto font-bold text-white text-center">CARACTERISTICAS</h2>
                     <div className="flex flex-col lg:flex lg:flex-row justify-around w-full mt-20 lg:space-x-0 items-center lg:space-y-0 px-20">
 
-                    <Image src="/caracteristicas/11.jpg" width={700} height={1000} alt="" className="px-8 hover:scale-105 hover:rotate-2 transition cursor-pointer"/>
+                    <Image src="/caracteristicas/11.jpg" width={440} height={1000} alt="" className="px-8 hover:scale-105 hover:rotate-2 transition cursor-pointer"/>
                     <div className="grid grid-cols-2 gap-y-14">
                         <Image src="/caracteristicas/12.jpg" width={700} height={1000} alt="" className="px-8 hover:scale-105 hover:rotate-2 transition cursor-pointer"/>
                         <Image src="/caracteristicas/13.jpg" width={700} height={1000} alt="" className="px-8 hover:scale-105 hover:rotate-2 transition cursor-pointer"/>
                         <Image src="/caracteristicas/14.jpg" width={700} height={1000} alt="" className="px-8 hover:scale-105 hover:rotate-2 transition cursor-pointer"/>
                         <Image src="/caracteristicas/15.jpg" width={700} height={1000} alt="" className="px-8 hover:scale-105 hover:rotate-2 transition cursor-pointer"/>
                     </div>
-                    <Image src="/caracteristicas/16.jpg" width={700} height={1000} alt="" className="px-8 hover:scale-105 hover:rotate-2 transition cursor-pointer"/>
+                    <Image src="/caracteristicas/16.jpg" width={440} height={1000} alt="" className="px-8 hover:scale-105 hover:rotate-2 transition cursor-pointer"/>
 
                     </div>
                 </div>
