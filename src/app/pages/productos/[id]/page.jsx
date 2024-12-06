@@ -354,7 +354,7 @@ export default function Producto({params}){
                     ${e.titulo === "Ventilador Móvil Industrial" && "bg-[#ff3131] w-[99%] ml-[-102px] mt-[-3%] h-[350px]"} 
                     ${e.titulo === "Ventilador Móvil de 45° Industrial" && "bg-[#fecb17] relative w-[57vw] ml-[-40%] mt-[-9vh] h-[340px]"}
                     ${e.titulo === "Ventilador de Pared" && "bg-[#1c4573] w-[99vw] mt-[-5%] h-[345px]"}
-                    ${e.titulo === "Ventilador Industrial Vertical" && "bg-[#e0e0cd] w-[51vw] mt-[-1.3%] ml-[-22%] h-[550px]"}
+                    ${e.titulo === "Ventilador Industrial Vertical" && "bg-[#e0e0cd] w-[51vw] mt-[-3vh] ml-[-22%] h-[550px]"}
                     ${e.titulo === "Ventilador Comercial Vertical" && "bg-[#fe7604] w-[59vw] mt-[-1.3%] ml-[-9%] h-[480px]"}
 
                     `} ></div>
