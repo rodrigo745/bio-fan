@@ -345,14 +345,14 @@ export default function Producto({params}){
                     ${e.titulo === "EVAPORATIVO INDUSTRIAL <br/> Mod-150L COOL MILITARY" && "hidden"}
                 
                 `}>
-                <div className={`absolute z-0 w-[80%] h-[460px]  rounded-md
-                    ${e.titulo === "Ventilador de Techo Industrial" && "mt-[8%] bg-[#fe7604]"}   
-                    ${e.titulo === "Ventilador de Techo Comercial" && "bg-[#f0c50b] h-[360px] mt-[-4%]"}   
+                <div className={`absolute z-0  h-[460px]  rounded-md
+                    ${e.titulo === "Ventilador de Techo Industrial" && "mt-[8%] bg-[#fe7604] w-[80%]"}   
+                    ${e.titulo === "Ventilador de Techo Comercial" && "bg-[#f0c50b] h-[360px] w-[80%] mt-[-4%]"}   
                     ${e.titulo === "Ventilador Móvil Industrial" && "bg-[#ff3131] w-[99%] ml-[-102px] mt-[-3%] h-[350px]"} 
                     ${e.titulo === "Ventilador Móvil de 45° Industrial" && "bg-[#fecb17] relative w-[57vw] ml-[-40%] mt-[-9vh] h-[340px]"}
                     ${e.titulo === "Ventilador de Pared" && "bg-[#1e4675] w-[99vw] mt-[-5%] h-[345px]"}
                     ${e.titulo === "Ventilador Industrial Vertical" && "bg-[#ddddcb] w-[51vw] mt-[-3vh] ml-[-22%] h-[550px]"}
-                    ${e.titulo === "Ventilador Comercial Vertical" && "bg-[#fe7604] w-[59vw] mt-[-1.3%] ml-[-9%] h-[480px]"}
+                    ${e.titulo === "Ventilador Comercial Vertical" && "bg-[#fe7604] w-[56vw] mt-[-1.3%] ml-[-9%] h-[480px]"}
 
                     `} ></div>
                     {
@@ -377,7 +377,6 @@ export default function Producto({params}){
                      ${e.titulo === "Ventilador Industrial Vertical" && " hover:border-0 hover:border-none w-[300px]"}
                      ${e.titulo === "Ventilador Comercial Vertical" && "hover:border-none  w-[400px] rounded-2xl"}
                      ${e.titulo === "EVAPORATIVO INDUSTRIAL <br/> Mod-335L" && "hover:border-none hover:scale-[1] w-[99vw] absolute  pt-0 rounded-2xl z-40 mt-[-90px]"}
-
                     `}/>
                 <Image src={e.img2[1]} width={530} height={530} alt=""  className={`absolute z-20 mt-20 border-4 hover:cursor-pointer 
                     ${e.titulo === "Ventilador de Techo Industrial" && "bg-[#fe7604] border-[#fe7604]" } 
