@@ -346,8 +346,8 @@ export default function Producto({params}){
                 
                 `}>
                 <div className={`absolute z-0 w-[80%] h-[460px]  rounded-md
-                    ${e.titulo === "Ventilador de Techo Industrial" && "mt-[8%]"}   
-                    ${e.titulo === "Ventilador de Techo Comercial" ? "bg-[#f0c50b] h-[360px] mt-[-4%]" : "bg-[#fe7604]"}   
+                    ${e.titulo === "Ventilador de Techo Industrial" && "mt-[8%] bg-[#fe7604]"}   
+                    ${e.titulo === "Ventilador de Techo Comercial" && "bg-[#f0c50b] h-[360px] mt-[-4%]"}   
                     ${e.titulo === "Ventilador Móvil Industrial" && "bg-[#ff3131] w-[99%] ml-[-102px] mt-[-3%] h-[350px]"} 
                     ${e.titulo === "Ventilador Móvil de 45° Industrial" && "bg-[#fecb17] relative w-[57vw] ml-[-40%] mt-[-9vh] h-[340px]"}
                     ${e.titulo === "Ventilador de Pared" && "bg-[#1e4675] w-[99vw] mt-[-5%] h-[345px]"}
