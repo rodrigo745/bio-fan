@@ -351,7 +351,7 @@ export default function Producto({params}){
                     ${e.titulo === "Ventilador Móvil Industrial" && "bg-[#ff3131] w-[99%] ml-[-102px] mt-[-3%] h-[350px]"} 
                     ${e.titulo === "Ventilador Móvil de 45° Industrial" && "bg-[#fecb17] relative w-[57vw] ml-[-40%] mt-[-9vh] h-[340px]"}
                     ${e.titulo === "Ventilador de Pared" && "bg-[#1e4675] w-[99vw] mt-[-5%] h-[345px]"}
-                    ${e.titulo === "Ventilador Industrial Vertical" && "bg-[#e0e0cd] w-[51vw] mt-[-3vh] ml-[-22%] h-[550px]"}
+                    ${e.titulo === "Ventilador Industrial Vertical" && "bg-[#ddddcb] w-[51vw] mt-[-3vh] ml-[-22%] h-[550px]"}
                     ${e.titulo === "Ventilador Comercial Vertical" && "bg-[#fe7604] w-[59vw] mt-[-1.3%] ml-[-9%] h-[480px]"}
 
                     `} ></div>
@@ -361,7 +361,7 @@ export default function Producto({params}){
                     }
                     {
                         e.titulo === "Ventilador Industrial Vertical" && 
-                        <div className={`z-0 absolute rounded-md bg-[#e0e0cd] w-[54vw] mt-[14%] ml-[22%] h-[550px] `} ></div>
+                        <div className={`z-0 absolute rounded-md bg-[#ddddcc] w-[54vw] mt-[14%] ml-[22%] h-[550px] `} ></div>
                     }
                     {
                         e.titulo === "Ventilador Comercial Vertical" && 
