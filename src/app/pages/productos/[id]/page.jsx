@@ -368,7 +368,7 @@ export default function Producto({params}){
                         <div className={`z-0 absolute rounded-md bg-[#fe7604] w-[53vw] mt-[14%] ml-[35%] h-[430px] `} ></div>
                     }
                 <Image src={e.img2[0]} width={ e.titulo === "EVAPORATIVO INDUSTRIAL <br/> Mod-335L" ? 1500 : 450} height={450} alt="" className={`z-10 hover:scale-105 transition hover:z-30 hover:cursor-pointer hover:border-4 
-                    ${e.titulo === "Ventilador de Techo Comercial" ? "bg-[#f0c50b] hover:border-[#f0c50b]" : "bg-[#fe7604] hover:border-[#fe7604]"} 
+                    ${e.titulo === "Ventilador de Techo Comercial" && "bg-[#f0c50b] hover:border-[#f0c50b]"} 
                     ${e.titulo === "Ventilador Móvil Industrial" && " hover:border-[#ff3131] bg-[#ff3131] ml-20"}
                     ${e.titulo === "Ventilador Móvil de 45° Industrial" && "w-[480px] h-[330px] hover:scale-150 hover:border-none scale-150 relative top-32 right-[40%]"}
                     ${e.titulo === "Ventilador de Pared" && "mt-20 mr-40 hover:border-[#1d4675]"}
