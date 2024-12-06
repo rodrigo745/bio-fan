@@ -368,7 +368,7 @@ export default function Producto({params}){
                         <div className={`z-0 absolute rounded-md bg-[#fe7604] w-[53vw] mt-[14%] ml-[35%] h-[430px] `} ></div>
                     }
                 <Image src={e.img2[0]} width={ e.titulo === "EVAPORATIVO INDUSTRIAL <br/> Mod-335L" ? 1500 : 450} height={450} alt="" className={`z-10 hover:scale-105 transition hover:z-30 hover:cursor-pointer hover:border-4 
-                    ${e.titulo === "Ventilador de Techo Industrial" && "bg-[#ff3131] hover:border-[#ff3131]" } 
+                    ${e.titulo === "Ventilador de Techo Industrial" && "bg-[#fe7604] hover:border-[#fe7604]" } 
 
                     ${e.titulo === "Ventilador de Techo Comercial" && "bg-[#f0c50b] hover:border-[#f0c50b]"} 
                     ${e.titulo === "Ventilador Móvil Industrial" && " hover:border-[#ff3131] bg-[#ff3131] ml-20"}
@@ -380,7 +380,7 @@ export default function Producto({params}){
 
                     `}/>
                 <Image src={e.img2[1]} width={530} height={530} alt=""  className={`absolute z-20 mt-20 border-4 hover:cursor-pointer 
-                    ${e.titulo === "Ventilador de Techo Industrial" && "bg-[#ff3131] border-[#ff3131]" } 
+                    ${e.titulo === "Ventilador de Techo Industrial" && "bg-[#fe7604] border-[#fe7604]" } 
                     ${e.titulo === "Ventilador de Techo Comercial" && "border-[#f0c50b] "}
                     ${e.titulo === "Ventilador Móvil Industrial" && "border-[#ff3131] bg-[#ff3131] ml-[23.4%] mt-[7%] w-[450px] h-[450px]"}
                     ${e.titulo === "Ventilador Móvil de 45° Industrial" && "w-[500px] scale-125 ml-[30%] mt-[-20px] border-none"}
@@ -393,7 +393,7 @@ export default function Producto({params}){
                     e.titulo != "Ventilador Móvil de 45° Industrial" &&
                 <Image src={e.img2[2]} width={450} height={450} alt="" className={`z-10 hover:scale-105 transition hover:z-30 hover:cursor-pointer relative bottom-10 hover:border-4 
                     
-                    ${e.titulo === "Ventilador de Techo Industrial" && "bg-[#ff3131] hover:border-[#ff3131]" } 
+                    ${e.titulo === "Ventilador de Techo Industrial" && "bg-[#fe7604] hover:border-[#fe7604]" } 
 
                     ${e.titulo === "Ventilador de Techo Comercial" && "bg-[#f0c50b] hover:border-[#f0c50b]" } 
                     ${e.titulo === "Ventilador Móvil Industrial" && "bottom-[0px] hover:border-[#ff3131] bg-[#ff3131] mr-[25%]"}
