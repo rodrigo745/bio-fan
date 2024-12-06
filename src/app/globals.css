@@ -349,13 +349,7 @@
   margin-left: 20px;
 }
 
-.brxe-rgcaln > div .imgClass {
-  max-width: 100%;
-  display: block;
-  transition: transform 0.3s cubic-bezier(.25, .46, .45, 1);
 
-
-}
 
 .brxe-rgcaln:before {
   content: '';
@@ -365,7 +359,11 @@
   width: 100%;
   height: 100%;
   
-  transform: translateX(-0px) rotateY(-30deg) rotateX(25deg) scale(1.03);
+  transform: perspective(700px) 
+  rotateX(3deg) 
+  rotateY(-30deg) 
+  rotateZ(2deg) 
+  translateZ(48px);
   transition: transform 0.3s cubic-bezier(.25, .46, .45, 1);
   backface-visibility: hidden;
   border: 9px solid;
@@ -393,4 +391,14 @@
 
 .brxe-rgcaln:hover:before {
   transform: translateX(0) rotateY(0) rotateX(0) scale(1);
+}
+
+
+
+.rodarImg{
+  transform: perspective(360px) 
+            rotateX(3deg) 
+            rotateY(26deg) 
+            rotateZ(2deg) 
+            translateZ(2px);
 }

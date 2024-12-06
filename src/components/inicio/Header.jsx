@@ -120,7 +120,7 @@ export default function Header() {
                                 height={1200} 
                                 alt="imagen slider" 
                                 className={` absolute w-full top-0 transition  
-                                    ${flash} slide-in-left43`}
+                                    ${flash} slide-in-left`}
                             />
                         </div>
                         <div className={`animacion-texto2 ${e.titulo !== "EVAPORATIVOS" ? "hoverBlack" : "hoverEvapo"} hidden lg:block mr-5 mt-5 helvetica
@@ -129,6 +129,7 @@ export default function Header() {
                         ${e.titulo == "VENTILADOR PARED" && "mr-[-170px] "}
                         ${e.titulo == "VENTILADOR VERTICAL" && "mt-[-80px] "}
                         ${e.titulo === "VENTILADOR DE TECHO INDUSTRIAL" && "mt-[-20px] mr-[-100px]"}
+                        
                         `}>
                             <div className={`${e.titulo == "VENTILADOR MOVIL" && "mt-[-70px]"}
                             ${e.titulo == "VENTILADOR MOVIL 45°" && "mt-[-50px]"}
@@ -172,6 +173,7 @@ export default function Header() {
                         <div className={`w-full h-full animacion-texto
                             relative
                             ${e.titulo == "VENTILADOR INDUSTRIAL" && "top-[16%]"}
+                            ${e.titulo == "VENTILADOR DE TECHO INDUSTRIAL" && "mt-[-5%] "}
                             ${e.titulo == "VENTILADOR VERTICAL" && "top-[1%]"}
                             ${e.titulo == "EVAPORATIVOS" && "top-[3%]"}
                             ${e.titulo == "VENTILADOR DE TECHO INDUSTRIAL" && "top-[18%]"}

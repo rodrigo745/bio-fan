@@ -1,0 +1,28 @@
+import Image from "next/image"
+
+export default function Noti2(){
+    return(
+        <div className="helvetica">
+            <h3 className="text-neutral-400 text-2xl font-bold ml-3">Inicio / Noticias / <span className="font-bold text-black">¿Qué entornos son adecuados para ventiladores industriales grandes?</span></h3>
+            <div className="flex mt-0 justify-center items-center ">
+                <Image src="/noticias/5.jpg" width={650} height={400} alt="" className="" />
+                <Image src="/noticias/6.jpg" width={700} height={700} alt="" className="relative ml-[-60px] mt-[80px] w-[750px] h-[600px] " />
+            </div>
+            <h2 style={{textShadow: "0px 0px 2px #000"}} className="text-3xl font-semibold  text-center m-auto mt-10 mb-10 text-[#1d4674] helvetica">¿Qué entornos son adecuados para ventiladores industriales grandes?</h2>
+
+            <div className="w-[77%] text-justify text-2xl m-auto" style={{lineHeight: 1.7}}>
+                <p>Los ventiladores industriales de gran tamaño tienen excelentes efectos de enfriamiento y extracción, por lo que se pueden utilizar en muchos campos e industrias, incluidos la logística y el almacenamiento, la fabricación de automóviles, el procesamiento y la fabricación de maquinaria, la refrigeración pública y la extracción de diversos entornos regionales, como las regiones. En la industria de refrigeración y extracción en el país y en el extranjero, las industrias en las que se pueden utilizar los ventiladores de techo industriales se dividen específicamente en las siguientes categorías específicas:</p>
+                <ul className="list-disc ml-8 mt-7">
+                    <li className=""><strong>El equipo de refrigeración del taller no es el ideal:</strong> algunos propietarios de talleres conocen un poco la ventilación y la refrigeración e instalan una cierta cantidad de equipos de refrigeración tradicionales o de otro tipo, pero el efecto de refrigeración no es ideal y se requiere una cierta ventilación auxiliar de refrigeración. En este caso, se pueden utilizar grandes ventiladores de techo industriales para ayudar a la refrigeración. Combinado con la alta cobertura de los grandes ventiladores industriales y el efecto del fuerte viento, el efecto de enfriamiento y ventilación del taller puede ser más satisfactorio.</li>
+                    <li className="mt-7"><strong>Taller con demasiado espacio:</strong>algunos entornos cerrados y talleres grandes tienen mucho espacio. En este caso, el aire acondicionado puede no ser adecuado para instalar el aire acondicionado, porque la cobertura puede no estar bien cubierta, lo que genera un efecto insatisfactorio, y es por esto que los ventiladores industriales grandes se pueden usar en este entorno y se pueden usar de acuerdo con sus características. Obtenga una buena respuesta de enfriamiento y ventilación en este entorno.</li>
+                    <li className="mt-7"><strong>A menudo en el taller abierto:</strong> muchos talleres y talleres están siempre abiertos debido a la circulación frecuente de mercancías y la entrada y salida de materiales. Si el aire acondicionado se utiliza solo para enfriar y ventilar, es difícil lograr el efecto deseado. Por lo tanto, en este entorno, a menudo se utilizan ventiladores industriales grandes. Se puede obtener un efecto muy bueno, y la instalación razonable de varios ventiladores industriales grandes puede hacer que el ambiente de todo el taller sea muy cómodo y adecuado.</li>
+                </ul>
+                <p className="m-7">Además, la combinación de refrigeración y ventilación de “complemento de ventiladores” de grandes ventiladores industriales y aires acondicionados ecológicos se puede aplicar a la mayoría de los espacios altos y talleres de fábrica, y el efecto de refrigeración es más significativo y mejor. La planta de producción está equipada con grandes ventiladores industriales y aires acondicionados ecológicos. <br/>
+A través de un diseño y cálculo profesional, combinados con las necesidades reales de los clientes, se complementan científicamente dos productos con ventajas obvias. Ambos productos se complementan entre sí y en sus respectivas funciones, ambos se complementan en gran medida. Al mismo tiempo, compense la falta de eficiencia del otro y el plan complementario del ventilador refleja un buen efecto integral y valor de aplicación.<br/>
+Sin embargo, en términos de volumen, los ventiladores de techo industriales grandes son mucho más grandes que los ventiladores domésticos grandes. Obviamente, los ventiladores de techo industriales solo son adecuados para lugares grandes, como canchas de baloncesto, gimnasios, pisos de fábrica, etc. En términos del concepto de diseño, los ventiladores de techo domésticos imitan a los ventiladores tradicionales y el efecto de enfriamiento es promedio. Sin embargo, el ventilador industrial grande adopta el método de diseño de la hélice, que empuja una gran cantidad de aire al suelo, formando una capa de aire para moverse horizontalmente, de modo que la circulación del aire de todo el espacio puede lograr un efecto. de enfriamiento, y solo necesita girar lentamente en el aire para lograr una brisa natural silenciosa y continua. </p>
+            <p className="mt-9 ml-7 text-center w-[100%] font-bold mb-20">En resumen, creemos que todo el mundo considera que no existe una ventaja o desventaja absoluta entre ambos productos, pero el ámbito de aplicación es diferente: una familia, una empresa. Por lo tanto, cuando compre cualquiera de los mismos productos en el futuro, debe considerar su ámbito de aplicación.</p>
+            </div>
+
+        </div>
+    )
+}

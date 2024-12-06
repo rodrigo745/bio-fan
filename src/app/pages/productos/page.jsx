@@ -11,10 +11,12 @@ export default function Productos(){
     ]
     const informacion2 = [
         {titulo: "SERIE HDB", descripcion: "VENTILADOR DE PARED", img: "/productos/5.png"},
-        {titulo: "SERIE HDS/L", descripcion: "VENTILADOR VERTICAL",  img: "/productos/6.jpg"},
-        {titulo: "EVAPORATIVOS", descripcion: "INDUSTRIAL-COMERCIAL",  img: "/productos/7.png"},
-        {titulo: "RECUBRIMIENTO SOLAR", descripcion: "",  img: "/productos/8.png"}
+        {titulo: "SERIE HDS/L", descripcion: "VENTILADOR INDUSTRIAL VERTICAL",  img: "/productos/6.jpg"},
+        {titulo: "SERIE HDS/L", descripcion: "VENTILADOR COMERCIAL VERTICAL",  img: "/productos/7.jpg"},
+        {titulo: "EVAPORATIVOS", descripcion: "INDUSTRIAL-COMERCIAL",  img: "/productos/8.png"},
     ]
+        
+    const recu = [{titulo: "RECUBRIMIENTO SOLAR", descripcion: "",  img: "/productos/8.png"}]
 
     return(
         <div className="w-full bg-[#e6e6d4]">
@@ -43,14 +45,15 @@ export default function Productos(){
             <div className="w-full h-[260vh] lg:h-[75vh] flex flex-col lg:flex lg:flex-row  lg:space-x-12 mt-10 px-10 mb-24" id="producto-2">
                 {
                     informacion2.map((e, index)=> (
-                        <Link href={`/pages/productos/${index+5}`} key={index} className={`w-[100%] lg:w-[25%] h-full 
+                        <Link href={index+5 == 8 ? "/pages/evaporativos" : `productos/${index+5}`} key={index} className={`w-[100%] lg:w-[25%] h-full 
                         flex items-end justify-center mb-5 lg:mb-0 relative hover:scale-105 transition cursor-pointer`}>
                             <Image src={e.img} width={400} height={400} alt="producto" className="absolute w-full h-full" />
                             <div className={`py-3 px-8 w-[90%] text-center text-white         
                                 rounded-[35px] z-30 mb-10 relative bottom-[-60px]
                                 ${index == 0 && "bg-[#f0a84d]"}
-                                ${index == 1 && "bg-[#646363]"}
-                                ${index > 1 && "bg-[#1d4674]"}
+                                ${index == 1 && "bg-[#646363] w-[100%] px-1 "}
+                                ${index == 2 && "bg-[#646363] w-[100%] px-2 "}
+                                ${index > 2 && "bg-[#1d4674] px-1 py-6"}
                             `}>
                                 <h4 className={`text-2xl lg:text-5xl font-bold ${e.titulo === "EVAPORATIVOS" && "lg:text-[42px]"} ${e.titulo === "RECUBRIMIENTO SOLAR" && "lg:text-[42px]"}
                                 `}>{e.titulo}</h4>
@@ -61,22 +64,22 @@ export default function Productos(){
                 }
             </div>
             <div className="bg-white pb-52 ">
-                <h4 className="text-center w-[50%] pt-20 pb-20 mx-auto text-3xl helvetica">Diseñados para ofrecer un rendimiento óptimo en entornos exigentes, nuestros ventiladores son sinónimo de <strong>calidad y confianza.</strong></h4>
+                <h4 className="text-center w-[55%] text-[#fe7604] font-semibold pt-20 pb-20 mx-auto text-3xl helvetica">Diseñados para ofrecer un rendimiento óptimo en entornos exigentes, nuestros ventiladores son sinónimo de calidad y confianza.</h4>
 
                 <div className=" flex justify-evenly">
                     <div className=" w-[490px] h-[370px] brxe-rgcaln mt-28" id="brxe-rgcaln">
                         <div className="contenido transition ">
-                            <Image src="/productos/1.jpg" className="-rotate-12 hover:-rotate-0 transition duration-[0.6s] scale-125" width={390} height={400} alt="" />
+                            <Image src="/productos/1.jpg" className="rodarImg -rotate-12 hover:-rotate-0 transition duration-[0.6s] scale-125" width={390} height={400} alt="" />
                         </div>
                     </div>
-                    <div className=" w-[600px] h-[630px] brxe-rgcaln" id="brxe-rgcaln2">
+                    <div className=" w-[430px] h-[455px] brxe-rgcaln" id="brxe-rgcaln2">
                         <div className="contenido imgClass">
-                            <Image src="/productos/2.jpg" className="-rotate-12 hover:-rotate-0 transition duration-[0.6s]" width={900} height={500} alt="" />
+                            <Image src="/productos/2.jpg" className="rodarImg -rotate-12 hover:-rotate-0 transition duration-[0.6s]" width={460} height={500} alt="" />
                         </div>
                     </div>
-                    <div className=" w-[370px] h-[520px] brxe-rgcaln mt-14" id="brxe-rgcaln3">
+                    <div className=" w-[370px] h-[400px] brxe-rgcaln mt-14" id="brxe-rgcaln3">
                         <div className="contenido imgClass">
-                            <Image src="/productos/3.jpg" className="w-full -rotate-12 hover:-rotate-0 transition duration-[0.6s]" width={400} height={300} alt="" />
+                            <Image src="/productos/3.1.jpg" className="rodarImg w-full -rotate-12 hover:-rotate-0 transition duration-[0.6s]" width={400} height={300} alt="" />
                         </div>
                     </div>
                 </div>

@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Aplicaciones(){
 
@@ -26,17 +27,22 @@ export default function Aplicaciones(){
         {
             titulo: "Grandes ventiladores de techo para almacenes y fabricación.",
             descripcion: "Ventiladores de techo para almacenes: una solución rentable para mejorar la circulación del aire. Los ventiladores de techo para almacenes son una forma sencilla y eficaz de mejorar la circulación del aire y...",
-            img: "/inicio/noticias/1.jpg"
+            img: "/inicio/noticias/1.jpg",
+            direccion: "/pages/noticias"
         },
         {
             titulo: "¿Qué entornos son adecuados para grandes ventiladores industriales?",
             descripcion: "¿En qué zonas se pueden utilizar grandes ventiladores? Los grandes ventiladores industriales tienen excelentes efectos de enfriamiento y extracción por lo que pueden usarse en muchos...",
-            img: "/inicio/noticias/2.jpg"
+            img: "/inicio/noticias/2.jpg",
+            direccion: "/pages/noticias"
+
         },
         {
             titulo: "Una descripción general de los ventiladores de techo industriales.",
             descripcion: "Cuando desee un ventilador de techo grande para su fabrica, almacén u otro espacio, un ventilador de techo industrial es la opción lógica...",
-            img: "/inicio/noticias/3.jpg"
+            img: "/inicio/noticias/3.jpg",
+            direccion: "/pages/noticias"
+
         }
     ]
     const mostrarPestaña = (e)=>{
@@ -130,7 +136,6 @@ export default function Aplicaciones(){
                                             <button className="btnModal w-2 h-2"></button>
                                             <button className="btnModal w-3 h-3"></button>
                                             <button className="btnModal w-4 h-4"></button>
-                                            <button className="btnModal w-5 h-5"></button>
                                             <div className="modalAplicaciones relative ">
                                                 <p className="relative text-center top-[-40px] text-4xl text-white text-shadow mt-[-40px] font-bold">{
                                                 numero <= 6 ?
@@ -141,7 +146,6 @@ export default function Aplicaciones(){
                                                 </p>
                                                 <Image  src={`${numero <=6 ? titulosIndustriales[numero].img :  titulosComerciales[numero-10].img}`} width={800} height={800} alt="" className="w-full" />
                                             </div>
-                                            <button className="btnModal w-5 h-5"></button>
                                             <button className="btnModal w-4 h-4"></button>
                                             <button className="btnModal w-3 h-3"></button>
                                             <button className="btnModal w-2 h-2"></button>
@@ -154,12 +158,12 @@ export default function Aplicaciones(){
                 <div className="flex flex-col lg:flex-row justify-center space-x-4 ">
                     {
                         informacion.map((e, index)=> (
-                        <div key={index} className="flex flex-col justify-center items-center lg:w-[20%] hover:border transition hover:scale-105 hover:cursor-pointer p-4">
+                        <Link href={`/pages/noticias/${index}`} key={index} className="flex flex-col justify-center items-center lg:w-[20%] hover:border transition hover:scale-105 hover:cursor-pointer p-4">
                             <Image className="" src={e.img} width={300} height={200} alt="" />
                             <p className={`bg-[#1d4674] rounded-sm ${index == 1 && "bg-[#f0a84d]"} ${index == 2 && "bg-[#eb5347]"} text-white relative bottom-5 w-[230px] h-[90px] text-center p-2`}>{e.titulo}</p>
                             <p className="h-[190px] w-[90%] text-center">{e.descripcion}</p>
                             <button className=" border-b-2 border-[#1d4674]">Leer más</button>
-                        </div>
+                        </Link>
 
                          ) )
                     }
