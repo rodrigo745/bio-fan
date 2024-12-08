@@ -1,7 +1,8 @@
 "use client";
 import { useState } from "react";
 import Link from "next/link";
-
+import { useRouter } from "next/navigation";
+ 
 // Iconos
 import { HiOutlineMail } from "react-icons/hi";
 import { IoCall } from "react-icons/io5";
@@ -11,15 +12,23 @@ import Image from "next/image";
 
 export default function Nav(){
 
+    const router = useRouter();
+
+
     const [ menu, setMenu ] = useState(false);
 
     const mostrarMenu = ()=>{
         menu ? setMenu(false) : setMenu(true);
     }
 
+    const refrescar = ()=>{
+        router.refresh();
+        router.push("/");
+    }
+
     return(
         <div className="fixed w-full z-50">
-            <div className="w-full flex justify-between  px-4 md:px-20 py-1 bg-[#1d4674] text-white font-medium text-sm"> {/* Contactos - parte superior */}
+            <div className="w-full flex justify-between  px-4 md:pl-36 py-1 bg-[#1d4674] text-white font-medium text-sm"> {/* Contactos - parte superior */}
                 <div className="flex space-x-3 md:space-x-5 "> {/* Izquierda */}
                     <div className="flex">
                         <HiOutlineMail className="m-1 scale-125 mr-2"/>
@@ -37,17 +46,17 @@ export default function Nav(){
 
             {/* ------------------------------------------------- */}
 
-            <div className="bg-white border-b-2 shadow-md flex px-16 justify-between py-1"> {/* Nav Desktop */}
-                <Link href="/">
+            <div className="bg-white roboto border-b-2 shadow-md flex px-32 justify-between py-1"> {/* Nav Desktop */}
+                <a href="/">
                     <div className="h-full w-fit flex justify-center content-center items-center">
                         <Image className="w-[180px] lg:w-[280px] pl-4" src="/logo-bio.png" width={300} height={200} alt="Logo de bio-fan" />
                     </div>
-                </Link>
+                </a>
                 {/* Escritorio */}
-                <div className="text-sm sm:text-sm  md:text-md lg:text-lg xl:text-xl 2xl:text-2xl hidden md:block">
+                <div className="text-sm sm:text-sm  md:text-md lg:text-lg xl:text-xl 2xl:text-xl hidden md:block">
                     <div className="flex text-[#1d4674] font-semibold
-                                    sm:space-x-1 md:space-x-3 lg:space-x-2 xl:space-x-3 2xl:space-x-5 pt-2">
-                        <Link href="/#main" className={estiloHoverSecciones} >Inicio</Link>
+                                    sm:space-x-1 md:space-x-3 lg:space-x-2 xl:space-x-3 2xl:space-x-4 pt-2">
+                        <Link href="/" className={estiloHoverSecciones} >Inicio</Link>
                         <Link href="/pages/aplicaciones" className={estiloHoverSecciones}>Aplicaciones</Link>
                         <Link href="/pages/caracteristicas" className={estiloHoverSecciones}>Beneficios</Link>
                         <div className="dropdown">
@@ -136,7 +145,7 @@ export default function Nav(){
                         </div>
                         <Link href="/pages/contacto" className={estiloHoverSecciones}>Contacto</Link>
                         <div className={`flex pr-5 ${estiloHoverSecciones}`}>
-                            <Link href="/">Tienda</Link>
+                            <Link href="/pages/tienda">Tienda</Link>
                             <div className="scale-150">
                                 <TiShoppingCart className="scale-125 mt-1 ml-3"/>
                             </div>

@@ -3,6 +3,7 @@ import info from "./info.json";
 import { useState } from "react";
 import Image from "next/image";
 import TablaVariante from "@/components/productos/tablaVariante";
+import Link from "next/link";
 
 export default function Producto({params}){
 
@@ -48,7 +49,7 @@ export default function Producto({params}){
                     
                 </div>
                 <div className="lg:w-[46%]">
-                    <p className="font-semibold text-neutral-400 roboto">EQUIPOS /  {
+                    <p className="font-semibold text-neutral-400 roboto"> <Link href="/pages/productos" className="hover:text-neutral-800">EQUIPOS</Link>  /  {
                         e.titulo === "EVAPORATIVO INDUSTRIAL <br/> Mod-335L" || e.titulo === "EVAPORATIVO INDUSTRIAL <br/> Mod-150L COOL MILITARY" ? "ENFRIADOR EVAPORATIVO INDUSTRIAL" : enlace
                         } {e.serie}</p>
                     <h3 className="text-4xl font-semibold text-[#1d4674] mt-5 mb-4 roboto border-b-4 border-neutral-400 pb-3 w-fit" dangerouslySetInnerHTML={{__html: e.titulo}}></h3>
@@ -319,6 +320,7 @@ export default function Producto({params}){
                 }
                 {
                     pestaña === 2 &&
+                    <div className="flex w-full justify-center space-x-32 pr-20">
                     <div className="flex space-x-12 justify-center items-center">
                         <div className="flex flex-col space-y-5">
                             <input type="text" placeholder="Nombre *" className="px-5 border border-orange-500 rounded-lg bg-[#1d4674] py-3 text-white" />
@@ -328,8 +330,12 @@ export default function Producto({params}){
                             </div>
                         <div>
                             <p className="font-semibold text-2xl open">Solicita el Manual</p>
-                            <button className="py-3 w-full rounded-md mt-3 text-white bg-[#fe7604]">Enviar</button>
+                            <button className="py-2 w-full rounded-md mt-3 text-xl text-white bg-[#fe7604]">Enviar</button>
                         </div>
+                    </div>
+                    <div className="flex justify-center items-center border-l-2  pl-32 pr-40">
+                        <button className="px-10 p-2 bg-[#1e4675] text-white rounded-md text-xl">Descargar PDF</button>
+                    </div>
                     </div>
                 }
                     
@@ -372,7 +378,7 @@ export default function Producto({params}){
 
                     ${e.titulo === "Ventilador de Techo Comercial" && "bg-[#f0c50b] hover:border-[#f0c50b]"} 
                     ${e.titulo === "Ventilador Móvil Industrial" && " hover:border-[#ff3131] bg-[#ff3131] ml-20"}
-                    ${e.titulo === "Ventilador Móvil de 45° Industrial" && "w-[480px] h-[330px] hover:scale-[1.6] hover:border-none scale-150 relative top-32 right-[40%] transition"}
+                    ${e.titulo === "Ventilador Móvil de 45° Industrial" && "w-[480px] h-[330px] hover:scale-[1.6] border-[#f0c50b] scale-150 relative top-32 right-[40%] transition"}
                     ${e.titulo === "Ventilador de Pared" && "mt-20 mr-40 hover:border-[#1d4675]"}
                      ${e.titulo === "Ventilador Industrial Vertical" && " hover:border-0 hover:border-none w-[300px]"}
                      ${e.titulo === "Ventilador Comercial Vertical" && "hover:border-none  w-[400px] rounded-2xl"}
@@ -382,7 +388,7 @@ export default function Producto({params}){
                     ${e.titulo === "Ventilador de Techo Industrial" && "bg-[#fe7604] border-[#fe7604]" } 
                     ${e.titulo === "Ventilador de Techo Comercial" && "border-[#f0c50b] "}
                     ${e.titulo === "Ventilador Móvil Industrial" && "border-[#ff3131] bg-[#ff3131] ml-[23.4%] mt-[7%] w-[450px] h-[450px]"}
-                    ${e.titulo === "Ventilador Móvil de 45° Industrial" && "w-[500px] scale-125 ml-[30%] mt-[-20px] border-none"}
+                    ${e.titulo === "Ventilador Móvil de 45° Industrial" && "w-[500px] scale-125 ml-[30%] mt-[-20px] border-[#f0c50b]"}
                     ${e.titulo === "Ventilador de Pared" && "w-[600px] mt-[-20px] border-[#1d4675]"}
                      ${e.titulo === "Ventilador Industrial Vertical" && "hover:border-4 hover:border-[#fe7604] border-[0px] hover:scale-105 transition  mt-[0px] relative hover:border-none w-[300px]"}
                      ${e.titulo === "Ventilador Comercial Vertical" && "hover:border-none border-[0px] hover:scale-105 transition  mt-[0px] relative  w-[400px] rounded-2xl"}

@@ -52,14 +52,14 @@ export default function Catalogo(){
             {/* Catalogo */}
             <div className="w-full h-full flex bg-[#e6e6d4] flex-col items-center mb-20 lg:mt-0 lg:mb-20 lg:pb-20">
                 <h2 className="text-[#1d4674] roboto text-3xl lg:text-5xl font-bold mt-20 mb-10">CATÁLOGOS EQUIPO</h2>
-                <div className="flex justify-around w-[90vw] lg:space-x-10">
-                    <div className="hover:scale-105 hover:cursor-pointer transition">
-                        <Image src="/productos/1/1.png" width={640} height={400} alt="" />
-                        <p className="text-center mx-auto relative left-[140px] bg-[#1d4674] p-2 w-fit text-white px-5 rounded-lg text-lg font-bold">INDUSTRIAL HDS</p>
+                <div className="flex justify-around w-[90vw] lg:space-x-2">
+                    <div className="hover:scale-110 hover:cursor-pointer transition">
+                        <Image src="/catalogo/4.png" width={840} height={400} alt="" />
+                        <p className="text-center mx-auto relative left-[10px] bg-[#1d4674] p-2 w-fit text-white px-5 rounded-lg text-lg font-bold">INDUSTRIAL HDS</p>
                     </div>
-                    <div className="hover:scale-105 hover:cursor-pointer transition pr-20">
-                        <Image src="/productos/2/1.png" width={530} height={400} alt="" />
-                        <p className="text-center mx-auto relative left-[50px] bg-[#1d4674] p-2 w-fit text-white px-5 rounded-lg text-lg font-bold">COMERCIAL HDS</p>
+                    <div className="hover:scale-110 hover:cursor-pointer transition mt-7 pr-20">
+                        <Image src="/catalogo/5.png" width={580} height={400} alt="" />
+                        <p className="text-center mx-auto relative left-[-3px] mt-6 bg-[#1d4674] p-2 w-fit text-white px-5 rounded-lg text-lg font-bold">COMERCIAL HDS</p>
                     </div>
 
                 </div>

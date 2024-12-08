@@ -343,14 +343,12 @@
             "gama": "no",
             "caracteristicas": "no",
             "especificacion": [
-                [{"text": "Modelo", "num": 1}, {"text": "335L", "num": 2}],
-                [{"text": "Dimensiones (mm)", "num": 1}, {"text": "1228 x 1148 x 1850", "num": 2}],
+                [{"text": "Modelo", "num": 1}, {"text": "150L", "num": 2}],
+                [{"text": "Dimensiones (mm)", "num": 1}, {"text": "1131 x 620 x 1642", "num": 2}],
                 [{"text": "Voltaje (V) Frecuencia", "num": 1}, {"text": "220-240/380-420 50Hz", "num": 2}],
-                [{"text": "Peso neto (Kg)", "num": 1}, {"text": "170", "num": 2}],
-                [{"text": "Capacidad del tanque de agua", "num": 1}, {"text": "335L", "num": 2}],
-                [{"text": "Nivel de presión de sonido", "num": 1}, {"text": "bajo de 64.8 dB", "num": 2}],
+                [{"text": "Peso neto (Kg)", "num": 1}, {"text": "55", "num": 2}],
+                [{"text": "Nivel de ruido", "num": 1}, {"text": "bajo de 64 dB", "num": 2}],
                 [{"text": "Desplazamiento del aire", "num": 1}, {"text": "18,000m3/h", "num": 2}]
-            
             ],
             "espePuntos": ["", [""]]
         }
