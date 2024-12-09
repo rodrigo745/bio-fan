@@ -65,19 +65,19 @@ export default function Nav(){
                             }
                             </Link>
                             <div className="dropdown-content cursor-pointer">
-                                <div href="/pages/productos" className="enlace dropdown2">
-                                    <p>Serie HDS</p>
+                                <div href="/pages/productos" className="enlace hover:relative hover:pl-8 dropdown2">
+                                    <p className="">Serie HDS</p>
                                     <div className="dropdown-content2">
-                                        <Link href="/pages/productos" className="flex p-2 space-x-3 border hover:bg-[#ddd]">
+                                        <Link href="/pages/productos" className="flex p-2 py-3 pt-4 space-x-3 border hover:bg-[#ddd]">
                                         <Image src="/nav/1.png" width={50} height={50} className="w-fit" alt=""/>
                                         <p>Ventilador de techo Industrial</p></Link>
-                                        <Link href="/pages/productos" className="flex p-2 space-x-3 border hover:bg-[#ddd]">
+                                        <Link href="/pages/productos" className="flex p-2 py-4 space-x-3 border hover:bg-[#ddd]">
                                         <Image src="/nav/2.png" width={50} height={50} className="w-fit" alt=""/>
                                         <p>Ventilador de techo Comercial</p>
                                         </Link>
                                     </div>
                                 </div>
-                                <div href="/pages/productos" className="enlace dropdown2">
+                                <div href="/pages/productos" className="enlace hover:relative hover:pl-8 dropdown2">
                                     <p>Serie HDY</p>
                                     <div className="dropdown-content2">
                                         <Link href="/pages/productos" className="flex p-[14px] py-2 space-x-3 border hover:bg-[#ddd]">
@@ -90,7 +90,7 @@ export default function Nav(){
                                         </Link>
                                     </div>                               
                                 </div>
-                                <div href="/pages/productos" className="enlace dropdown2">
+                                <div href="/pages/productos" className="enlace hover:relative hover:pl-8 dropdown2">
                                     <p>Serie HDB</p>
                                     <div className="dropdown-content2">
                                         <Link href="/pages/productos" className="flex p-[14px] py-2 space-x-3 border hover:bg-[#ddd]">
@@ -99,7 +99,7 @@ export default function Nav(){
                                         </Link>
                                     </div> 
                                 </div>
-                                <div href="/pages/productos" className="enlace dropdown2">
+                                <div href="/pages/productos" className="enlace hover:relative hover:pl-8 dropdown2">
                                     <p>Serie HDS/L</p>
                                     <div className="dropdown-content2">
                                         <Link href="/pages/productos" className="flex p-[14px] py-2 space-x-3 border hover:bg-[#ddd]">
@@ -108,7 +108,7 @@ export default function Nav(){
                                         </Link>
                                     </div> 
                                 </div>
-                                <div href="/pages/productos" className="enlace dropdown2">
+                                <div href="/pages/productos" className="enlace hover:relative hover:pl-8 dropdown2">
                                     <p>Evaporativos</p>
                                     <div className="dropdown-content2">
                                         <Link href="/pages/productos" className="flex p-[14px] py-2 space-x-3 border hover:bg-[#ddd]">
@@ -129,7 +129,7 @@ export default function Nav(){
                                         </Link>
                                     </div>
                                 </div>
-                                <Link href="/pages/productos" className="enlace">Recubrimiento solar</Link>
+                                <Link href="/pages/productos" className="enlace hover:relative hover:pl-8">Recubrimiento solar</Link>
                             </div>
                         </div>
                         <div className="dropdown">
@@ -166,7 +166,7 @@ export default function Nav(){
                                 <Link onClick={mostrarMenu} href="/pages/catalogo" className={estiloHoverSecciones}>Catalogo</Link>
                                 <Link onClick={mostrarMenu} href="/pages/contacto" className={estiloHoverSecciones}>Contacto</Link>
                                 <Link onClick={mostrarMenu} href="/" className={estiloHoverSecciones}>Tienda</Link>
-                                <p onClick={mostrarMenu} className="absolute top-0 right-10 text-3xl cursor-pointer">x</p>
+                                <p onClick={mostrarMenu} className="absolute  top-0 right-10 text-3xl cursor-pointer">x</p>
                             </div>
                         </div>
                     }
@@ -176,4 +176,4 @@ export default function Nav(){
     )
 }
 
-const estiloHoverSecciones = "p-2 border-4 border-white hover:border-red-500 transition hover:transition hover:rounded-md cursor-pointer";
+const estiloHoverSecciones = "p-2 border-4 border-white hover:border-red-500 transition hover:transition hover:rounded-md cursor-pointer ";
