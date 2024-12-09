@@ -4,6 +4,7 @@ import { useState } from "react";
 import Image from "next/image";
 import TablaVariante from "@/components/productos/tablaVariante";
 import Link from "next/link";
+import ImageSlider from "@/components/imagenSuperpuesta";
 
 export default function Producto({params}){
 
@@ -359,6 +360,7 @@ export default function Producto({params}){
                     ${e.titulo === "Ventilador de Pared" && "bg-[#1e4675] w-[99vw] mt-[-5%] h-[345px]"}
                     ${e.titulo === "Ventilador Industrial Vertical" && "bg-[#ddddcb] w-[51vw] mt-[-3vh] ml-[-22%] h-[550px]"}
                     ${e.titulo === "Ventilador Comercial Vertical" && "bg-[#fe7604] w-[56vw] mt-[-1.3%] ml-[-9%] h-[480px]"}
+                    ${e.titulo === "EVAPORATIVO INDUSTRIAL <br/> Mod-335L" && "bg-[#1e4675] w-[99vw] mt-[-80px] h-[99vh]"}
 
                     `} ></div>
                     {
@@ -373,7 +375,7 @@ export default function Producto({params}){
                         e.titulo === "Ventilador Comercial Vertical" && 
                         <div className={`z-0 absolute rounded-md bg-[#fe7604] w-[53vw] mt-[14%] ml-[35%] h-[430px] `} ></div>
                     }
-                <Image src={e.img2[0]} width={ e.titulo === "EVAPORATIVO INDUSTRIAL <br/> Mod-335L" ? 1500 : 450} height={450} alt="" className={`z-10 hover:scale-105 transition hover:z-30 hover:cursor-pointer hover:border-4 
+                <Image src={e.img2[0]} width={450} height={450} alt="" className={`z-10 hover:scale-105 transition hover:z-30 hover:cursor-pointer hover:border-4 
                     ${e.titulo === "Ventilador de Techo Industrial" && "bg-[#fe7604] hover:border-[#fe7604]" } 
 
                     ${e.titulo === "Ventilador de Techo Comercial" && "bg-[#f0c50b] hover:border-[#f0c50b]"} 
@@ -382,7 +384,7 @@ export default function Producto({params}){
                     ${e.titulo === "Ventilador de Pared" && "mt-20 mr-40 hover:border-[#1d4675]"}
                      ${e.titulo === "Ventilador Industrial Vertical" && " hover:border-0 hover:border-none w-[300px]"}
                      ${e.titulo === "Ventilador Comercial Vertical" && "hover:border-none  w-[400px] rounded-2xl"}
-                     ${e.titulo === "EVAPORATIVO INDUSTRIAL <br/> Mod-335L" && "hover:border-none hover:scale-[1] w-[99vw] absolute  pt-0 rounded-2xl z-40 mt-[-90px]"}
+                     ${e.titulo === "EVAPORATIVO INDUSTRIAL <br/> Mod-335L" && "hover:border-none hover:scale-[1] w-[32vw] absolute  pt-0 rounded-2xl z-40 mt-[-42px] left-0 ml-[90px]"}
                     `}/>
                 <Image src={e.img2[1]} width={530} height={530} alt=""  className={`absolute z-20 mt-20 border-4 hover:cursor-pointer 
                     ${e.titulo === "Ventilador de Techo Industrial" && "bg-[#fe7604] border-[#fe7604]" } 
@@ -392,6 +394,7 @@ export default function Producto({params}){
                     ${e.titulo === "Ventilador de Pared" && "w-[600px] mt-[-20px] border-[#1d4675]"}
                      ${e.titulo === "Ventilador Industrial Vertical" && "hover:border-4 hover:border-[#fe7604] border-[0px] hover:scale-105 transition  mt-[0px] relative hover:border-none w-[300px]"}
                      ${e.titulo === "Ventilador Comercial Vertical" && "hover:border-none border-[0px] hover:scale-105 transition  mt-[0px] relative  w-[400px] rounded-2xl"}
+                     ${e.titulo === "EVAPORATIVO INDUSTRIAL <br/> Mod-335L" && "border-none hover:scale-[1] w-[60vw] absolute  pt-0 rounded-2xl z-40 mt-[-42px] right-0 mr-20"}
                     `} 
                     style={{animationDuration: "10s"}} />
                 {
@@ -480,6 +483,12 @@ export default function Producto({params}){
                 e.titulo === "EVAPORATIVO INDUSTRIAL <br/> Mod-150L COOL MILITARY" &&
                 <div className="mt-10 ml-28">
                     <Image src={e.img2[0]} width={800} height={400} alt=""/>
+                </div>
+            }
+            {
+                e.titulo === "EVAPORATIVO INDUSTRIAL <br/> Mod-335L" &&
+                <div className="relative mt-[-300px] left-[-25vw] z-50">
+                    <ImageSlider/>
                 </div>
             }
         </div>

@@ -42,7 +42,7 @@ export default function Productos(){
                     ))
                 }
             </div>
-            <div className="w-full h-[260vh] lg:h-[75vh] flex flex-col lg:flex lg:flex-row  lg:space-x-12 mt-10 px-10 mb-24" id="producto-2">
+            <div className="w-full h-[260vh] lg:h-[75vh] flex flex-col lg:flex lg:flex-row  lg:space-x-12 mt-10 px-10 mb-12" id="producto-2">
                 {
                     informacion2.map((e, index)=> (
                         <Link href={index+5 == 8 ? "/pages/evaporativos" : `productos/${index+5}`} key={index} className={`w-[100%] lg:w-[25%] h-full 
@@ -63,6 +63,33 @@ export default function Productos(){
                     ))
                 }
             </div>
+            <div className="bg-[#e6e6d4] w-full h-[260vh] lg:h-[75vh] px-10 flex justify-between mb-24">
+                <Link href={"/pages/evaporativos"} className={`w-[100%] lg:w-[23%] h-full 
+                        flex items-end justify-center mb-5 lg:mb-0 relative hover:scale-105 transition cursor-pointer`}>
+                            <Image src="/productos/8.png" width={400} height={400} alt="producto" className="absolute w-full h-full" />
+                            <div className={`py-3 px-8 w-[90%] text-center text-white         
+                                rounded-[35px] z-30 mb-10 relative bottom-[-60px]
+                                bg-[#1d4674]
+                            `}>
+                                <h4 className={`text-2xl lg:text-5xl font-bold ${"lg:text-[42px]"}}
+                                `}>EVAPORATIVOS</h4>
+                                <p className="text-3xl font-bold">INDUSTRIAL- COMERCIAL</p>
+                            </div>
+                        </Link>
+                        <Link href={""} className={`w-[100%] lg:w-[43%] h-full 
+                        flex items-end justify-center mb-5 lg:mb-0 relative hover:scale-105 transition cursor-pointer`}>
+                            <Image src="/productos/9.jpg" width={400} height={400} alt="producto" className="absolute w-full h-full" />
+                            <div className={`py-3 px-8 w-[50%] text-center text-white         
+                                rounded-[35px] z-30 mb-10 relative bottom-[-60px] ml-40
+                                bg-[#1d4674]
+                            `}>
+                                <h4 className={`text-2xl lg:text-4xl font-bold ${"lg:text-[42px]"}}
+                                `}>RECUBRIMIENTO SOLAR</h4>
+                            </div>
+                        </Link>
+            </div>
+
+
             <div className="bg-white pb-52 ">
                 <h4 className="text-center w-[55%] text-[#fe7604] font-semibold pt-20 pb-20 mx-auto text-3xl helvetica">Diseñados para ofrecer un rendimiento óptimo en entornos exigentes, nuestros ventiladores son sinónimo de calidad y confianza.</h4>
 

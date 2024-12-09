@@ -96,7 +96,9 @@ export default function Header() {
     };
     // Función para manejar clics en los botones
     const handleClick = (index) => {
-      setCurrentIndex(index); // Cambia el índice al botón clickeado
+        setCurrentIndex(index); // Cambia el índice al botón clickeado
+        setVista(index); // Cambia la imagen visible en el slider
+        contRef.current = index; // Actualiza el índice del slider
     };
 
 
@@ -207,15 +209,31 @@ export default function Header() {
             }
             <div className="hidden lg:block">
 
-            <div className={styles.contCirculo}>
-            {Array.from({ length: 8 }).map((_, index) => (
-                <button
+            <div className="absolute space-x-4 flex bottom-0 justify-center items-center w-full mb-4">
+    {/* Botones para cambiar de imagen/slider */}
+    {informacion.map((_, index) => {
+        // Tamaños de los botones en orden ascendente y luego descendente
+        const sizes = [
+            'w-[12px] h-[12px]', 
+            'w-[14px] h-[14px]', 
+            'w-4 h-4', 
+            'w-[18px] h-[18px]', 
+            'w-[20px] h-[20px]', 
+            'w-[18px] h-[18px]', 
+            'w-4 h-4', 
+            'w-[14px] h-[14px]', 
+            'w-[12px] h-[12px]'
+        ];
+
+        return (
+            <button
                 key={index}
-                className={`${styles.circulo} ${currentIndex === index ? styles.active : ""}`}
-                onClick={() => handleClick(index)} // Cambia el índice con el clic
-                />
-            ))}
-            </div>
+                className={`rounded-full bg-white ${sizes[index]} ${currentIndex === index ? 'bg-[#1d4674]' : ''}`}
+                onClick={() => handleClick(index)}
+            />
+        );
+    })}
+</div>
             </div>
         </div>
     )

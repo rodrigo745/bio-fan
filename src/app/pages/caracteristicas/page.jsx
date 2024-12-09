@@ -1,5 +1,5 @@
-
 import Image from "next/image"
+import Link from "next/link"
 
 export default function Caracteristicas(){
 
@@ -16,11 +16,18 @@ export default function Caracteristicas(){
 
 
                 <div className="flex flex-col lg:flex lg:flex-row justify-center w-full lg:space-x-0 items-center lg:space-y-0 px-20 absolute mt-[-290px]">
-    
-                    <Image src="/caracteristicas/1.jpg" width={410} height={1000} alt="" className="px-2 hover:scale-105 transition cursor-pointer"/>
-                    <Image src="/caracteristicas/2.jpg" width={410} height={1000} alt="" className="px-2 hover:scale-105 transition cursor-pointer"/>
-                    <Image src="/caracteristicas/3.jpg" width={410} height={1000} alt="" className="px-2 hover:scale-105 transition cursor-pointer"/>
-                    <Image src="/caracteristicas/6.jpg" width={410} height={1000} alt="" className="px-2 hover:scale-105 transition cursor-pointer"/>
+                    <Link href="/pages/beneficios/1">
+                        <Image src="/caracteristicas/1.jpg" width={410} height={1000} alt="" className="px-2 hover:scale-105 transition cursor-pointer"/>
+                    </Link>
+                    <Link href="/pages/beneficios/2">
+                        <Image src="/caracteristicas/2.jpg" width={410} height={1000} alt="" className="px-2 hover:scale-105 transition cursor-pointer"/>
+                    </Link>    
+                    <Link href="/pages/beneficios/3">
+                        <Image src="/caracteristicas/3.jpg" width={410} height={1000} alt="" className="px-2 hover:scale-105 transition cursor-pointer"/>
+                    </Link>    
+                    <Link href="/pages/beneficios/4">    
+                        <Image src="/caracteristicas/6.jpg" width={410} height={1000} alt="" className="px-2 hover:scale-105 transition cursor-pointer"/>
+                    </Link>    
                 </div>
                 
                 <div className="mt-[400px] flex w-full">
