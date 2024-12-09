@@ -138,9 +138,9 @@ export default function Nav(){
                             }
                             </Link>
                             <div className="dropdown-content">
-                                <Link target="_blank" className="enlace" href="https://bio-fan.aflip.in/03-CATALOGO-RESUMEN.html">Catálogo Resumen</Link>
-                                <Link target="_blank" className="enlace" href="https://bio-fan.aflip.in/Catalogo-General.html">Catálogo General</Link>
-                                <Link target="_blank" className="enlace" href="https://bio-fan.aflip.in/02-CATALOGO-EVAPORATIVOS.html">Catálogo Evaporativos</Link>
+                                <Link target="_blank" className="enlace hover:relative hover:pl-8" href="https://bio-fan.aflip.in/03-CATALOGO-RESUMEN.html">Catálogo Resumen</Link>
+                                <Link target="_blank" className="enlace hover:relative hover:pl-8" href="https://bio-fan.aflip.in/Catalogo-General.html">Catálogo General</Link>
+                                <Link target="_blank" className="enlace hover:relative hover:pl-8" href="https://bio-fan.aflip.in/02-CATALOGO-EVAPORATIVOS.html">Catálogo Evaporativos</Link>
                             </div>
                         </div>
                         <Link href="/pages/contacto" className={estiloHoverSecciones}>Contacto</Link>
