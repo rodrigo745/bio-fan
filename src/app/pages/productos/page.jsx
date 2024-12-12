@@ -31,12 +31,12 @@ export default function Productos(){
                         <Link href={`/pages/productos/${index+1}`} key={index} className={`w-[100%] lg:w-[25%] h-full 
                         flex items-end justify-center mb-5 lg:mb-0 relative hover:scale-105 transition cursor-pointer`}>
                             <Image src={e.img} width={400} height={400} alt="producto" className="absolute w-full h-full" />
-                            <div className={`py-3 px-6 w-[80%] text-center text-white         
+                            <div className={`py-3 px-3 w-[80%] text-center text-white         
                                 rounded-[35px] z-30 mb-10 relative bottom-[-60px]
                                 ${index >= 2 ? "bg-[#eb5347]" : "bg-[#1d4674]"}
                             `}>
-                                <h4 className="text-2xl lg:text-5xl font-bold">{e.titulo}</h4>
-                                <p className="text-3xl font-bold">{e.descripcion}</p>
+                                <h4 className="text-2xl lg:text-4xl font-bold">{e.titulo}</h4>
+                                <p className="text-2xl font-bold">{e.descripcion}</p>
                             </div>
                         </Link>
                     ))
@@ -48,16 +48,16 @@ export default function Productos(){
                         <Link href={index+5 == 8 ? "/pages/evaporativos" : `productos/${index+5}`} key={index} className={`w-[100%] lg:w-[25%] h-full 
                         flex items-end justify-center mb-5 lg:mb-0 relative hover:scale-105 transition cursor-pointer`}>
                             <Image src={e.img} width={400} height={400} alt="producto" className="absolute w-full h-full" />
-                            <div className={`py-3 px-8 w-[90%] text-center text-white         
+                            <div className={`py-2 px-2 w-[80%] text-center text-white         
                                 rounded-[35px] z-30 mb-10 relative bottom-[-60px]
                                 ${index == 0 && "bg-[#f0a84d]"}
-                                ${index == 1 && "bg-[#646363] w-[100%] px-1 "}
-                                ${index == 2 && "bg-[#646363] w-[100%] px-2 "}
-                                ${index > 2 && "bg-[#1d4674] px-1 py-6"}
+                                ${index == 1 && "bg-[#646363] w-[80%] px-1 "}
+                                ${index == 2 && "bg-[#646363] w-[80%] px-2 "}
+                                ${index > 2 && "bg-[#1d4674] px-1 py-3"}
                             `}>
-                                <h4 className={`text-2xl lg:text-5xl font-bold ${e.titulo === "EVAPORATIVOS" && "lg:text-[42px]"} ${e.titulo === "RECUBRIMIENTO SOLAR" && "lg:text-[42px]"}
+                                <h4 className={`text-2xl lg:text-4xl font-bold ${e.titulo === "EVAPORATIVOS" && "lg:text-[36px]"} ${e.titulo === "RECUBRIMIENTO SOLAR" && "lg:text-[36px]"}
                                 `}>{e.titulo}</h4>
-                                <p className="text-3xl font-bold">{e.descripcion}</p>
+                                <p className="text-2xl font-bold">{e.descripcion}</p>
                             </div>
                         </Link>
                     ))
@@ -71,9 +71,9 @@ export default function Productos(){
                                 rounded-[35px] z-30 mb-10 relative bottom-[-60px]
                                 bg-[#1d4674]
                             `}>
-                                <h4 className={`text-2xl lg:text-5xl font-bold ${"lg:text-[42px]"}}
+                                <h4 className={`text-2xl lg:text-4xl font-bold ${"lg:text-[36px]"}}
                                 `}>EVAPORATIVOS</h4>
-                                <p className="text-3xl font-bold">INDUSTRIAL- COMERCIAL</p>
+                                <p className="text-2xl font-bold">INDUSTRIAL- COMERCIAL</p>
                             </div>
                         </Link>
                         <Link href={""} className={`w-[100%] lg:w-[43%] h-full 

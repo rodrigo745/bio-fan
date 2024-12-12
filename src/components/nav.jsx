@@ -49,7 +49,7 @@ export default function Nav(){
             <div className="bg-white roboto border-b-2 shadow-md flex px-32 justify-between py-1"> {/* Nav Desktop */}
                 <a href="/">
                     <div className="h-full w-fit flex justify-center content-center items-center">
-                        <Image className="w-[180px] lg:w-[280px] pl-4" src="/logo-bio.png" width={300} height={200} alt="Logo de bio-fan" />
+                        <Image className="w-[180px] lg:w-[280px] pl-4" src="/logo-bio.png" width={280} height={50} alt="Logo de bio-fan" />
                     </div>
                 </a>
                 {/* Escritorio */}
@@ -103,8 +103,12 @@ export default function Nav(){
                                     <p>Serie HDS/L</p>
                                     <div className="dropdown-content2">
                                         <Link href="/pages/productos" className="flex p-[14px] py-2 space-x-3 border hover:bg-[#ddd]">
-                                        <Image src="/nav/6.png" width={40} height={50} className="w-fit" alt=""/>
-                                        <p className="">Ventilador Vertical Industrial y Comercial</p>
+                                            <Image src="/nav/6.png" width={40} height={50} className="w-fit" alt=""/>
+                                            <p className="p-2">Ventilador Vertical Industrial</p>
+                                        </Link>
+                                        <Link href="/pages/productos" className="flex p-[14px] py-2 space-x-3 border hover:bg-[#ddd]">
+                                            <Image src="/productos/9/1.png" width={40} height={50} className="w-fit" alt=""/>
+                                            <p className="p-1 py-2">Ventilador Vertical Comercial</p>
                                         </Link>
                                     </div> 
                                 </div>

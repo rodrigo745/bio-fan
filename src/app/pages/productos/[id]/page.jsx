@@ -347,7 +347,7 @@ export default function Producto({params}){
             <div className={`flex  mt-28 pb-52 px-28
                 ${e.titulo === "Ventilador Móvil Industrial" ? "justify-between px-0" : "justify-evenly"}
                 ${e.titulo === "Ventilador Industrial Vertical" && " grid  grid-cols-3 gap-y-8 mx-auto w-[66vw] h-[800px]"}
-                ${e.titulo === "Ventilador Comercial Vertical" && " grid  grid-cols-4 gap-x-9 gap-y-8 mx-auto w-[90vw] h-[800px]"}
+                ${e.titulo === "Ventilador Comercial Vertical" && " grid-cols-4 gap-x-9 gap-y-8 mx-auto w-[90vw] h-[800px] hidden"}
                      ${e.titulo === "EVAPORATIVO INDUSTRIAL <br/> Mod-335L" && "h-[81vh]"}
                     ${e.titulo === "EVAPORATIVO INDUSTRIAL <br/> Mod-150L COOL MILITARY" && "hidden"}
                 
