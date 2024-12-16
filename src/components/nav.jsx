@@ -49,7 +49,7 @@ export default function Nav(){
             <div className="bg-white roboto border-b-2 shadow-md flex px-32 justify-between py-1"> {/* Nav Desktop */}
                 <a href="/">
                     <div className="h-full w-fit flex justify-center content-center items-center">
-                        <Image className="w-[180px] lg:w-[280px] pl-4" src="/logo-bio.png" width={280} height={50} alt="Logo de bio-fan" />
+                        <Image className="w-[180px] lg:w-[280px] pl-4" src="/logo-bio.png" width={280} height={72} alt="Logo de bio-fan" />
                     </div>
                 </a>
                 {/* Escritorio */}
@@ -68,10 +68,10 @@ export default function Nav(){
                                 <div href="/pages/productos" className="enlace hover:relative hover:pl-8 dropdown2">
                                     <p className="">Serie HDS</p>
                                     <div className="dropdown-content2">
-                                        <Link href="/pages/productos" className="flex p-2 py-3 pt-4 space-x-3 border hover:bg-[#ddd]">
+                                        <Link href="/pages/productos/1" className="flex p-2 py-3 pt-4 space-x-3 border hover:bg-[#ddd]">
                                         <Image src="/nav/1.png" width={50} height={50} className="w-fit" alt=""/>
                                         <p>Ventilador de techo Industrial</p></Link>
-                                        <Link href="/pages/productos" className="flex p-2 py-4 space-x-3 border hover:bg-[#ddd]">
+                                        <Link href="/pages/productos/2" className="flex p-2 py-4 space-x-3 border hover:bg-[#ddd]">
                                         <Image src="/nav/2.png" width={50} height={50} className="w-fit" alt=""/>
                                         <p>Ventilador de techo Comercial</p>
                                         </Link>
@@ -80,11 +80,11 @@ export default function Nav(){
                                 <div href="/pages/productos" className="enlace hover:relative hover:pl-8 dropdown2">
                                     <p>Serie HDY</p>
                                     <div className="dropdown-content2">
-                                        <Link href="/pages/productos" className="flex p-[14px] py-2 space-x-3 border hover:bg-[#ddd]">
+                                        <Link href="/pages/productos/3" className="flex p-[14px] py-2 space-x-3 border hover:bg-[#ddd]">
                                         <Image src="/nav/3.png" width={40} height={50} className="w-fit" alt=""/>
                                         <p className="pt-3">Ventilador Movil de 45°</p>
                                         </Link>
-                                        <Link href="/pages/productos" className="flex p-[14px] py-2 space-x-3 border hover:bg-[#ddd]">
+                                        <Link href="/pages/productos/4" className="flex p-[14px] py-2 space-x-3 border hover:bg-[#ddd]">
                                         <Image src="/nav/4.png" width={40} height={20} className="w-fit h-12" alt=""/>
                                         <p className="">Ventilador Movil de 45° Industrial</p>
                                         </Link>
@@ -93,7 +93,7 @@ export default function Nav(){
                                 <div href="/pages/productos" className="enlace hover:relative hover:pl-8 dropdown2">
                                     <p>Serie HDB</p>
                                     <div className="dropdown-content2">
-                                        <Link href="/pages/productos" className="flex p-[14px] py-2 space-x-3 border hover:bg-[#ddd]">
+                                        <Link href="/pages/productos/5" className="flex p-[14px] py-2 space-x-3 border hover:bg-[#ddd]">
                                         <Image src="/nav/5.png" width={40} height={50} className="w-fit" alt=""/>
                                         <p className="pt-2">Ventilador de Pared</p>
                                         </Link>
@@ -102,11 +102,11 @@ export default function Nav(){
                                 <div href="/pages/productos" className="enlace hover:relative hover:pl-8 dropdown2">
                                     <p>Serie HDS/L</p>
                                     <div className="dropdown-content2">
-                                        <Link href="/pages/productos" className="flex p-[14px] py-2 space-x-3 border hover:bg-[#ddd]">
+                                        <Link href="/pages/productos/6" className="flex p-[14px] py-2 space-x-3 border hover:bg-[#ddd]">
                                             <Image src="/nav/6.png" width={40} height={50} className="w-fit" alt=""/>
                                             <p className="p-2">Ventilador Vertical Industrial</p>
                                         </Link>
-                                        <Link href="/pages/productos" className="flex p-[14px] py-2 space-x-3 border hover:bg-[#ddd]">
+                                        <Link href="/pages/productos/7" className="flex p-[14px] py-2 space-x-3 border hover:bg-[#ddd]">
                                             <Image src="/productos/9/1.png" width={40} height={50} className="w-fit" alt=""/>
                                             <p className="p-1 py-2">Ventilador Vertical Comercial</p>
                                         </Link>
@@ -115,19 +115,27 @@ export default function Nav(){
                                 <div href="/pages/productos" className="enlace hover:relative hover:pl-8 dropdown2">
                                     <p>Evaporativos</p>
                                     <div className="dropdown-content2">
-                                        <Link href="/pages/productos" className="flex p-[14px] py-2 space-x-3 border hover:bg-[#ddd]">
-                                        <Image src="/nav/7.png" width={40} height={50} className="w-fit" alt=""/>
+                                        <Link href="/pages/productos/8" className="flex p-[14px] py-2 space-x-3 border hover:bg-[#ddd]">
+                                        <Image src="/nav/7.png" width={40} height={50} className="w-fit " alt=""/>
                                         <p className="">Enfriador Evaporativo Industrial - 335L</p>
                                         </Link>
-                                        <Link href="/pages/productos" className="flex p-[14px] py-2 space-x-3 border hover:bg-[#ddd]">
+                                        <Link href="/pages/productos/8" className="flex p-[14px] py-2 space-x-3 border hover:bg-[#ddd]">
+                                        <Image src="/productos/7/01.png" width={40} height={50} className="w-fit" alt=""/>
+                                        <p className="pt-3">120L Cool Military</p>
+                                        </Link>
+                                        <Link href="/pages/productos/8" className="flex p-[14px] py-2 space-x-3 border hover:bg-[#ddd]">
+                                        <Image src="/productos/7/00.png" width={40} height={50} className="w-fit" alt=""/>
+                                        <p className="pt-3">260L Cool Military</p>
+                                        </Link>
+                                        <Link href="/pages/evaporativos" className="flex p-[14px] py-2 space-x-3 border hover:bg-[#ddd]">
                                         <Image src="/nav/8.png" width={40} height={50} className="w-fit" alt=""/>
                                         <p className="">Enfriador Evaporativo Industrial Cool Military</p>
                                         </Link>
-                                        <Link href="/pages/productos" className="flex p-[14px] py-2 space-x-3 border hover:bg-[#ddd]">
+                                        <Link href="/pages/productos/10" className="flex p-[14px] py-2 space-x-3 border hover:bg-[#ddd]">
                                         <Image src="/nav/9.png" width={40} height={50} className="w-fit" alt=""/>
                                         <p className="">Enfriador Evaporativo Industrial - OFS PRO</p>
                                         </Link>
-                                        <Link href="/pages/productos" className="flex p-[14px] py-2 space-x-3 border hover:bg-[#ddd]">
+                                        <Link href="/pages/evaporativos" className="flex p-[14px] py-2 space-x-3 border hover:bg-[#ddd]">
                                         <Image src="/nav/10.png" width={40} height={50} className="w-fit" alt=""/>
                                         <p className="">Enfriador Evaporativo Comercial - Senapati</p>
                                         </Link>

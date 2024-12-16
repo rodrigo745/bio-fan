@@ -217,7 +217,7 @@
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
   font-size: 17px;
-  left: 262px;
+  left: 259.6px;
   top: -1px;
   line-height: 25px;
 }
@@ -402,3 +402,46 @@
             rotateZ(2deg) 
             translateZ(2px);
 }
+
+
+
+
+/* Carrusel */
+
+.carrusel11 {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+}
+
+.imagenes11 {
+  display: flex;
+  animation: movimiento11 20s infinite linear;
+}
+.imagen11 {
+  width: 400px;
+  height: 300px;
+  object-fit: cover;
+}
+.imagenes22 {
+  display: flex;
+  animation: movimiento22 20s infinite linear;
+}
+@keyframes movimiento11 {
+  0% {
+      transform: translateX(0);
+  }
+  100% {
+      transform: translateX(-99.5%);
+  }
+}
+@keyframes movimiento22 {
+  0% {
+      transform: translateX(-99.5%);
+  }
+  100% {
+      transform: translateX(0);
+  }
+}
+

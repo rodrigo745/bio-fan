@@ -2,7 +2,7 @@
 import { useState, useEffect, useRef } from "react"
 import Image from "next/image";
 import PrecargaImagenes from "../preCarga";
-import styles from "@/components/inicio/Circulos.module.css";
+import Link from "next/link";
 
 export default function Header() {
 
@@ -73,27 +73,7 @@ export default function Header() {
         }, 1000);
     };
 
-    const cambiar = (e) => {
-        const btn = e.target.id;
-
-        if (btn === "1") {
-            const prevIndex = (contRef.current - 1 + informacion.length) % informacion.length;
-            setVista(prevIndex);
-            contRef.current = prevIndex;
-            setFlash("tran");
-        setTimeout(() => {
-            setFlash("");
-        }, 1000);
-        setAnimacionTexto("animacion-texto");
-        setTimeout(() => {
-            setAnimacionTexto("");
-        }, 2000);
-        } else if (btn === "2") {
-            avanzarImagen();
-        }
-        
-        
-    };
+   
     // Función para manejar clics en los botones
     const handleClick = (index) => {
         setCurrentIndex(index); // Cambia el índice al botón clickeado
@@ -192,11 +172,11 @@ export default function Header() {
                                         ${e.titulo === "VENTILADOR DE TECHO INDUSTRIAL" && "lg:w-[190%]"}`} style={{lineHeight: 1}}>{e.titulo}</h2>
 
                                 }
-                                <h5 className={`text-md w-[50%] lg:w-[132%] text-justify lg:text-3xl font-medium mt-2 helvetica ${e.titulo == "VENTILADOR MOVIL 45°" && "lg:w-[150%]"}
+                                <h5 className={`text-md w-[50%] lg:w-[132%] text-justify lg:text-3xl mb-6 font-medium mt-2 helvetica ${e.titulo == "VENTILADOR MOVIL 45°" && "lg:w-[150%]"}
                                 ${e.titulo == "RECUBRIMIENTO SUPERIOR SOLAR" && "lg:w-[150%]"}
                                 ${e.titulo == "VENTILADOR INDUSTRIAL" && "lg:w-[170%]"}
                                 `}>{e.descripcion}</h5>
-                                <button className="p-1 px-3 font-medium mt-4 rounded-lg bg-[#eb5347] text-white">Aprende más</button>
+                                <Link href={`/pages/inicio/${index}`} className=" py-2 px-5 font-medium  rounded-lg bg-[#eb5347] text-white">Aprende más</Link>
                             </div>
                             {/*<button  onClick={cambiar} id="2" className="text-7xl right-0 absolute top-[33vh] z-20">{">"}</button>*/}
                             
